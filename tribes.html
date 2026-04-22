@@ -102,12 +102,16 @@ nav a:hover { color: var(--black); }
   color: var(--gray-300);
   margin-bottom: 2rem;
 }
+.map-layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+}
 .map-container {
-  position: relative;
-  width: 100%;
-  background: var(--bg);
+  background: #edf1f5;
   border: 1px solid var(--gray-100);
-  border-radius: 2px;
+  position: relative;
   overflow: hidden;
 }
 .map-container svg {
@@ -115,32 +119,49 @@ nav a:hover { color: var(--black); }
   height: auto;
   display: block;
 }
-.territory {
-  cursor: pointer;
-  transition: opacity 0.3s, filter 0.3s;
-  opacity: 0.55;
+.map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3/4;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  color: var(--gray-300);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
-.territory:hover {
-  opacity: 0.85;
-  filter: brightness(1.1);
+.map-note {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  color: var(--gray-300);
+  letter-spacing: 0.06em;
+  margin-top: 0.75rem;
+  line-height: 1.5;
 }
-.territory.active {
-  opacity: 0.85;
+.map-sidebar { padding-top: 0.5rem; }
+.map-sidebar-intro {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--gray-500);
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
 }
 .map-legend {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem 3rem;
-  margin-top: 1.5rem;
+  flex-direction: column;
+  gap: 0;
 }
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   cursor: pointer;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--gray-100);
   transition: opacity 0.2s;
 }
-.legend-item:hover { opacity: 0.7; }
+.legend-item:first-child { border-top: 1px solid var(--gray-100); }
+.legend-item:hover { opacity: 0.65; }
 .legend-dot {
   width: 10px;
   height: 10px;
@@ -148,11 +169,15 @@ nav a:hover { color: var(--black); }
   flex-shrink: 0;
 }
 .legend-name {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.legend-territory {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray-500);
+  font-size: 0.5rem;
+  color: var(--gray-400);
+  letter-spacing: 0.06em;
+  margin-top: 0.1rem;
 }
 
 /* ── DIVIDER ── */
@@ -173,9 +198,7 @@ nav a:hover { color: var(--black); }
   margin: 0 auto;
   padding: clamp(4rem, 8vw, 7rem) var(--pad);
 }
-.tribe-header {
-  margin-bottom: 3rem;
-}
+.tribe-header { margin-bottom: 3rem; }
 .tribe-label {
   font-family: var(--font-mono);
   font-size: 0.55rem;
@@ -199,7 +222,6 @@ nav a:hover { color: var(--black); }
   margin-top: 0.5rem;
 }
 
-/* ── TRIBE GRID: text + image side by side ── */
 .tribe-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -209,7 +231,6 @@ nav a:hover { color: var(--black); }
 .tribe-grid.reverse { direction: rtl; }
 .tribe-grid.reverse > * { direction: ltr; }
 
-/* ── FACTS ROW ── */
 .facts {
   display: flex;
   gap: 2.5rem;
@@ -224,12 +245,8 @@ nav a:hover { color: var(--black); }
   color: var(--gray-300);
   margin-bottom: 0.25rem;
 }
-.fact-value {
-  font-size: 0.85rem;
-  font-weight: 400;
-}
+.fact-value { font-size: 0.85rem; font-weight: 400; }
 
-/* ── NARRATIVE ── */
 .narrative p {
   font-size: 0.95rem;
   font-weight: 300;
@@ -238,11 +255,7 @@ nav a:hover { color: var(--black); }
   margin-bottom: 1.5rem;
 }
 
-/* ── TRIBE IMAGE ── */
-.tribe-visual {
-  position: sticky;
-  top: 80px;
-}
+.tribe-visual { position: sticky; top: 80px; }
 .tribe-visual img {
   width: 100%;
   display: block;
@@ -259,7 +272,6 @@ nav a:hover { color: var(--black); }
   line-height: 1.6;
 }
 
-/* ── QUOTE ── */
 .quote {
   margin: 2.5rem 0;
   padding-left: 1.5rem;
@@ -283,7 +295,6 @@ nav a:hover { color: var(--black); }
   color: var(--gray-300);
 }
 
-/* ── ASIDE ── */
 .aside {
   margin: 2.5rem 0 0;
   padding: 1.25rem 1.5rem;
@@ -310,16 +321,12 @@ nav a:hover { color: var(--black); }
   text-underline-offset: 2px;
 }
 
-/* ── CLOSING ── */
 .closing {
   padding: clamp(5rem, 10vw, 8rem) var(--pad);
   background: var(--black);
   color: var(--white);
 }
-.closing-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.closing-inner { max-width: 1200px; margin: 0 auto; }
 .closing h2 {
   font-family: var(--font-body);
   font-weight: 300;
@@ -349,10 +356,7 @@ nav a:hover { color: var(--black); }
   padding: 0.75rem 1.5rem;
   transition: all 0.25s;
 }
-.cta:hover {
-  color: var(--white);
-  border-color: var(--white);
-}
+.cta:hover { color: var(--white); border-color: var(--white); }
 
 footer {
   padding: 3rem var(--pad);
@@ -363,14 +367,15 @@ footer {
   letter-spacing: 0.1em;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 860px) {
-  .tribe-grid {
-    grid-template-columns: 1fr;
-  }
+  .tribe-grid { grid-template-columns: 1fr; }
   .tribe-grid.reverse { direction: ltr; }
   .tribe-visual { position: static; }
   .hero { padding-top: 5rem; }
+  .map-layout { grid-template-columns: 1fr; }
+  .map-legend { flex-direction: row; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+  .legend-item { border: none !important; padding: 0.4rem 0; }
+  .legend-territory { display: none; }
 }
 </style>
 </head>
@@ -396,145 +401,16 @@ footer {
 <!-- ═══════════ TERRITORY MAP ═══════════ -->
 <section class="map-section" id="map">
   <div class="map-label">Approximate Territories / c. 1500</div>
-  <div class="map-container">
-    <svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="water" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#e8eef3;stop-opacity:1" />
-          <stop offset="100%" style="stop-color:#dce5ed;stop-opacity:1" />
-        </linearGradient>
-        <filter id="shadow">
-          <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
-        </filter>
-      </defs>
-
-      <rect width="800" height="900" fill="url(#water)"/>
-
-      <!-- Florida peninsula outline -->
-      <path d="M180,50 L320,30 L460,25 L580,40 L650,70 L700,120 L730,200 L740,300 L735,380 L720,420
-               L700,460 L680,490 L650,530 L620,570 L590,620 L560,660 L540,700 L520,730
-               L500,760 L470,790 L440,810 L400,820 L360,810 L320,790 L280,760
-               L250,730 L220,690 L200,650 L180,600 L160,540 L140,480
-               L120,420 L105,370 L95,310 L90,250 L100,190 L120,130 L150,80 Z"
-            fill="#f5f3ef" stroke="#d4cfc7" stroke-width="1.5" filter="url(#shadow)"/>
-
-      <!-- Lake Okeechobee -->
-      <ellipse cx="480" cy="540" rx="55" ry="45" fill="#d5dfe8" stroke="#c0ccd6" stroke-width="1"/>
-      <text x="480" y="544" text-anchor="middle" font-family="'IBM Plex Mono', monospace"
-            font-size="7" letter-spacing="0.5" fill="#99aab8">OKEECHOBEE</text>
-
-      <!-- Territory: Tocobaga (Tampa Bay area, northwest) -->
-      <path class="territory" data-tribe="tocobaga"
-            d="M130,170 L200,140 L280,130 L340,150 L360,200 L340,270 L290,310
-               L230,310 L170,290 L130,250 L110,210 Z"
-            fill="var(--tocobaga)" onclick="scrollToTribe('tocobaga')"/>
-
-      <!-- Territory: Ais (Cape Canaveral to St. Lucie, northeast coast) -->
-      <path class="territory" data-tribe="ais"
-            d="M580,120 L700,160 L730,250 L735,350 L720,420 L680,440
-               L620,400 L580,340 L560,260 L560,180 Z"
-            fill="var(--ais)" onclick="scrollToTribe('ais')"/>
-
-      <!-- Territory: Calusa (southwest coast, Charlotte Harbor to Keys) -->
-      <path class="territory" data-tribe="calusa"
-            d="M110,310 L200,320 L280,340 L340,370 L380,420 L400,480
-               L410,530 L390,580 L350,640 L310,700 L280,750 L250,730
-               L220,690 L195,640 L170,580 L150,510 L130,440 L110,370 Z"
-            fill="var(--calusa)" onclick="scrollToTribe('calusa')"/>
-
-      <!-- Territory: Mayaimi (interior, around Okeechobee) -->
-      <path class="territory" data-tribe="mayaimi"
-            d="M380,420 L450,400 L540,420 L580,480 L570,550 L540,600
-               L490,620 L430,610 L400,570 L390,510 Z"
-            fill="var(--mayaimi)" onclick="scrollToTribe('mayaimi')"/>
-
-      <!-- Territory: Jaega (Palm Beach / Jupiter Inlet, southeast coast) -->
-      <path class="territory" data-tribe="jaega"
-            d="M580,480 L670,460 L690,510 L680,580 L650,630
-               L610,650 L570,640 L550,600 L560,540 Z"
-            fill="var(--jaega)" onclick="scrollToTribe('jaega')"/>
-
-      <!-- Territory: Tequesta (Biscayne Bay / Miami, southern tip east) -->
-      <path class="territory" data-tribe="tequesta"
-            d="M490,620 L560,640 L600,680 L580,730 L530,770
-               L470,790 L430,780 L400,750 L380,700 L390,650 L430,620 Z"
-            fill="var(--tequesta)" onclick="scrollToTribe('tequesta')"/>
-
-      <!-- Territory labels -->
-      <text x="220" y="230" text-anchor="middle" font-family="'Inter', sans-serif"
-            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
-            opacity="0.9">Tocobaga</text>
-
-      <text x="650" y="290" text-anchor="middle" font-family="'Inter', sans-serif"
-            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
-            opacity="0.9">Ais</text>
-
-      <text x="260" y="510" text-anchor="middle" font-family="'Inter', sans-serif"
-            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
-            opacity="0.9">Calusa</text>
-
-      <text x="480" y="510" text-anchor="middle" font-family="'Inter', sans-serif"
-            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
-            opacity="0.9">Mayaimi</text>
-
-      <text x="630" y="570" text-anchor="middle" font-family="'Inter', sans-serif"
-            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
-            opacity="0.9">Jaega</text>
-
-      <text x="500" y="710" text-anchor="middle" font-family="'Inter', sans-serif"
-            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
-            opacity="0.9">Tequesta</text>
-
-      <!-- Tampa Bay indent -->
-      <path d="M130,170 L155,210 L140,240 L110,230 L105,200 Z"
-            fill="url(#water)" opacity="0.7"/>
-
-      <!-- Charlotte Harbor indent -->
-      <path d="M120,350 L145,370 L135,395 L108,380 Z"
-            fill="url(#water)" opacity="0.7"/>
-
-      <!-- Biscayne Bay indent -->
-      <path d="M540,700 L560,720 L545,745 L525,735 Z"
-            fill="url(#water)" opacity="0.5"/>
-
-      <!-- Scale bar -->
-      <line x1="600" y1="860" x2="720" y2="860" stroke="#b0b8c0" stroke-width="1"/>
-      <line x1="600" y1="855" x2="600" y2="865" stroke="#b0b8c0" stroke-width="1"/>
-      <line x1="720" y1="855" x2="720" y2="865" stroke="#b0b8c0" stroke-width="1"/>
-      <text x="660" y="878" text-anchor="middle" font-family="'IBM Plex Mono', monospace"
-            font-size="8" fill="#99aab8" letter-spacing="0.5">~100 MI</text>
-
-      <!-- Compass -->
-      <text x="60" y="870" text-anchor="middle" font-family="'IBM Plex Mono', monospace"
-            font-size="10" fill="#b0b8c0" letter-spacing="1">N</text>
-      <line x1="60" y1="873" x2="60" y2="893" stroke="#b0b8c0" stroke-width="1"/>
-      <polygon points="55,875 60,873 65,875" fill="#b0b8c0"/>
-    </svg>
-  </div>
-  <div class="map-legend">
-    <div class="legend-item" onclick="scrollToTribe('calusa')">
-      <div class="legend-dot" style="background:var(--calusa)"></div>
-      <span class="legend-name">Calusa</span>
+  <div class="map-layout">
+    <div>
+      <div class="map-container" id="map-container">
+        <div class="map-loading">Loading map&hellip;</div>
+      </div>
+      <div class="map-note">Boundaries are approximate, reconstructed from colonial-era accounts. Geographic data: US Census / Natural Earth.</div>
     </div>
-    <div class="legend-item" onclick="scrollToTribe('tocobaga')">
-      <div class="legend-dot" style="background:var(--tocobaga)"></div>
-      <span class="legend-name">Tocobaga</span>
-    </div>
-    <div class="legend-item" onclick="scrollToTribe('mayaimi')">
-      <div class="legend-dot" style="background:var(--mayaimi)"></div>
-      <span class="legend-name">Mayaimi</span>
-    </div>
-    <div class="legend-item" onclick="scrollToTribe('tequesta')">
-      <div class="legend-dot" style="background:var(--tequesta)"></div>
-      <span class="legend-name">Tequesta</span>
-    </div>
-    <div class="legend-item" onclick="scrollToTribe('jaega')">
-      <div class="legend-dot" style="background:var(--jaega)"></div>
-      <span class="legend-name">Jaega</span>
-    </div>
-    <div class="legend-item" onclick="scrollToTribe('ais')">
-      <div class="legend-dot" style="background:var(--ais)"></div>
-      <span class="legend-name">Ais</span>
+    <div class="map-sidebar">
+      <p class="map-sidebar-intro">Six peoples divided the peninsula between the Gulf and the Atlantic. Click any territory to read their story.</p>
+      <div class="map-legend" id="map-legend"></div>
     </div>
   </div>
 </section>
@@ -789,21 +665,159 @@ footer {
 
 <footer>The Traveler Project / finderscape.com</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <script>
 function scrollToTribe(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-const territories = document.querySelectorAll('.territory');
-territories.forEach(t => {
-  t.addEventListener('mouseenter', () => {
-    territories.forEach(o => { if (o !== t) o.style.opacity = '0.2'; });
-    t.style.opacity = '0.9';
+(async function() {
+  var container = document.getElementById('map-container');
+  var legendEl = document.getElementById('map-legend');
+
+  var tribes = [
+    { id:'tocobaga', name:'Tocobaga', territory:'Tampa Bay',
+      color:'#8b5e3c', labelPos:[-82.35,27.95],
+      coords:[[-84,30],[-81.0,30],[-81.0,27.1],[-84,27.1]] },
+    { id:'ais', name:'Ais', territory:'Cape Canaveral to St. Lucie',
+      color:'#b08d35', labelPos:[-80.85,27.95],
+      coords:[[-81.0,30],[-79,30],[-79,27.1],[-81.0,27.1]] },
+    { id:'calusa', name:'Calusa', territory:'Charlotte Harbor to the Keys',
+      color:'#2a6b4f', labelPos:[-81.85,26.2],
+      coords:[[-84,27.1],[-81.0,27.1],[-81.0,26.0],[-80.7,25.5],[-80.7,24],[-84,24]] },
+    { id:'mayaimi', name:'Mayaimi', territory:'Lake Okeechobee basin',
+      color:'#4a7c9b', labelPos:[-80.82,26.55],
+      coords:[[-81.0,27.1],[-80.4,27.1],[-80.4,26.3],[-80.7,25.5],[-81.0,26.0]] },
+    { id:'jaega', name:'Jaega', territory:'Jupiter Inlet to Palm Beach',
+      color:'#7b6b9d', labelPos:[-80.25,26.7],
+      coords:[[-80.4,27.1],[-79,27.1],[-79,26.3],[-80.4,26.3]] },
+    { id:'tequesta', name:'Tequesta', territory:'Biscayne Bay & Miami River',
+      color:'#c45d3e', labelPos:[-80.35,25.65],
+      coords:[[-80.4,26.3],[-79,26.3],[-79,24],[-80.7,24],[-80.7,25.5]] }
+  ];
+
+  try {
+    var us = await d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json');
+    var states = topojson.feature(us, us.objects.states);
+    var florida = states.features.find(function(f){ return f.id === '12'; });
+    if (!florida) throw new Error('Florida not found');
+
+    var W = 560, H = 760;
+    var focus = {
+      type:'Feature',
+      geometry:{ type:'Polygon',
+        coordinates:[[[-83.1,24.3],[-79.8,24.3],[-79.8,28.7],[-83.1,28.7],[-83.1,24.3]]] }
+    };
+    var projection = d3.geoMercator().fitExtent([[12,12],[W-12,H-12]], focus);
+    var pathGen = d3.geoPath(projection);
+
+    container.innerHTML = '';
+    var svg = d3.select(container).append('svg')
+      .attr('viewBox','0 0 '+W+' '+H);
+
+    svg.append('rect').attr('width',W).attr('height',H).attr('fill','#edf1f5');
+
+    svg.append('defs').append('clipPath').attr('id','fl-clip')
+      .append('path').datum(florida).attr('d',pathGen);
+
+    svg.append('path').datum(florida).attr('d',pathGen)
+      .attr('fill','#eeebe5').attr('stroke','none');
+
+    var g = svg.append('g').attr('clip-path','url(#fl-clip)');
+
+    tribes.forEach(function(t) {
+      var ring = t.coords.concat([t.coords[0]]);
+      var feat = { type:'Feature', geometry:{ type:'Polygon', coordinates:[ring] } };
+      g.append('path').datum(feat).attr('d',pathGen)
+        .attr('fill',t.color).attr('opacity',0.5)
+        .attr('cursor','pointer').attr('class','territory').attr('data-tribe',t.id)
+        .on('click',function(){ scrollToTribe(t.id); })
+        .on('mouseenter',function(){
+          svg.selectAll('.territory').transition().duration(200).attr('opacity',0.12);
+          d3.select(this).transition().duration(200).attr('opacity',0.75);
+          svg.selectAll('.ml').transition().duration(200).attr('opacity',0.15);
+          svg.select('#ml-'+t.id).transition().duration(200).attr('opacity',1);
+        })
+        .on('mouseleave',function(){
+          svg.selectAll('.territory').transition().duration(250).attr('opacity',0.5);
+          svg.selectAll('.ml').transition().duration(250).attr('opacity',0.85);
+        });
+    });
+
+    var lc = projection([-80.83,26.93]);
+    var lr = projection([-80.55,26.93]);
+    var lt = projection([-80.83,27.18]);
+    svg.append('ellipse').attr('cx',lc[0]).attr('cy',lc[1])
+      .attr('rx',lr[0]-lc[0]).attr('ry',lc[1]-lt[1])
+      .attr('fill','#d8e2ea').attr('stroke','#c5d0d9').attr('stroke-width',0.5);
+    svg.append('text').attr('x',lc[0]).attr('y',lc[1]+3)
+      .attr('text-anchor','middle').attr('font-family',"'IBM Plex Mono',monospace")
+      .attr('font-size',6.5).attr('fill','#8ea0b0').attr('letter-spacing','0.5px')
+      .text('OKEECHOBEE');
+
+    svg.append('path').datum(florida).attr('d',pathGen)
+      .attr('fill','none').attr('stroke','#c8c0b4').attr('stroke-width',1);
+
+    tribes.forEach(function(t) {
+      var p = projection(t.labelPos);
+      if (!p) return;
+      svg.append('text').attr('id','ml-'+t.id).attr('class','ml')
+        .attr('x',p[0]).attr('y',p[1]).attr('text-anchor','middle')
+        .attr('font-family',"'Inter',sans-serif").attr('font-size',11.5)
+        .attr('font-weight',400).attr('fill','#fff').attr('opacity',0.85)
+        .attr('pointer-events','none')
+        .attr('paint-order','stroke fill')
+        .attr('stroke','rgba(0,0,0,0.2)').attr('stroke-width',3)
+        .text(t.name);
+    });
+
+    var sc1 = projection([-82.5,24.8]);
+    var sc2 = projection([-81.6,24.8]);
+    var sLen = sc2[0]-sc1[0];
+    var sY = H-25, sX = W-20-sLen;
+    svg.append('line').attr('x1',sX).attr('y1',sY).attr('x2',sX+sLen).attr('y2',sY)
+      .attr('stroke','#b3bcc5').attr('stroke-width',0.8);
+    svg.append('line').attr('x1',sX).attr('y1',sY-4).attr('x2',sX).attr('y2',sY+4)
+      .attr('stroke','#b3bcc5').attr('stroke-width',0.8);
+    svg.append('line').attr('x1',sX+sLen).attr('y1',sY-4).attr('x2',sX+sLen).attr('y2',sY+4)
+      .attr('stroke','#b3bcc5').attr('stroke-width',0.8);
+    svg.append('text').attr('x',sX+sLen/2).attr('y',sY+12)
+      .attr('text-anchor','middle').attr('font-family',"'IBM Plex Mono',monospace")
+      .attr('font-size',7).attr('fill','#99aab8').attr('letter-spacing','0.5px')
+      .text('~60 MI');
+
+  } catch(e) {
+    console.error('Map error:',e);
+    container.innerHTML = '<div class="map-loading">Map unavailable</div>';
+  }
+
+  tribes.forEach(function(t) {
+    var item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = '<div class="legend-dot" style="background:'+t.color+'"></div>' +
+      '<div><div class="legend-name">'+t.name+'</div>' +
+      '<div class="legend-territory">'+t.territory+'</div></div>';
+    item.addEventListener('click',function(){ scrollToTribe(t.id); });
+    item.addEventListener('mouseenter',function(){
+      var svg = d3.select('#map-container svg');
+      if (!svg.empty()) {
+        svg.selectAll('.territory').transition().duration(200).attr('opacity',0.12);
+        svg.select('[data-tribe="'+t.id+'"]').transition().duration(200).attr('opacity',0.75);
+        svg.selectAll('.ml').transition().duration(200).attr('opacity',0.15);
+        svg.select('#ml-'+t.id).transition().duration(200).attr('opacity',1);
+      }
+    });
+    item.addEventListener('mouseleave',function(){
+      var svg = d3.select('#map-container svg');
+      if (!svg.empty()) {
+        svg.selectAll('.territory').transition().duration(250).attr('opacity',0.5);
+        svg.selectAll('.ml').transition().duration(250).attr('opacity',0.85);
+      }
+    });
+    legendEl.appendChild(item);
   });
-  t.addEventListener('mouseleave', () => {
-    territories.forEach(o => o.style.opacity = '');
-  });
-});
+})();
 </script>
 
 </body>
