@@ -16,7 +16,7 @@
     "calusa_ai_hypotheses": 192,
     "calusa_glossed": 74,
     "granberry_baseline": 12,
-    "generated_at": "2026-04-21T13:15:54.671852"
+    "generated_at": "2026-04-22T11:50:39.233166"
   },
   "languages": [
     {
@@ -8479,7 +8479,7 @@
       "author": "",
       "year": "c. 1567",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "fetched",
       "relevance": "",
       "url": ""
     },
@@ -8760,6 +8760,312 @@
       "type": "scholarly_monograph",
       "status": "processed",
       "relevance": "Chapter on Calusa as capturing society, includes population estimates and political structure",
+      "url": ""
+    },
+    {
+      "name": "Keegan & Tormo - Experiencia Misionera en la Florida (1957)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Zubillaga - Monumenta Antiquae Floridae (1566-1572)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "French - Historical Collections of Louisiana and Florida, New Series (1869)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "French - Historical Collections of Louisiana and Florida, 2nd Series (1875)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Lowery - Spanish Settlements 1513-1561 (1905)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Lowery - Spanish Settlements: Florida 1562-1574 (1911)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Garcilaso de la Vega - La Florida del Inca (1605/1723 English)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Brinton - Notes on the Floridian Peninsula (1859)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Gatschet - The Timucua Language (1880)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Gatschet - Migration Legend of the Creek Indians, Vol 1 (1884)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Gatschet - Migration Legend of the Creek Indians, Vol 2 (1888)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Swanton - Indian Tribes of the Lower Mississippi Valley (1911)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Bourne - Narratives of the Career of Hernando de Soto, Vol 1 (1904)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Bourne - Narratives of the Career of Hernando de Soto, Vol 2 (1904)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Cabeza de Vaca - Relación (Buckingham Smith translation, 1871)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Bartram - Travels through North and South Carolina, Georgia, East and West Florida (1791)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Adair - History of the American Indians (1775)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Herrera - Historia General, Vol 2",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Herrera - Historia General, Vol 3",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Herrera - Historia General, Vol 4",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Ruidíaz y Caravia - La Florida, Vol 1 (1893)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Oviedo - Historia General y Natural de las Indias, Vol 1 (1851 ed.)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Oviedo - Historia General y Natural de las Indias, Vol 3 (1851 ed.)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "unprocessed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 087 - Revolt among Jororo and Mayaca (1696-1697)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 102 - Zuniga Description of Florida Natives (1700)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 108 - Franciscan Report on Florida Missions (1617)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 073 - Miscellaneous Translations 1574-1716",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 031 - Ponce de León: Antonio de Herrera Account (1513)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 013 - The Surruque and Ais (1605)",
+      "author": "",
+      "year": "",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Bourne - Narratives of De Soto, Vol 1: Gentleman of Elvas (1904)",
+      "author": "",
+      "year": "1904",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Laudonniere - Account of French Colony in Florida (1564-1565)",
+      "author": "",
+      "year": "1586",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Gentleman of Elvas - De Soto Narrative",
+      "author": "",
+      "year": "1557",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Ribault - True Discovery of Terra Florida (1563)",
+      "author": "",
+      "year": "1563",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Las Casas - Historia de las Indias (excerpt)",
+      "author": "",
+      "year": "1561",
+      "type": "primary",
+      "status": "fetched",
+      "relevance": "",
       "url": ""
     }
   ],
@@ -9470,31 +9776,10 @@
     ]
   },
   "deep_read": {
-    "total_extractions": 9658,
-    "novel_terms": 5400,
-    "files_processed": 21,
-    "by_language": {
-      "unknown": 2269,
-      "taíno": 1039,
-      "timucua": 478,
-      "nahuatl": 433,
-      "spanish": 312,
-      "calusa": 192,
-      "muskogean": 64,
-      "creek/muskogean": 58,
-      "creek": 56,
-      "quechua": 47,
-      "creek/seminole": 45,
-      "tunica": 44,
-      "apalachee": 43,
-      "creek/muskogee": 42,
-      "guale": 22,
-      "maya": 16,
-      "choctaw": 14,
-      "apalachee/muskogean": 12,
-      "muisca": 11,
-      "hitchiti": 11
-    }
+    "total_extractions": 0,
+    "novel_terms": 0,
+    "files_processed": 0,
+    "by_language": {}
   },
   "cognates": {
     "total": 100,
@@ -11148,22 +11433,22 @@
       },
       {
         "id": "ponce_first_contact",
-        "title": "Ponce de Leon's First Contact (1513)",
+        "title": "Ponce de León's First Contact (1513)",
         "context": "Spanish ships anchor off the southwest Florida coast. Calusa warriors paddle out in canoes. The first recorded encounter between Europeans and the Calusa.",
         "lines": [
           {
             "speaker": "spanish",
-            "speaker_name": "Soldado espanol",
-            "spanish": "Somos enviados por el Rey de Espana. Venimos en paz.",
-            "english": "We are sent by the King of Spain. We come in peace.",
-            "pronunciation": "Somos enviados por el Rey de Espana. Venimos en paz.",
+            "speaker_name": "Soldado español",
+            "spanish": "Venimos en nombre del Rey de España, nuestro señor. Traemos paz.",
+            "english": "We come in the name of the King of Spain, our lord. We bring peace.",
+            "pronunciation": "Venimos en nombre del Rey de España, nuestro señor. Traemos paz.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Somos enviados por el Rey de Espana. Venimos en paz.",
-                "english": "We are sent by the King of Spain. We come in peace.",
+                "calusa": "Venimos en nombre del Rey de España, nuestro señor. Traemos paz.",
+                "english": "We come in the name of the King of Spain, our lord. We bring peace.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11204,17 +11489,17 @@
           },
           {
             "speaker": "spanish",
-            "speaker_name": "Ponce de Leon",
-            "spanish": "Traemos la palabra de Dios y regalos para vuestro cacique.",
-            "english": "We bring the word of God and gifts for your chief.",
-            "pronunciation": "Traemos la palabra de Dios y regalos para vuestro cacique.",
+            "speaker_name": "Ponce de León",
+            "spanish": "Traemos la palabra de Dios Nuestro Señor e presentes para vuestro cacique.",
+            "english": "We bring the word of God Our Lord and gifts for your chief.",
+            "pronunciation": "Traemos la palabra de Dios Nuestro Señor e presentes para vuestro cacique.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Traemos la palabra de Dios y regalos para vuestro cacique.",
-                "english": "We bring the word of God and gifts for your chief.",
+                "calusa": "Traemos la palabra de Dios Nuestro Señor e presentes para vuestro cacique.",
+                "english": "We bring the word of God Our Lord and gifts for your chief.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11306,17 +11591,17 @@
           },
           {
             "speaker": "spanish",
-            "speaker_name": "Soldado espanol",
-            "spanish": "Nos atacan! A las armas!",
-            "english": "They attack us! To arms!",
-            "pronunciation": "Nos atacan! A las armas!",
+            "speaker_name": "Soldado español",
+            "spanish": "¡Nos acometen! ¡A las armas, señores!",
+            "english": "They charge us! To arms, men!",
+            "pronunciation": "¡Nos acometen! ¡A las armas, señores!",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Nos atacan! A las armas!",
-                "english": "They attack us! To arms!",
+                "calusa": "¡Nos acometen! ¡A las armas, señores!",
+                "english": "They charge us! To arms, men!",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11335,16 +11620,16 @@
           {
             "speaker": "spanish",
             "speaker_name": "Joven Fontaneda",
-            "spanish": "No me mateis, por Dios. Soy cristiano, soy solamente un nino.",
-            "english": "Do not kill me, for God's sake. I am a Christian, I am only a child.",
-            "pronunciation": "No me mateis, por Dios. Soy cristiano, soy solamente un nino.",
+            "spanish": "¡No me matéis, por amor de Dios! Soy cristiano, no soy sino un niño.",
+            "english": "Do not kill me, for the love of God! I am a Christian, I am but a child.",
+            "pronunciation": "¡No me matéis, por amor de Dios! Soy cristiano, no soy sino un niño.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "No me mateis, por Dios. Soy cristiano, soy solamente un nino.",
-                "english": "Do not kill me, for God's sake. I am a Christian, I am only a child.",
+                "calusa": "¡No me matéis, por amor de Dios! Soy cristiano, no soy sino un niño.",
+                "english": "Do not kill me, for the love of God! I am a Christian, I am but a child.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11396,16 +11681,16 @@
           {
             "speaker": "spanish",
             "speaker_name": "Joven Fontaneda",
-            "spanish": "Vengo de Cartagena de Indias. Mi navio se hundio en la tormenta.",
-            "english": "I come from Cartagena de Indias. My ship sank in the storm.",
-            "pronunciation": "Vengo de Cartagena de Indias. Mi navio se hundio en la tormenta.",
+            "spanish": "Vengo de Cartagena de Indias. Mi navío se perdió en la tormenta.",
+            "english": "I come from Cartagena de Indias. My ship was lost in the storm.",
+            "pronunciation": "Vengo de Cartagena de Indias. Mi navío se perdió en la tormenta.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Vengo de Cartagena de Indias. Mi navio se hundio en la tormenta.",
-                "english": "I come from Cartagena de Indias. My ship sank in the storm.",
+                "calusa": "Vengo de Cartagena de Indias. Mi navío se perdió en la tormenta.",
+                "english": "I come from Cartagena de Indias. My ship was lost in the storm.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11500,21 +11785,21 @@
       },
       {
         "id": "menendez_carlos",
-        "title": "Menendez Meets King Carlos (1566)",
-        "context": "Pedro Menendez de Aviles, adelantado of La Florida, arrives at the Calusa capital on Mound Key to negotiate with King Carlos. Menendez will marry Carlos's sister Antonia to seal an alliance. Based on accounts by Solis de Meras and Barcia.",
+        "title": "Menéndez Meets King Carlos (1566)",
+        "context": "Pedro Menéndez de Avilés, adelantado of La Florida, arrives at the Calusa capital on Mound Key to negotiate with King Carlos. Menéndez will marry Carlos's sister Doña Antonia to seal an alliance. Based on accounts by Solís de Merás and Barcia.",
         "lines": [
           {
             "speaker": "spanish",
-            "speaker_name": "Menendez",
-            "spanish": "El Rey Felipe, nuestro senor, os ofrece su amistad y proteccion.",
+            "speaker_name": "Menéndez",
+            "spanish": "El Rey Don Felipe, nuestro señor, os ofrece su amistad e protección.",
             "english": "King Philip, our lord, offers you his friendship and protection.",
-            "pronunciation": "El Rey Felipe, nuestro senor, os ofrece su amistad y proteccion.",
+            "pronunciation": "El Rey Don Felipe, nuestro señor, os ofrece su amistad e protección.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "El Rey Felipe, nuestro senor, os ofrece su amistad y proteccion.",
+                "calusa": "El Rey Don Felipe, nuestro señor, os ofrece su amistad e protección.",
                 "english": "King Philip, our lord, offers you his friendship and protection.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
@@ -11607,17 +11892,17 @@
           },
           {
             "speaker": "spanish",
-            "speaker_name": "Menendez",
-            "spanish": "Deseo la paz entre nuestros pueblos. Tomare a vuestra hermana por esposa.",
-            "english": "I desire peace between our peoples. I will take your sister as my wife.",
-            "pronunciation": "Deseo la paz entre nuestros pueblos. Tomare a vuestra hermana por esposa.",
+            "speaker_name": "Menéndez",
+            "spanish": "Deseo la paz entre nuestros pueblos. Tomaré a vuestra hermana por esposa, como es voluntad de Dios.",
+            "english": "I desire peace between our peoples. I will take your sister as my wife, as is God's will.",
+            "pronunciation": "Deseo la paz entre nuestros pueblos. Tomaré a vuestra hermana por esposa, como es voluntad de Dios.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Deseo la paz entre nuestros pueblos. Tomare a vuestra hermana por esposa.",
-                "english": "I desire peace between our peoples. I will take your sister as my wife.",
+                "calusa": "Deseo la paz entre nuestros pueblos. Tomaré a vuestra hermana por esposa, como es voluntad de Dios.",
+                "english": "I desire peace between our peoples. I will take your sister as my wife, as is God's will.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11668,17 +11953,17 @@
           },
           {
             "speaker": "spanish",
-            "speaker_name": "Menendez",
-            "spanish": "Os daremos herramientas de hierro y telas finas.",
-            "english": "We will give you iron tools and fine cloth.",
-            "pronunciation": "Os daremos herramientas de hierro y telas finas.",
+            "speaker_name": "Menéndez",
+            "spanish": "Os daremos fierro para herramientas e paños finos.",
+            "english": "We will give you iron for tools and fine cloth.",
+            "pronunciation": "Os daremos fierro para herramientas e paños finos.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Os daremos herramientas de hierro y telas finas.",
-                "english": "We will give you iron tools and fine cloth.",
+                "calusa": "Os daremos fierro para herramientas e paños finos.",
+                "english": "We will give you iron for tools and fine cloth.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11691,22 +11976,22 @@
       },
       {
         "id": "mission_estero",
-        "title": "The Mission at Estero Bay (c. 1700)",
-        "context": "A Franciscan friar attempts to convert the Calusa at their settlement near Estero Bay. The Calusa resist, defending their traditional religion centered on the sipi idol. Based on accounts from the Havana missions.",
+        "title": "The Mission at Estero Bay (c. 1697)",
+        "context": "A Franciscan friar attempts to convert the Calusa at their settlement near Estero Bay during the ill-fated 1697 mission. The Calusa resist, defending their traditional religion centered on the sipi idol. Based on documents translated by Hann (1991).",
         "lines": [
           {
             "speaker": "spanish",
-            "speaker_name": "Fray Juan",
-            "spanish": "Hay un solo Dios verdadero, el Dios de los cristianos.",
-            "english": "There is only one true God, the God of the Christians.",
-            "pronunciation": "Hay un solo Dios verdadero, el Dios de los cristianos.",
+            "speaker_name": "Fray franciscano",
+            "spanish": "No hay sino un solo Dios verdadero, el Dios de los cristianos.",
+            "english": "There is but one true God, the God of the Christians.",
+            "pronunciation": "No hay sino un solo Dios verdadero, el Dios de los cristianos.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Hay un solo Dios verdadero, el Dios de los cristianos.",
-                "english": "There is only one true God, the God of the Christians.",
+                "calusa": "No hay sino un solo Dios verdadero, el Dios de los cristianos.",
+                "english": "There is but one true God, the God of the Christians.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11757,17 +12042,17 @@
           },
           {
             "speaker": "spanish",
-            "speaker_name": "Fray Juan",
-            "spanish": "Debeis abandonar vuestros idolos. Son obra del demonio.",
-            "english": "You must abandon your idols. They are the work of the devil.",
-            "pronunciation": "Debeis abandonar vuestros idolos. Son obra del demonio.",
+            "speaker_name": "Fray franciscano",
+            "spanish": "Habéis de dexar vuestros ídolos. Son obra del demonio.",
+            "english": "You must forsake your idols. They are the work of the devil.",
+            "pronunciation": "Habéis de dexar vuestros ídolos. Son obra del demonio.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Debeis abandonar vuestros idolos. Son obra del demonio.",
-                "english": "You must abandon your idols. They are the work of the devil.",
+                "calusa": "Habéis de dexar vuestros ídolos. Son obra del demonio.",
+                "english": "You must forsake your idols. They are the work of the devil.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,
@@ -11859,17 +12144,17 @@
           },
           {
             "speaker": "spanish",
-            "speaker_name": "Fray Juan",
-            "spanish": "Que Dios tenga piedad de vuestras almas.",
-            "english": "May God have mercy on your souls.",
-            "pronunciation": "Que Dios tenga piedad de vuestras almas.",
+            "speaker_name": "Fray franciscano",
+            "spanish": "Que Dios Nuestro Señor tenga piedad de vuestras ánimas.",
+            "english": "May God Our Lord have mercy on your souls.",
+            "pronunciation": "Que Dios Nuestro Señor tenga piedad de vuestras ánimas.",
             "template": "spanish_line",
             "avg_confidence": 1.0,
             "tier": "historical_spanish",
             "words": [
               {
-                "calusa": "Que Dios tenga piedad de vuestras almas.",
-                "english": "May God have mercy on your souls.",
+                "calusa": "Que Dios Nuestro Señor tenga piedad de vuestras ánimas.",
+                "english": "May God Our Lord have mercy on your souls.",
                 "pos": "PHRASE",
                 "tier": "historical_spanish",
                 "confidence": 1.0,

@@ -745,12 +745,20 @@ function scrollToTribe(id) {
         });
     });
 
-    var lc = projection([-80.83,26.93]);
-    var lr = projection([-80.55,26.93]);
-    var lt = projection([-80.83,27.18]);
-    svg.append('ellipse').attr('cx',lc[0]).attr('cy',lc[1])
-      .attr('rx',lr[0]-lc[0]).attr('ry',lc[1]-lt[1])
+    var lakeCoords = [
+      [-80.99,26.78],[-81.01,26.84],[-81.01,26.91],[-80.99,26.98],
+      [-80.95,27.04],[-80.90,27.08],[-80.84,27.11],[-80.78,27.13],
+      [-80.71,27.14],[-80.65,27.13],[-80.59,27.11],[-80.55,27.08],
+      [-80.51,27.04],[-80.48,26.98],[-80.47,26.91],[-80.47,26.85],
+      [-80.48,26.79],[-80.51,26.74],[-80.56,26.70],[-80.62,26.68],
+      [-80.69,26.67],[-80.76,26.67],[-80.83,26.68],[-80.89,26.70],
+      [-80.94,26.73],[-80.99,26.78]
+    ];
+    var lakeRing = lakeCoords;
+    var lakeFeat = {type:'Feature',geometry:{type:'Polygon',coordinates:[lakeRing]}};
+    svg.append('path').datum(lakeFeat).attr('d',pathGen)
       .attr('fill','#d8e2ea').attr('stroke','#c5d0d9').attr('stroke-width',0.5);
+    var lc = projection([-80.73,26.91]);
     svg.append('text').attr('x',lc[0]).attr('y',lc[1]+3)
       .attr('text-anchor','middle').attr('font-family',"'IBM Plex Mono',monospace")
       .attr('font-size',6.5).attr('fill','#8ea0b0').attr('letter-spacing','0.5px')

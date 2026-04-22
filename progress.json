@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-21T22:29:05.732824+00:00",
-  "elapsed_seconds": 3364,
+  "updated_at": "2026-04-22T15:52:13.162172+00:00",
+  "elapsed_seconds": 2805,
   "total_extractions": 0,
   "novel_terms": 0,
   "by_language": {},
-  "files_completed": 31,
-  "files_total": 31,
-  "current_file": null,
-  "current_chunk": 0,
+  "files_completed": 45,
+  "files_total": 52,
+  "current_file": "shipp_desoto_florida_1881.txt",
+  "current_chunk": 418,
   "files": [
     {
       "name": "fontaneda_memoir_full.txt",
@@ -65,7 +65,37 @@
       "extractions": 0
     },
     {
+      "name": "adair_history_american_indians_1775.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
       "name": "barcia_ensayo_cronologico_1723.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "bartram_travels_florida_1791.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "bourne_desoto_narratives_v1_1904.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "bourne_desoto_narratives_v2_1904.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "brinton_notes_floridian_peninsula_1859.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "cabeza_de_vaca_relacion_1542.txt",
       "status": "done",
       "extractions": 0
     },
@@ -75,7 +105,32 @@
       "extractions": 0
     },
     {
+      "name": "elvas_desoto_narrative.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
       "name": "fairbanks_history_florida_1871.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "french_historical_collections_1869.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "french_historical_collections_1875.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "garcilaso_florida_inca_english.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "garcilaso_la_florida_del_inca.txt",
       "status": "done",
       "extractions": 0
     },
@@ -85,12 +140,47 @@
       "extractions": 0
     },
     {
+      "name": "gatschet_migration_legend_creek_v1_1884.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "gatschet_timucua_language_1880.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
       "name": "hann_collection_south_florida.txt",
       "status": "done",
       "extractions": 0
     },
     {
+      "name": "keegan_tormo_experiencia_misionera_florida.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "las_casas_historia_indias.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "laudonniere_florida_1586.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
       "name": "lopez_velasco_geografia_indias.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "lowery_spanish_settlements_v1_1513_1561.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "lowery_spanish_settlements_v2_florida_1562_1574.txt",
       "status": "done",
       "extractions": 0
     },
@@ -110,12 +200,22 @@
       "extractions": 0
     },
     {
+      "name": "oviedo_historia_general_v1.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
       "name": "peter_martyr_v1_1912.txt",
       "status": "done",
       "extractions": 0
     },
     {
       "name": "peter_martyr_v2_1912.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "ribault_florida_1563.txt",
       "status": "done",
       "extractions": 0
     },
@@ -136,32 +236,39 @@
     },
     {
       "name": "shipp_desoto_florida_1881.txt",
-      "status": "done",
+      "status": "processing",
+      "chunk": 418,
+      "total_chunks": 573,
+      "extractions": 0
+    },
+    {
+      "name": "solis_meras_menendez_chronicle.txt",
+      "status": "pending",
       "extractions": 0
     },
     {
       "name": "swanton_creek_indians_1922.txt",
-      "status": "done",
+      "status": "pending",
       "extractions": 0
     },
     {
       "name": "swanton_tunica_1921_extracted.txt",
-      "status": "done",
+      "status": "pending",
       "extractions": 0
     },
     {
       "name": "tacachale_essays_1978.txt",
-      "status": "done",
+      "status": "pending",
       "extractions": 0
     },
     {
       "name": "worth_additional_agi_transcriptions.txt",
-      "status": "done",
+      "status": "pending",
       "extractions": 0
     },
     {
       "name": "worth_fontaneda_revisited_1995.txt",
-      "status": "done",
+      "status": "pending",
       "extractions": 0
     }
   ],
