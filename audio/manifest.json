@@ -1,0 +1,315 @@
+{
+  "calusa_voice_id": "3xiGMDSwPTp1mHS84zpd",
+  "spanish_voice_id": "diKn1AGR1UOOaW8J7qoL",
+  "model": "eleven_multilingual_v2",
+  "files": {
+    "ponce_first_contact_00.mp3": {
+      "scenario_id": "ponce_first_contact",
+      "line_index": 0,
+      "text": "Somos enviados por el Rey de Espana. Venimos en paz.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "ponce_first_contact_02.mp3": {
+      "scenario_id": "ponce_first_contact",
+      "line_index": 2,
+      "text": "Traemos la palabra de Dios y regalos para vuestro cacique.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "ponce_first_contact_05.mp3": {
+      "scenario_id": "ponce_first_contact",
+      "line_index": 5,
+      "text": "Nos atacan! A las armas!",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "fontaneda_captivity_00.mp3": {
+      "scenario_id": "fontaneda_captivity",
+      "line_index": 0,
+      "text": "No me mateis, por Dios. Soy cristiano, soy solamente un nino.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "fontaneda_captivity_02.mp3": {
+      "scenario_id": "fontaneda_captivity",
+      "line_index": 2,
+      "text": "Vengo de Cartagena de Indias. Mi navio se hundio en la tormenta.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "menendez_carlos_00.mp3": {
+      "scenario_id": "menendez_carlos",
+      "line_index": 0,
+      "text": "El Rey Felipe, nuestro senor, os ofrece su amistad y proteccion.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "menendez_carlos_03.mp3": {
+      "scenario_id": "menendez_carlos",
+      "line_index": 3,
+      "text": "Deseo la paz entre nuestros pueblos. Tomare a vuestra hermana por esposa.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "menendez_carlos_05.mp3": {
+      "scenario_id": "menendez_carlos",
+      "line_index": 5,
+      "text": "Os daremos herramientas de hierro y telas finas.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "mission_estero_00.mp3": {
+      "scenario_id": "mission_estero",
+      "line_index": 0,
+      "text": "Hay un solo Dios verdadero, el Dios de los cristianos.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "mission_estero_02.mp3": {
+      "scenario_id": "mission_estero",
+      "line_index": 2,
+      "text": "Debeis abandonar vuestros idolos. Son obra del demonio.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "mission_estero_05.mp3": {
+      "scenario_id": "mission_estero",
+      "line_index": 5,
+      "text": "Que Dios tenga piedad de vuestras almas.",
+      "speaker": "spanish",
+      "voice_id": "diKn1AGR1UOOaW8J7qoL"
+    },
+    "fontaneda_phrase_00.mp3": {
+      "scenario_id": "fontaneda_phrase",
+      "line_index": 0,
+      "text": "seletega",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "fontaneda_captivity_01.mp3": {
+      "scenario_id": "fontaneda_captivity",
+      "line_index": 1,
+      "text": "ura kalos nyo n",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "trade_exchange_03.mp3": {
+      "scenario_id": "trade_exchange",
+      "line_index": 3,
+      "text": "tahni nyo",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "warning_intruders_00.mp3": {
+      "scenario_id": "warning_intruders",
+      "line_index": 0,
+      "text": "tejieue lehte",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "ponce_first_contact_01.mp3": {
+      "scenario_id": "ponce_first_contact",
+      "line_index": 1,
+      "text": "tejieue lehte",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "greeting_visitor_01.mp3": {
+      "scenario_id": "greeting_visitor",
+      "line_index": 1,
+      "text": "ura nyo",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "village_life_03.mp3": {
+      "scenario_id": "village_life",
+      "line_index": 3,
+      "text": "chile ri tuhra mashu",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "warning_intruders_01.mp3": {
+      "scenario_id": "warning_intruders",
+      "line_index": 1,
+      "text": "nyo kalos seletega",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "menendez_carlos_01.mp3": {
+      "scenario_id": "menendez_carlos",
+      "line_index": 1,
+      "text": "nyo kalos waka",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "warning_intruders_02.mp3": {
+      "scenario_id": "warning_intruders",
+      "line_index": 2,
+      "text": "wiruhtu nyoka nihki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "ponce_first_contact_03.mp3": {
+      "scenario_id": "ponce_first_contact",
+      "line_index": 3,
+      "text": "wiruhtu nyoka nihki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "ceremony_03.mp3": {
+      "scenario_id": "ceremony",
+      "line_index": 3,
+      "text": "chile nuhpi",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "greeting_visitor_03.mp3": {
+      "scenario_id": "greeting_visitor",
+      "line_index": 3,
+      "text": "chile washa suhki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "greeting_visitor_02.mp3": {
+      "scenario_id": "greeting_visitor",
+      "line_index": 2,
+      "text": "nyo nyo pi seletega",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "warning_intruders_03.mp3": {
+      "scenario_id": "warning_intruders",
+      "line_index": 3,
+      "text": "chile hohti kuhki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "ponce_first_contact_04.mp3": {
+      "scenario_id": "ponce_first_contact",
+      "line_index": 4,
+      "text": "chile hohti kuhki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "ceremony_01.mp3": {
+      "scenario_id": "ceremony",
+      "line_index": 1,
+      "text": "\u00f3hko ki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "village_life_01.mp3": {
+      "scenario_id": "village_life",
+      "line_index": 1,
+      "text": "\u00f3hko kuhpa kupe",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "trade_exchange_00.mp3": {
+      "scenario_id": "trade_exchange",
+      "line_index": 0,
+      "text": "nyo washa suhki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "trade_exchange_01.mp3": {
+      "scenario_id": "trade_exchange",
+      "line_index": 1,
+      "text": "ura uhpa suhki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "ceremony_02.mp3": {
+      "scenario_id": "ceremony",
+      "line_index": 2,
+      "text": "sipi seletega",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "mission_estero_04.mp3": {
+      "scenario_id": "mission_estero",
+      "line_index": 4,
+      "text": "sipi seletega",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "menendez_carlos_04.mp3": {
+      "scenario_id": "menendez_carlos",
+      "line_index": 4,
+      "text": "ura onagatano suhki",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "menendez_carlos_02.mp3": {
+      "scenario_id": "menendez_carlos",
+      "line_index": 2,
+      "text": "chile guevu",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "village_life_02.mp3": {
+      "scenario_id": "village_life",
+      "line_index": 2,
+      "text": "tirupo washa",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "trade_exchange_02.mp3": {
+      "scenario_id": "trade_exchange",
+      "line_index": 2,
+      "text": "washa ohtu tuhra",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "ceremony_00.mp3": {
+      "scenario_id": "ceremony",
+      "line_index": 0,
+      "text": "kalos",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "mission_estero_01.mp3": {
+      "scenario_id": "mission_estero",
+      "line_index": 1,
+      "text": "kalos",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "village_life_00.mp3": {
+      "scenario_id": "village_life",
+      "line_index": 0,
+      "text": "guevu pi washa",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "fontaneda_captivity_03.mp3": {
+      "scenario_id": "fontaneda_captivity",
+      "line_index": 3,
+      "text": "chile",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "greeting_visitor_00.mp3": {
+      "scenario_id": "greeting_visitor",
+      "line_index": 0,
+      "text": "tahni",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "fontaneda_captivity_04.mp3": {
+      "scenario_id": "fontaneda_captivity",
+      "line_index": 4,
+      "text": "ura sacaspada",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    },
+    "mission_estero_03.mp3": {
+      "scenario_id": "mission_estero",
+      "line_index": 3,
+      "text": "guarugunbe ohka",
+      "speaker": "calusa",
+      "voice_id": "3xiGMDSwPTp1mHS84zpd"
+    }
+  }
+}

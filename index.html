@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Traveler and The Lost Tribes of Florida | Voices from the Water</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --bg: #fafafa;
+  --gray-100: #f0f0f0;
+  --gray-200: #e0e0e0;
+  --gray-300: #c0c0c0;
+  --gray-400: #999;
+  --gray-500: #666;
+  --gray-600: #444;
+  --red: #d63220;
+  --red-light: #f5e6e4;
+  --blue: #0057b8;
+  --green: #1a7a3a;
+  --green-light: #e6f2eb;
+  --amber: #a67c00;
+  --amber-light: #faf3e0;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 clamp(2rem, 5vw, 6rem) 6rem;
+}
+
+.hero-overline {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s 0.2s both;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  max-width: 900px;
+  animation: fadeIn 1s 0.4s both;
+}
+
+.hero h1 em {
+  font-style: italic;
+}
+
+.hero-sub {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  font-weight: 300;
+  color: var(--gray-500);
+  max-width: 520px;
+  margin-top: 2.5rem;
+  line-height: 1.7;
+  animation: fadeIn 0.8s 0.7s both;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 3.5rem;
+  margin-top: 4rem;
+  animation: fadeIn 0.8s 1s both;
+}
+
+.hero-stat .number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--black);
+}
+
+.hero-stat .label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-top: 0.4rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── NAV STRIP ── */
+.nav-strip {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 0 clamp(2rem, 5vw, 6rem);
+  display: flex;
+  align-items: center;
+  height: 48px;
+  gap: 2rem;
+  overflow-x: auto;
+}
+
+.nav-strip a {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.nav-strip a:hover { color: var(--black); }
+
+/* ── SECTIONS ── */
+section {
+  padding: 8rem clamp(2rem, 5vw, 6rem);
+  max-width: 1400px;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 1.5rem;
+}
+
+section h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
+section p.lead {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--gray-500);
+  max-width: 580px;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  height: 1px;
+  background: var(--gray-200);
+  margin: 0 clamp(2rem, 5vw, 6rem);
+}
+
+/* ── PURPOSE ── */
+.purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gray-200);
+  margin-top: 3rem;
+}
+
+.purpose-card {
+  background: var(--white);
+  padding: 2.5rem;
+}
+
+.purpose-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.purpose-card p {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--gray-500);
+  line-height: 1.8;
+}
+
+/* ── STATS BAR ── */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1px;
+  background: var(--gray-200);
+  margin: 3rem 0;
+}
+
+.stat-cell {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+}
+
+.stat-cell .val {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  color: var(--black);
+  line-height: 1;
+}
+
+.stat-cell .desc {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-top: 0.6rem;
+}
+
+/* ── LEXICON ── */
+.tier-legend {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.tier-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tier-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+}
+
+.lexicon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--gray-200);
+}
+
+.word-card {
+  background: var(--white);
+  padding: 1.5rem;
+  transition: background 0.2s;
+}
+
+.word-card:hover { background: var(--bg); }
+
+.word-card .calusa-word {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--black);
+  line-height: 1.2;
+}
+
+.word-card .english {
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--gray-500);
+  margin-top: 0.4rem;
+}
+
+.word-card .tier-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1px;
+  margin-top: 0.6rem;
+}
+
+/* ── AUDIO CONTROLS ── */
+.play-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 1px solid var(--gray-300);
+  color: var(--gray-600);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0;
+}
+.play-btn:hover {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+.play-btn.playing {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
+}
+.play-btn svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+.play-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+}
+.play-all-btn:hover { background: var(--gray-600); }
+.play-all-btn.playing { background: var(--red); }
+.play-all-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+.dialogue-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  background: var(--gray-100);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.dialogue-line .line-content { flex: 1; }
+.dialogue-line .line-audio { flex-shrink: 0; padding-top: 0.15rem; }
+.dialogue-line.speaker-spanish {
+  background: #fef9f0;
+  border-left: 3px solid var(--amber);
+}
+.dialogue-line.speaker-calusa {
+  border-left: 3px solid var(--green);
+}
+.speaker-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.4rem;
+  border-radius: 1px;
+  margin-bottom: 0.35rem;
+}
+.speaker-tag.tag-calusa {
+  background: var(--green-light);
+  color: var(--green);
+}
+.speaker-tag.tag-spanish {
+  background: var(--amber-light);
+  color: var(--amber);
+}
+.speaker-name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: var(--gray-600);
+  margin-left: 0.4rem;
+}
+.spanish-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--black);
+  letter-spacing: 0.01em;
+}
+
+/* ── AMBIENT AUDIO ── */
+.ambient-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--gray-200);
+  background: var(--bg);
+}
+.ambient-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 1px solid var(--gray-300);
+  color: var(--gray-600);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.ambient-toggle:hover {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+.ambient-toggle.active {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+}
+.ambient-toggle svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+.ambient-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  letter-spacing: 0.05em;
+}
+.ambient-volume {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 3px;
+  background: var(--gray-200);
+  outline: none;
+  border-radius: 2px;
+}
+.ambient-volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--gray-500);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tier-primary {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+.tier-published {
+  background: #e8f0fa;
+  color: var(--blue);
+}
+
+.tier-ai {
+  background: var(--amber-light);
+  color: var(--amber);
+}
+
+/* ── NETWORK ── */
+#network { text-align: left; }
+
+#network-canvas {
+  width: 100%;
+  max-width: 900px;
+  height: 520px;
+  margin: 2rem 0;
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+}
+
+/* ── MORPHOLOGY / MATCH CARDS ── */
+.morph-matches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1px;
+  background: var(--gray-200);
+  margin-top: 2rem;
+}
+
+.match-card {
+  background: var(--white);
+  padding: 1.5rem;
+}
+
+.match-card .pair {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.match-card .arrow {
+  color: var(--gray-300);
+  font-size: 1rem;
+}
+
+.match-card .w {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--black);
+}
+
+.match-card .glosses {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--gray-500);
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.match-card .cov {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  margin-top: 0.5rem;
+}
+
+.cognate-type, .evidence-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.45rem;
+  border-radius: 1px;
+}
+
+.type-established, .ev-primary {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+.type-ai, .ev-speculative {
+  background: var(--amber-light);
+  color: var(--amber);
+}
+
+.ev-published {
+  background: #e8f0fa;
+  color: var(--blue);
+}
+
+/* ── VISION ── */
+.vision-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--gray-200);
+  margin-top: 2rem;
+}
+
+.vision-word {
+  background: var(--white);
+  padding: 1rem 1.2rem;
+}
+
+.vision-word strong {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--black);
+}
+
+.vision-word .pg {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  margin-left: 0.5rem;
+}
+
+/* ── TIMELINE ── */
+.timeline {
+  position: relative;
+  margin: 3rem 0;
+  padding-left: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--gray-200);
+}
+
+.timeline-item.current {
+  background: var(--red-light);
+  margin: 0 -2rem;
+  padding: 1.2rem 2rem;
+}
+
+.timeline-item .year {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  padding-top: 0.15rem;
+}
+
+.timeline-item.current .year {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.timeline-item .event {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.timeline-item.current .event {
+  color: var(--black);
+  font-weight: 400;
+}
+
+/* ── SOURCES ── */
+.sources-list {
+  margin-top: 2rem;
+}
+
+.source-row {
+  display: grid;
+  grid-template-columns: 1fr 80px 100px;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.85rem;
+}
+
+.source-row:first-child { border-top: 1px solid var(--gray-200); }
+
+.source-row .name {
+  font-weight: 400;
+  color: var(--black);
+}
+
+.source-row .year-col {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  text-align: center;
+}
+
+.source-row .status {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
+
+.status-fetched { color: var(--green); }
+.status-processed { color: var(--amber); }
+.status-pending { color: var(--red); }
+.status-identified { color: var(--gray-400); }
+
+/* ── FOOTER ── */
+footer {
+  padding: 6rem clamp(2rem, 5vw, 6rem);
+  border-top: 1px solid var(--gray-200);
+  max-width: 700px;
+}
+
+footer blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+footer cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  color: var(--gray-400);
+  letter-spacing: 0.03em;
+  margin-bottom: 2rem;
+}
+
+footer .gen {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  letter-spacing: 0.05em;
+}
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 1;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .hero-stats { flex-wrap: wrap; gap: 2rem; }
+  .purpose-grid { grid-template-columns: 1fr; }
+  .source-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .source-row .year-col, .source-row .status { text-align: left; }
+  .timeline-item { grid-template-columns: 70px 1fr; gap: 1rem; }
+  .nav-strip { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <div class="hero-overline">The Traveler and The Lost Tribes of Florida</div>
+  <h1>Voices from the <em>Water</em></h1>
+  <p class="hero-sub">Recovering the lost languages of South Florida's first people, the Calusa, Tequesta, and their neighbors, from five centuries of scattered archives.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="number" id="stat-entries">&ndash;</div>
+      <div class="label">Lexicon Entries</div>
+    </div>
+    <div class="hero-stat">
+      <div class="number" id="stat-primary">&ndash;</div>
+      <div class="label">Primary Glosses</div>
+    </div>
+    <div class="hero-stat">
+      <div class="number" id="stat-published">&ndash;</div>
+      <div class="label">Scholarly Analyses</div>
+    </div>
+    <div class="hero-stat">
+      <div class="number" id="stat-languages">&ndash;</div>
+      <div class="label">Languages Mapped</div>
+    </div>
+    <div class="hero-stat">
+      <div class="number" id="stat-sources">&ndash;</div>
+      <div class="label">Sources Processed</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="nav-strip">
+  <a href="#purpose">Purpose</a>
+  <a href="#data">Data</a>
+  <a href="#lexicon">Lexicon</a>
+  <a href="#network">Network</a>
+  <a href="#morphology">Morphology</a>
+  <a href="#cognates">Cognates</a>
+  <a href="#place-names">Place Names</a>
+  <a href="#vision">Vision</a>
+  <a href="#history">Timeline</a>
+  <a href="#sources">Sources</a>
+  <a href="#reconstruction">Reconstruction</a>
+</nav>
+
+<!-- ═══════════ PURPOSE ═══════════ -->
+<div class="divider"></div>
+<section id="purpose">
+  <div class="section-label">01 / Purpose</div>
+  <h2>Why this matters</h2>
+  <p class="lead" id="purpose-text"></p>
+  <div class="purpose-grid">
+    <div class="purpose-card">
+      <h3>The Problem</h3>
+      <p>The Calusa dominated South Florida for over a thousand years. They built shell mound cities, controlled trade routes across the Caribbean, and resisted Spanish colonization longer than any other group. Yet their language, the key to their identity, survives only as scattered fragments in 16th-century Spanish documents. Fewer than a dozen words have confirmed translations.</p>
+    </div>
+    <div class="purpose-card">
+      <h3>The Method</h3>
+      <p>We use AI to cross-reference every available colonial-era document (memoirs, mission records, maps, legal correspondence) against neighboring indigenous languages. Computer-driven morphological analysis, phonetic matching, and vision-based manuscript reading extract vocabulary that human researchers might miss.</p>
+    </div>
+    <div class="purpose-card">
+      <h3>The Vision</h3>
+      <p id="goal-text"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ DATA OVERVIEW ═══════════ -->
+<div class="divider"></div>
+<section id="data">
+  <div class="section-label">02 / Live Data</div>
+  <h2>What we've recovered</h2>
+  <p class="lead">Every number below is generated from the actual project data. As new discoveries are made, these figures update.</p>
+  <div class="stats-bar" id="stats-bar"></div>
+</section>
+
+<!-- ═══════════ CALUSA LEXICON ═══════════ -->
+<div class="divider"></div>
+<section id="lexicon">
+  <div class="section-label">03 / The Calusa Lexicon</div>
+  <h2>Words with meanings</h2>
+  <p class="lead">Each entry is classified by provenance: primary-source translations from colonial authors, published scholarly analyses, and AI-generated hypotheses for further investigation.</p>
+  <div class="tier-legend">
+    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--green)"></div> Primary source</div>
+    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--blue)"></div> Published analysis</div>
+    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--amber)"></div> AI hypothesis</div>
+  </div>
+  <div class="lexicon-grid" id="lexicon-grid"></div>
+</section>
+
+<!-- ═══════════ NETWORK ═══════════ -->
+<div class="divider"></div>
+<section id="network">
+  <div class="section-label">04 / Language Network</div>
+  <h2>Connected languages</h2>
+  <p class="lead">South Florida's languages existed in a network of trade, migration, and contact. We map relationships to find cross-linguistic patterns.</p>
+  <canvas id="network-canvas"></canvas>
+</section>
+
+<!-- ═══════════ MORPHOLOGY ═══════════ -->
+<div class="divider"></div>
+<section id="morphology">
+  <div class="section-label">05 / Cross-Linguistic Matches</div>
+  <h2>Shared roots and morphemes</h2>
+  <p class="lead">By comparing Calusa words against Timucua, Taíno, Creek, and other documented languages, we identify shared morphemes that reveal meaning and origin.</p>
+  <div id="morph-summary"></div>
+  <div class="morph-matches" id="morph-matches"></div>
+</section>
+
+<!-- ═══════════ COGNATES ═══════════ -->
+<div class="divider"></div>
+<section id="cognates">
+  <div class="section-label">06 / Tunica-Calusa Cognates</div>
+  <h2>Testing Granberry's hypothesis</h2>
+  <p class="lead">Julian Granberry proposed that Calusa is related to Tunica. Established cognate pairs from his published work are distinguished from AI-proposed hypotheses.</p>
+  <div class="stats-bar" id="cognate-stats"></div>
+  <div class="morph-matches" id="cognate-matches"></div>
+</section>
+
+<!-- ═══════════ PLACE NAMES ═══════════ -->
+<div class="divider"></div>
+<section id="place-names">
+  <div class="section-label">07 / Place Name Etymology</div>
+  <h2>What the land was called</h2>
+  <p class="lead">Place name analyses are classified by evidence: primary-source glosses from Fontaneda, published scholarly decompositions, and AI-proposed hypotheses awaiting validation.</p>
+  <div class="morph-matches" id="placename-grid"></div>
+</section>
+
+<!-- ═══════════ VISION ═══════════ -->
+<div class="divider"></div>
+<section id="vision">
+  <div class="section-label">08 / Vision Pipeline</div>
+  <h2>Reading the manuscripts</h2>
+  <p class="lead">High-resolution scans of historical documents are fed directly to AI vision models, extracting indigenous words that may have been overlooked in prior transcriptions.</p>
+  <div class="stats-bar" id="vision-stats"></div>
+  <div class="vision-highlights" id="vision-highlights"></div>
+</section>
+
+<!-- ═══════════ TIMELINE ═══════════ -->
+<div class="divider"></div>
+<section id="history">
+  <div class="section-label">09 / Timeline</div>
+  <h2>From living language to recovery</h2>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<!-- ═══════════ SOURCES ═══════════ -->
+<div class="divider"></div>
+<section id="sources">
+  <div class="section-label">10 / Sources & References</div>
+  <h2>Documentary evidence</h2>
+  <p class="lead">Every word in our lexicon traces back to a specific historical source. This project stands on centuries of scholarship.</p>
+  <div class="sources-list" id="sources-list"></div>
+</section>
+
+<!-- ═══════════ RECONSTRUCTION ═══════════ -->
+<div class="divider"></div>
+<section id="reconstruction">
+  <div class="section-label">11 / Reconstruction</div>
+  <h2>Rebuilding sentences</h2>
+  <p class="lead">Using Granberry's Calusa-Tunica hypothesis, SOV grammar from Haas's Tunica documentation, and our expanded cognate table, we reconstruct hypothetical Calusa sentences. Every word is tagged with its source and confidence.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0;">
+    <div class="stat-cell"><div class="val" id="rc-cognates">0</div><div class="desc">Cognate pairs</div></div>
+    <div class="stat-cell"><div class="val" id="rc-established">0</div><div class="desc">Established (Granberry)</div></div>
+    <div class="stat-cell"><div class="val" id="rc-templates">0</div><div class="desc">Grammar templates</div></div>
+    <div class="stat-cell"><div class="val" id="rc-scenarios">0</div><div class="desc">Dialogue scenarios</div></div>
+  </div>
+
+  <h3 style="margin-top:3rem;font-family:var(--font-display);font-size:1.5rem;">Cognate Pairs (Calusa ~ Tunica)</h3>
+  <div id="cognate-pairs" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0;"></div>
+
+  <h3 style="margin-top:3rem;font-family:var(--font-display);font-size:1.5rem;">Reconstructed Calusa Dialogue</h3>
+  <p style="font-size:0.8rem;color:var(--gray-400);margin:0.5rem 0 1rem;font-family:var(--font-mono);">
+    Click &#9654; to hear reconstructed Calusa pronunciation. Sorted by confidence, highest first.
+  </p>
+  <div id="dialogue-scenarios" style="margin:1.5rem 0;"></div>
+
+  <h3 style="margin-top:4rem;font-family:var(--font-display);font-size:1.5rem;">Historical Encounters</h3>
+  <p style="font-size:0.8rem;color:var(--gray-400);margin:0.5rem 0 1rem;font-family:var(--font-mono);">
+    Bilingual reconstructions of documented Spanish-Calusa encounters. Lines play in dialogue order.
+  </p>
+  <div class="ambient-controls" id="ambient-controls" style="display:none;">
+    <button class="ambient-toggle" id="ambient-toggle" onclick="toggleAmbient()" title="Toggle ambient soundscape">
+      <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+      Ambient
+    </button>
+    <input type="range" class="ambient-volume" id="ambient-volume" min="0" max="100" value="30" oninput="setAmbientVolume(this.value)">
+    <span class="ambient-label" id="ambient-track-label">Florida forest</span>
+  </div>
+  <div id="encounter-scenarios" style="margin:1.5rem 0;"></div>
+
+  <div style="margin-top:3rem;padding:1.5rem;border:1px solid var(--gray-200);background:var(--bg);">
+    <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:0.75rem;">Voice Attribution</div>
+    <p style="font-size:0.8rem;color:var(--gray-500);line-height:1.8;">
+      Audio pronunciation is modeled on recordings of Southeast US indigenous language speakers from the
+      <a href="https://muskogee.pages.wm.edu/" target="_blank" style="color:var(--blue);">Muskogee (Creek/Seminole) Documentation Project</a>
+      at the College of William &amp; Mary. Creek and Seminole are geographically and culturally the closest living
+      languages to the extinct Calusa. Source recordings include Margaret McKane Mauldin reading Creek folktales
+      and Spencer Frank broadcasting in Seminole on KWSH radio (1990-91). This project uses these materials
+      for language revitalization research, not commercial purposes.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <blockquote>"I made known to them the meaning of Se-le-tega, which is, 'Run to the lookout, see if there be any people coming;' they of Florida abbreviate their words more than we."</blockquote>
+  <cite>Hernando de Escalante Fontaneda, Memoir, c. 1575</cite>
+  <div class="gen" id="gen-time"></div>
+</footer>
+
+<script>
+const DATA_URL = 'data.json';
+
+async function init() {
+  const [resp] = await Promise.all([fetch(DATA_URL), loadAudioManifest(), loadAmbientManifest()]);
+  const data = await resp.json();
+  renderHero(data);
+  renderPurpose(data);
+  renderStats(data);
+  renderLexicon(data);
+  renderNetwork(data);
+  renderMorphology(data);
+  renderCognates(data);
+  renderPlaceNames(data);
+  renderVision(data);
+  renderTimeline(data);
+  renderSources(data);
+  renderReconstruction(data);
+  renderFooter(data);
+  observeSections();
+}
+
+function animateNumber(el, target, duration = 1000) {
+  const start = performance.now();
+  const step = (now) => {
+    const t = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - t, 3);
+    el.textContent = Math.round(target * ease).toLocaleString();
+    if (t < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function renderHero(data) {
+  const s = data.summary;
+  animateNumber(document.getElementById('stat-entries'), s.calusa_total);
+  animateNumber(document.getElementById('stat-primary'), s.calusa_primary_glosses);
+  animateNumber(document.getElementById('stat-published'), s.calusa_published_analyses);
+  animateNumber(document.getElementById('stat-languages'), s.total_languages);
+  animateNumber(document.getElementById('stat-sources'), data.sources.length);
+}
+
+function renderPurpose(data) {
+  document.getElementById('purpose-text').textContent = data.project.description;
+  document.getElementById('goal-text').textContent = data.project.goal;
+}
+
+function renderStats(data) {
+  const s = data.summary;
+  const bar = document.getElementById('stats-bar');
+  const cells = [
+    { val: s.calusa_primary_glosses, desc: 'Primary-source translations' },
+    { val: s.calusa_published_analyses, desc: 'Published scholarly glosses' },
+    { val: s.calusa_attested_unglossed, desc: 'Attested names (unglossed)' },
+    { val: s.calusa_ai_hypotheses, desc: 'AI hypotheses' },
+    { val: s.granberry_baseline, desc: 'Granberry 2011 baseline' },
+    { val: data.sources.length, desc: 'Sources cataloged' },
+  ];
+  bar.innerHTML = cells.map(c => `
+    <div class="stat-cell">
+      <div class="val">${c.val}</div>
+      <div class="desc">${c.desc}</div>
+    </div>
+  `).join('');
+}
+
+function renderLexicon(data) {
+  const calusa = data.languages.find(l => l.id === 'calusa');
+  if (!calusa) return;
+  const grid = document.getElementById('lexicon-grid');
+  const words = calusa.glossed_words.filter(w => w.word && w.meaning);
+  const tierOrder = { primary_gloss: 0, published_analysis: 1, ai_hypothesis: 2 };
+  words.sort((a, b) => (tierOrder[a.tier] ?? 9) - (tierOrder[b.tier] ?? 9));
+
+  const seen = new Set();
+  const unique = [];
+  for (const w of words) {
+    const k = w.word.replace(/[\/]/g, '').toLowerCase();
+    if (!seen.has(k)) { seen.add(k); unique.push(w); }
+  }
+
+  function tierBadge(tier) {
+    if (tier === 'primary_gloss') return '<span class="tier-badge tier-primary">primary source</span>';
+    if (tier === 'published_analysis') return '<span class="tier-badge tier-published">published</span>';
+    if (tier === 'ai_hypothesis') return '<span class="tier-badge tier-ai">ai hypothesis</span>';
+    return '';
+  }
+
+  grid.innerHTML = unique.slice(0, 40).map(w => {
+    const word = w.word.replace(/^\/|\/$/g, '');
+    return `
+      <div class="word-card">
+        <div class="calusa-word">${word}</div>
+        <div class="english">${w.meaning}</div>
+        ${tierBadge(w.tier)}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderNetwork(data) {
+  const canvas = document.getElementById('network-canvas');
+  const ctx = canvas.getContext('2d');
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * 2;
+  canvas.height = rect.height * 2;
+  ctx.scale(2, 2);
+  const W = rect.width, H = rect.height;
+
+  const langs = data.languages.filter(l => l.total_entries > 0);
+  const positions = {};
+  const coreLangs = ['calusa', 'tequesta', 'timucua', 'taino'];
+  const cx = W / 2, cy = H / 2;
+  const coreRadius = Math.min(W, H) * 0.18;
+  const outerRadius = Math.min(W, H) * 0.38;
+
+  let coreIdx = 0, outerIdx = 0;
+  const outerLangs = langs.filter(l => !coreLangs.includes(l.id));
+
+  for (const l of langs) {
+    if (coreLangs.includes(l.id)) {
+      const angle = (coreIdx / coreLangs.length) * Math.PI * 2 - Math.PI / 2;
+      positions[l.id] = {
+        x: cx + Math.cos(angle) * coreRadius,
+        y: cy + Math.sin(angle) * coreRadius,
+        r: Math.min(22, 7 + Math.sqrt(l.total_entries) * 0.35),
+      };
+      coreIdx++;
+    } else {
+      const angle = (outerIdx / outerLangs.length) * Math.PI * 2 - Math.PI / 4;
+      positions[l.id] = {
+        x: cx + Math.cos(angle) * outerRadius,
+        y: cy + Math.sin(angle) * outerRadius,
+        r: Math.min(14, 4 + Math.sqrt(l.total_entries) * 0.25),
+      };
+      outerIdx++;
+    }
+  }
+
+  // Edges
+  const neighbors = data.relations.neighbors || [];
+  ctx.lineWidth = 0.5;
+  for (const edge of neighbors) {
+    const a = positions[edge.from], b = positions[edge.to];
+    if (!a || !b) continue;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+    ctx.stroke();
+  }
+
+  const related = data.relations.related || [];
+  for (const rel of related) {
+    const a = positions[rel.language_a || rel.from];
+    const b = positions[rel.language_b || rel.to];
+    if (!a || !b) continue;
+    const weight = rel.weight || 0.3;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.strokeStyle = `rgba(214,50,32,${weight * 0.35})`;
+    ctx.lineWidth = weight * 2.5;
+    ctx.stroke();
+  }
+
+  // Nodes
+  for (const l of langs) {
+    const p = positions[l.id];
+    if (!p) continue;
+    const isCore = coreLangs.includes(l.id);
+
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+
+    if (l.id === 'calusa') {
+      ctx.fillStyle = '#1a1a1a';
+    } else if (isCore) {
+      ctx.fillStyle = '#555';
+    } else {
+      ctx.fillStyle = '#bbb';
+    }
+    ctx.fill();
+
+    if (isCore) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r + 3, 0, Math.PI * 2);
+      ctx.strokeStyle = l.id === 'calusa' ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0.12)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+
+    ctx.font = isCore ? "500 10px 'Inter'" : "400 8px 'Inter'";
+    ctx.fillStyle = isCore ? '#1a1a1a' : '#999';
+    ctx.textAlign = 'center';
+    ctx.fillText(l.name, p.x, p.y + p.r + 14);
+
+    ctx.font = "300 7px 'IBM Plex Mono'";
+    ctx.fillStyle = '#fff';
+    ctx.fillText(l.total_entries.toString(), p.x, p.y + 3);
+  }
+}
+
+function renderMorphology(data) {
+  const m = data.morphology;
+  if (m.error) return;
+
+  const summary = document.getElementById('morph-summary');
+  summary.innerHTML = `
+    <div class="stats-bar">
+      <div class="stat-cell"><div class="val">${m.timucua?.total || 0}</div><div class="desc">Timucua matches</div></div>
+      <div class="stat-cell"><div class="val">${m.timucua?.strong || 0}</div><div class="desc">Strong (≥40%)</div></div>
+      <div class="stat-cell"><div class="val">${m.taino?.total || 0}</div><div class="desc">Taíno matches</div></div>
+      <div class="stat-cell"><div class="val">${m.taino?.strong || 0}</div><div class="desc">Strong (≥40%)</div></div>
+    </div>
+  `;
+
+  const container = document.getElementById('morph-matches');
+  const allMatches = [
+    ...(m.timucua?.top || []).map(h => ({ ...h, lang: 'Timucua' })),
+    ...(m.taino?.top || []).map(h => ({ ...h, lang: 'Taíno' })),
+  ].sort((a, b) => (b.coverage || 0) - (a.coverage || 0));
+
+  container.innerHTML = allMatches.slice(0, 12).map(h => `
+    <div class="match-card">
+      <div class="pair">
+        <span class="w">${h.calusa_word}</span>
+        <span class="arrow">&rarr;</span>
+        <span class="w">${h.match_word}</span>
+      </div>
+      <div class="glosses">
+        Calusa: ${h.calusa_gloss || '...'}<br>
+        ${h.lang}: ${h.match_gloss || '...'}
+      </div>
+      <div class="cov">${Math.round((h.coverage || 0) * 100)}% coverage · ${h.lang}</div>
+    </div>
+  `).join('');
+}
+
+function renderCognates(data) {
+  const c = data.cognates;
+  if (!c || !c.total) return;
+  const stats = document.getElementById('cognate-stats');
+  stats.innerHTML = `
+    <div class="stat-cell"><div class="val">${c.established_count || 0}</div><div class="desc">Established (Granberry 1994)</div></div>
+    <div class="stat-cell"><div class="val">${c.ai_proposed_count || 0}</div><div class="desc">AI-proposed hypotheses</div></div>
+    <div class="stat-cell"><div class="val">${c.total}</div><div class="desc">Total pairs</div></div>
+  `;
+  const container = document.getElementById('cognate-matches');
+  const sorted = [...(c.matches || [])].sort((a, b) => {
+    if (a.type === 'established' && b.type !== 'established') return -1;
+    if (a.type !== 'established' && b.type === 'established') return 1;
+    return 0;
+  });
+  container.innerHTML = sorted.slice(0, 16).map(m => {
+    const typeClass = m.type === 'established' ? 'type-established' : 'type-ai';
+    const typeLabel = m.type === 'established' ? 'established' : 'ai hypothesis';
+    return `
+      <div class="match-card">
+        <div class="pair">
+          <span class="w">${m.calusa || '?'}</span>
+          <span class="arrow">&rarr;</span>
+          <span class="w">${m.tunica || '?'}</span>
+        </div>
+        <div class="glosses">
+          Calusa: ${m.calusa_meaning || '...'}<br>
+          Tunica: ${m.tunica_meaning || '...'}
+        </div>
+        <div class="cov">
+          <span class="cognate-type ${typeClass}">${typeLabel}</span>
+          ${m.citation ? ' · ' + m.citation.substring(0, 50) : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderPlaceNames(data) {
+  const pn = data.place_names;
+  if (!pn || !pn.total) return;
+  const container = document.getElementById('placename-grid');
+  const sorted = [...(pn.analyses || [])].sort((a, b) => {
+    const order = { primary_source: 0, published: 1, speculative: 2 };
+    return (order[a.evidence_type] ?? 9) - (order[b.evidence_type] ?? 9);
+  });
+  container.innerHTML = sorted.slice(0, 20).map(a => {
+    const evClass = a.evidence_type === 'primary_source' ? 'ev-primary'
+      : a.evidence_type === 'published' ? 'ev-published' : 'ev-speculative';
+    const evLabel = a.evidence_type === 'primary_source' ? 'primary source'
+      : a.evidence_type === 'published' ? 'published' : 'ai hypothesis';
+    return `
+      <div class="match-card">
+        <div class="pair">
+          <span class="w">${a.name}</span>
+          <span class="arrow">&rarr;</span>
+          <span class="w" style="font-style:normal;font-weight:300;font-family:var(--font-body);font-size:0.9rem">${a.proposed_meaning}</span>
+        </div>
+        <div class="glosses">
+          Morphemes: ${(a.morphemes || []).join(' + ')}<br>
+          ${a.evidence_note ? a.evidence_note.substring(0, 120) : (a.basis || '').substring(0, 100)}
+        </div>
+        <div class="cov">
+          <span class="evidence-tag ${evClass}">${evLabel}</span>
+          · ${a.confidence} confidence
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderVision(data) {
+  const v = data.vision;
+  const stats = document.getElementById('vision-stats');
+  stats.innerHTML = `
+    <div class="stat-cell"><div class="val">${v.pages_processed}</div><div class="desc">Pages scanned</div></div>
+    <div class="stat-cell"><div class="val">${v.total_words_found}</div><div class="desc">Words extracted</div></div>
+    <div class="stat-cell"><div class="val">${v.unique_words}</div><div class="desc">Unique terms</div></div>
+  `;
+  const container = document.getElementById('vision-highlights');
+  container.innerHTML = (v.highlights || []).slice(0, 18).map(w => `
+    <div class="vision-word">
+      <strong>${w.word}</strong>
+      <span class="pg">p.${w.page}</span>
+    </div>
+  `).join('');
+}
+
+function renderTimeline(data) {
+  const container = document.getElementById('timeline');
+  container.innerHTML = (data.timeline || []).map(t => {
+    const isCurrent = t.date.includes('2026');
+    return `
+      <div class="timeline-item ${isCurrent ? 'current' : ''}">
+        <div class="year">${t.date}</div>
+        <div class="event">${t.event}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderSources(data) {
+  const container = document.getElementById('sources-list');
+  const sorted = [...data.sources].sort((a, b) => {
+    const ya = parseInt(a.year) || 9999, yb = parseInt(b.year) || 9999;
+    return ya - yb;
+  });
+  container.innerHTML = sorted.map(s => {
+    const statusClass = s.status === 'fetched' ? 'status-fetched'
+      : s.status === 'processed' ? 'status-processed'
+      : s.status === 'pending' ? 'status-pending'
+      : 'status-identified';
+    return `
+      <div class="source-row">
+        <div class="name">${s.name || s.author || ''}</div>
+        <div class="year-col">${s.year || ''}</div>
+        <div class="status ${statusClass}">${s.status || ''}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderScenarioLine(line, sid) {
+  const speaker = line.speaker || 'calusa';
+  const isSpanish = speaker === 'spanish';
+  const speakerClass = isSpanish ? 'speaker-spanish' : 'speaker-calusa';
+  const tagClass = isSpanish ? 'tag-spanish' : 'tag-calusa';
+  const tagLabel = isSpanish ? 'Espanol' : 'Calusa';
+  const speakerName = line.speaker_name || '';
+
+  const audioFile = `${sid}_${String(line._origLineIdx).padStart(2,'0')}.mp3`;
+  const speakText = isSpanish
+    ? (line.spanish || '')
+    : cleanForSpeech(line.pronunciation || line.calusa || '');
+
+  let mainContent, confHtml;
+
+  if (isSpanish) {
+    mainContent = `<div class="spanish-text">${line.spanish || ''}</div>`;
+    confHtml = '';
+  } else {
+    const words = (line.words || []).map(w => {
+      const tier = w.tier || '';
+      const color = tier === 'primary_gloss' ? 'var(--green)' : tier === 'published_analysis' ? 'var(--blue)' : tier === 'tunica_projection' ? 'var(--amber)' : tier === 'gap' ? 'var(--red)' : 'var(--gray-500)';
+      return `<span title="${w.english} (${tier})" style="color:${color};cursor:help;">${w.calusa}</span>`;
+    }).join(' ');
+    const conf = (line.avg_confidence * 100).toFixed(0);
+    mainContent = `<div style="font-size:1rem;letter-spacing:0.02em;">${words || line.calusa}</div>`;
+    confHtml = `<div style="color:var(--gray-400);font-size:0.75rem;margin-top:0.2rem;">Confidence: ${conf}%</div>`;
+  }
+
+  const showTag = isSpanish || speakerName;
+  const tagHtml = showTag
+    ? `<div><span class="speaker-tag ${tagClass}">${tagLabel}</span>${speakerName ? `<span class="speaker-name">${speakerName}</span>` : ''}</div>`
+    : '';
+
+  return `
+    <div class="dialogue-line ${speakerClass}">
+      <div class="line-audio">
+        <button class="play-btn" data-audio="${audioFile}" data-fallback="${escapeAttr(speakText)}" data-speaker="${speaker}" onclick="playLine(this)" title="Listen">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </button>
+      </div>
+      <div class="line-content">
+        ${tagHtml}
+        ${mainContent}
+        <div style="color:var(--gray-500);font-style:italic;margin-top:0.3rem;">"${line.english_intended || line.english}"</div>
+        ${confHtml}
+      </div>
+    </div>
+  `;
+}
+
+function renderScenarioList(scenarios, showSpeakerTags) {
+  return scenarios.map(scenario => {
+    const sid = scenario.id;
+    const ambientTrack = scenario.ambient || '';
+    const audioFiles = scenario.lines.map(l => `${sid}_${String(l._origLineIdx).padStart(2,'0')}.mp3`);
+
+    const lines = scenario.lines.map(line => renderScenarioLine(line, sid)).join('');
+
+    return `
+      <div style="margin-bottom:2.5rem;" data-ambient="${ambientTrack}">
+        <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:0.3rem;">
+          <h4 style="font-family:var(--font-display);font-size:1.2rem;">${scenario.title}</h4>
+          <button class="play-all-btn" data-files='${JSON.stringify(audioFiles)}' data-ambient="${ambientTrack}" onclick="playAll(this)" title="Play entire dialogue">
+            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+            Play all
+          </button>
+        </div>
+        <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:0.75rem;">${scenario.context}</p>
+        ${lines}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderReconstruction(data) {
+  const rc = data.reconstruction || {};
+  const cog = rc.cognates || {};
+  const gram = rc.grammar || {};
+  const dialogues = rc.dialogues || [];
+
+  animateNumber(document.getElementById('rc-cognates'), cog.total || 0);
+  animateNumber(document.getElementById('rc-established'), cog.established || 0);
+  animateNumber(document.getElementById('rc-templates'), gram.template_count || 0);
+  animateNumber(document.getElementById('rc-scenarios'), dialogues.length);
+
+  const pairsEl = document.getElementById('cognate-pairs');
+  const pairs = (cog.top_pairs || []).slice(0, 15);
+  pairsEl.innerHTML = pairs.map(p => {
+    const typeColor = p.type === 'established' ? 'var(--green)' : 'var(--amber)';
+    const typeBg = p.type === 'established' ? 'var(--green-light)' : 'var(--amber-light)';
+    return `
+      <div style="border:1px solid var(--gray-200);padding:1rem;background:var(--white);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;">
+          <span style="font-family:var(--font-mono);font-weight:500;">${p.calusa}</span>
+          <span style="font-size:0.7rem;padding:2px 6px;background:${typeBg};color:${typeColor};border-radius:2px;">${p.type}</span>
+        </div>
+        <div style="font-size:0.8rem;color:var(--gray-500);margin:0.3rem 0;">${p.calusa_meaning}</div>
+        <div style="border-top:1px solid var(--gray-100);padding-top:0.5rem;margin-top:0.5rem;">
+          <span style="font-family:var(--font-mono);color:var(--gray-500);">${p.tunica}</span>
+          <span style="font-size:0.8rem;color:var(--gray-400);margin-left:0.5rem;">${p.tunica_meaning}</span>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  const isBilingual = (s) => s.lines.some(l => l.speaker === 'spanish');
+  const calusaOnly = dialogues.filter(s => !isBilingual(s));
+  const encounters = dialogues.filter(s => isBilingual(s));
+
+  // Calusa-only: sort scenarios by avg confidence, lines by confidence
+  const scoredCalusa = calusaOnly.map(s => {
+    const avgConf = s.lines.reduce((sum, l) => sum + (l.avg_confidence || 0), 0) / (s.lines.length || 1);
+    const linesWithIdx = s.lines.map((l, i) => ({ ...l, _origLineIdx: i }));
+    linesWithIdx.sort((a, b) => (b.avg_confidence || 0) - (a.avg_confidence || 0));
+    return { ...s, lines: linesWithIdx, _avgConf: avgConf };
+  });
+  scoredCalusa.sort((a, b) => b._avgConf - a._avgConf);
+
+  // Encounters: keep dialogue order (chronological by scenario)
+  const orderedEncounters = encounters.map(s => {
+    const linesWithIdx = s.lines.map((l, i) => ({ ...l, _origLineIdx: i }));
+    return { ...s, lines: linesWithIdx };
+  });
+
+  document.getElementById('dialogue-scenarios').innerHTML = renderScenarioList(scoredCalusa, false);
+  document.getElementById('encounter-scenarios').innerHTML = renderScenarioList(orderedEncounters, true);
+
+  initAmbientControls(orderedEncounters);
+}
+
+/* ── Audio Playback Engine ── */
+const AUDIO_BASE = 'audio/';
+let audioManifest = null;
+let currentAudio = null;
+let playAllState = null;
+
+async function loadAudioManifest() {
+  try {
+    const resp = await fetch(AUDIO_BASE + 'manifest.json?t=' + Date.now());
+    if (resp.ok) audioManifest = await resp.json();
+  } catch(e) { /* no manifest yet */ }
+}
+
+function hasAudioFile(filename) {
+  return audioManifest && audioManifest.files && audioManifest.files[filename];
+}
+
+function cleanForSpeech(text) {
+  return text
+    .replace(/\[([^\]]*)\]/g, '')
+    .replace(/[_\-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function escapeAttr(str) {
+  return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+}
+
+const PLAY_SVG = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
+const PAUSE_SVG = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function stopAll() {
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  document.querySelectorAll('.play-btn.playing').forEach(b => {
+    b.classList.remove('playing');
+    b.innerHTML = PLAY_SVG;
+  });
+  if (playAllState) {
+    playAllState.active = false;
+    if (playAllState.btn) {
+      playAllState.btn.classList.remove('playing');
+      playAllState.btn.innerHTML = PLAY_SVG + ' Play all';
+    }
+    playAllState = null;
+  }
+  unduckAmbient();
+}
+
+function setPlaying(btn) {
+  btn.classList.add('playing');
+  btn.innerHTML = PAUSE_SVG;
+}
+
+function setIdle(btn) {
+  btn.classList.remove('playing');
+  btn.innerHTML = PLAY_SVG;
+}
+
+function playLine(btn) {
+  const audioFile = btn.dataset.audio;
+  const fallbackText = btn.dataset.fallback;
+  const wasPlaying = btn.classList.contains('playing');
+
+  stopAll();
+  if (wasPlaying) return;
+
+  if (hasAudioFile(audioFile)) {
+    playMp3(btn, AUDIO_BASE + audioFile);
+  } else {
+    speakFallback(btn, fallbackText);
+  }
+}
+
+function playMp3(btn, url) {
+  const audio = new Audio(url);
+  currentAudio = audio;
+  setPlaying(btn);
+  duckAmbient();
+
+  audio.onended = () => { setIdle(btn); currentAudio = null; unduckAmbient(); };
+  audio.onerror = () => {
+    setIdle(btn);
+    currentAudio = null;
+    unduckAmbient();
+    const fallback = btn.dataset.fallback;
+    if (fallback) speakFallback(btn, fallback);
+  };
+  audio.play().catch(() => {
+    setIdle(btn);
+    currentAudio = null;
+    unduckAmbient();
+  });
+}
+
+/* Web Speech API fallback for lines without pre-recorded audio */
+let speechVoice = null;
+function initSpeechVoice() {
+  if (!window.speechSynthesis) return;
+  const voices = window.speechSynthesis.getVoices();
+  speechVoice = voices.find(v => v.lang === 'es-MX')
+    || voices.find(v => v.lang === 'es-ES')
+    || voices.find(v => v.lang.startsWith('es'))
+    || voices.find(v => v.lang === 'it-IT')
+    || voices.find(v => v.lang.startsWith('it'))
+    || voices[0];
+}
+if (window.speechSynthesis) {
+  window.speechSynthesis.onvoiceschanged = initSpeechVoice;
+  initSpeechVoice();
+}
+
+function speakFallback(btn, text) {
+  if (!window.speechSynthesis || !text) return;
+  if (!speechVoice) initSpeechVoice();
+
+  const speaker = btn ? btn.dataset.speaker : 'calusa';
+  const utter = new SpeechSynthesisUtterance(text);
+  if (speaker === 'spanish') {
+    const voices = window.speechSynthesis.getVoices();
+    const esVoice = voices.find(v => v.lang === 'es-ES')
+      || voices.find(v => v.lang.startsWith('es'))
+      || speechVoice;
+    if (esVoice) utter.voice = esVoice;
+    utter.lang = 'es-ES';
+    utter.rate = 0.85;
+    utter.pitch = 1.0;
+  } else {
+    if (speechVoice) utter.voice = speechVoice;
+    utter.lang = 'es-MX';
+    utter.rate = 0.65;
+    utter.pitch = 0.9;
+  }
+
+  setPlaying(btn);
+  duckAmbient();
+  utter.onend = () => { setIdle(btn); unduckAmbient(); };
+  utter.onerror = () => { setIdle(btn); unduckAmbient(); };
+  window.speechSynthesis.speak(utter);
+}
+
+function playAll(btn) {
+  const wasActive = playAllState && playAllState.btn === btn;
+  stopAll();
+  if (wasActive) return;
+
+  let files;
+  try { files = JSON.parse(btn.dataset.files); } catch(e) { return; }
+  if (!files || files.length === 0) return;
+
+  const ambientTrack = btn.dataset.ambient || '';
+  if (ambientTrack && !ambientMuted) switchAmbientTrack(ambientTrack);
+
+  playAllState = { btn, files, idx: 0, active: true };
+  btn.classList.add('playing');
+  btn.innerHTML = PAUSE_SVG + ' Stop';
+
+  playAllNext();
+}
+
+function playAllNext() {
+  if (!playAllState || !playAllState.active) return;
+  const { btn, files, idx } = playAllState;
+  if (idx >= files.length) { stopAll(); return; }
+
+  const filename = files[idx];
+
+  duckAmbient();
+
+  if (hasAudioFile(filename)) {
+    const audio = new Audio(AUDIO_BASE + filename);
+    currentAudio = audio;
+    audio.onended = () => {
+      currentAudio = null;
+      unduckAmbient();
+      if (playAllState) { playAllState.idx++; setTimeout(playAllNext, 400); }
+    };
+    audio.onerror = () => {
+      currentAudio = null;
+      unduckAmbient();
+      if (playAllState) { playAllState.idx++; setTimeout(playAllNext, 200); }
+    };
+    audio.play().catch(() => {
+      unduckAmbient();
+      if (playAllState) { playAllState.idx++; setTimeout(playAllNext, 200); }
+    });
+  } else {
+    if (!window.speechSynthesis) {
+      unduckAmbient();
+      playAllState.idx++;
+      setTimeout(playAllNext, 200);
+      return;
+    }
+    if (!speechVoice) initSpeechVoice();
+    const lineBtn = document.querySelector(`.play-btn[data-audio="${filename}"]`);
+    const text = lineBtn ? lineBtn.dataset.fallback : '';
+    const speaker = lineBtn ? lineBtn.dataset.speaker : 'calusa';
+    if (!text) { unduckAmbient(); playAllState.idx++; setTimeout(playAllNext, 200); return; }
+
+    const utter = new SpeechSynthesisUtterance(text);
+    if (speaker === 'spanish') {
+      const voices = window.speechSynthesis.getVoices();
+      const esVoice = voices.find(v => v.lang === 'es-ES')
+        || voices.find(v => v.lang.startsWith('es'))
+        || speechVoice;
+      if (esVoice) utter.voice = esVoice;
+      utter.lang = 'es-ES';
+      utter.rate = 0.85;
+      utter.pitch = 1.0;
+    } else {
+      if (speechVoice) utter.voice = speechVoice;
+      utter.lang = 'es-MX';
+      utter.rate = 0.65;
+      utter.pitch = 0.9;
+    }
+    utter.onend = () => {
+      unduckAmbient();
+      if (playAllState) { playAllState.idx++; setTimeout(playAllNext, 400); }
+    };
+    utter.onerror = () => {
+      unduckAmbient();
+      if (playAllState) { playAllState.idx++; setTimeout(playAllNext, 200); }
+    };
+    window.speechSynthesis.speak(utter);
+  }
+}
+
+/* ── Ambient Audio Engine ── */
+const AMBIENT_BASE = 'audio/ambient/';
+let ambientManifest = null;
+let ambientAudio = null;
+let ambientGainNode = null;
+let audioCtx = null;
+let ambientMuted = true;
+let ambientBaseVolume = 0.3;
+
+async function loadAmbientManifest() {
+  try {
+    const resp = await fetch(AMBIENT_BASE + 'manifest.json?t=' + Date.now());
+    if (resp.ok) ambientManifest = await resp.json();
+  } catch(e) { /* no ambient manifest yet */ }
+}
+
+function initAmbientControls(scenarios) {
+  const ctrl = document.getElementById('ambient-controls');
+  const hasAmbient = scenarios.some(s => s.ambient);
+  if (hasAmbient || (ambientManifest && ambientManifest.tracks)) {
+    ctrl.style.display = 'flex';
+  }
+}
+
+function getAmbientCtx() {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  return audioCtx;
+}
+
+function toggleAmbient() {
+  const btn = document.getElementById('ambient-toggle');
+  if (ambientMuted) {
+    ambientMuted = false;
+    btn.classList.add('active');
+    startAmbient('forest_day');
+  } else {
+    ambientMuted = true;
+    btn.classList.remove('active');
+    stopAmbient();
+  }
+}
+
+function setAmbientVolume(val) {
+  ambientBaseVolume = val / 100;
+  if (ambientAudio) ambientAudio.volume = ambientBaseVolume;
+}
+
+function startAmbient(trackId) {
+  stopAmbient();
+  if (!ambientManifest || !ambientManifest.tracks) return;
+  const track = ambientManifest.tracks[trackId];
+  if (!track || !track.exists) return;
+
+  ambientAudio = new Audio(AMBIENT_BASE + track.filename);
+  ambientAudio.loop = true;
+  ambientAudio.volume = ambientBaseVolume;
+  ambientAudio.play().catch(() => {});
+
+  const label = document.getElementById('ambient-track-label');
+  if (label) label.textContent = track.description || trackId;
+}
+
+function stopAmbient() {
+  if (ambientAudio) {
+    ambientAudio.pause();
+    ambientAudio.src = '';
+    ambientAudio = null;
+  }
+}
+
+function switchAmbientTrack(trackId) {
+  if (ambientMuted || !trackId) return;
+  if (!ambientManifest || !ambientManifest.tracks || !ambientManifest.tracks[trackId]) return;
+  startAmbient(trackId);
+}
+
+function duckAmbient() {
+  if (!ambientAudio) return;
+  ambientAudio.volume = ambientBaseVolume * 0.3;
+}
+
+function unduckAmbient() {
+  if (!ambientAudio) return;
+  ambientAudio.volume = ambientBaseVolume;
+}
+
+function renderFooter(data) {
+  const gen = document.getElementById('gen-time');
+  gen.textContent = `Data generated ${data.summary.generated_at || 'recently'} · ${data.summary.total_entries} entries across ${data.summary.total_languages} languages`;
+}
+
+function observeSections() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.06 });
+
+  document.querySelectorAll('section, .divider').forEach(s => {
+    s.classList.add('reveal');
+    observer.observe(s);
+  });
+}
+
+init();
+</script>
+</body>
+</html>

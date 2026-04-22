@@ -1,0 +1,28 @@
+{
+  "tracks": {
+    "forest_day": {
+      "filename": "forest_day.mp3",
+      "description": "Daytime subtropical forest (hammock/mangrove interior)",
+      "duration": 22.0,
+      "exists": true
+    },
+    "shore_water": {
+      "filename": "shore_water.mp3",
+      "description": "Calm coastal shoreline (mangrove coast, shallow water)",
+      "duration": 22.0,
+      "exists": true
+    },
+    "night_insects": {
+      "filename": "night_insects.mp3",
+      "description": "Nighttime insect and frog chorus (subtropical night)",
+      "duration": 22.0,
+      "exists": true
+    },
+    "storm_approaching": {
+      "filename": "storm_approaching.mp3",
+      "description": "Approaching tropical storm (wind, distant thunder, first rain)",
+      "duration": 22.0,
+      "exists": true
+    }
+  }
+}

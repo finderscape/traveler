@@ -1,0 +1,1587 @@
+[
+  {
+    "id": "greeting_visitor",
+    "title": "Greeting a Visitor",
+    "context": "A Calusa villager greets a newcomer arriving by canoe at the settlement on Mound Key.",
+    "lines": [
+      {
+        "calusa": "[hello] tahni",
+        "english": "hello friend, companion",
+        "template": "sov_greeting",
+        "avg_confidence": 0.142,
+        "words": [
+          {
+            "calusa": "[hello]",
+            "english": "hello",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "tahni",
+            "english": "friend, companion",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "tahni",
+            "notes": "Projected from Tunica 'tahni' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "[hello] tahni",
+        "english_intended": "Hello, friend."
+      },
+      {
+        "calusa": "ura ño",
+        "english": "you (sg) beloved town, village",
+        "template": "sov_intransitive",
+        "avg_confidence": 0.477,
+        "words": [
+          {
+            "calusa": "ura",
+            "english": "you (sg)",
+            "pos": "PRON",
+            "tier": "tunica_projection",
+            "confidence": 0.255,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "ura",
+            "notes": "Projected from Tunica 'ura' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "ño",
+            "english": "beloved town, village",
+            "pos": "UNK",
+            "tier": "published_analysis",
+            "confidence": 0.7,
+            "source": "Cognate table (Granberry (1994) The Calusa: Linguistic and Cultural Origins and Relationships)",
+            "tunica_form": "ná",
+            "notes": "Semantic relationship: settling/dwelling → village"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "ura nyo",
+        "english_intended": "You come."
+      },
+      {
+        "calusa": "ño ño-pi [you] seletega",
+        "english": "beloved town, village beloved town, village you run to the lookout, see if people are coming",
+        "template": "sov_locative",
+        "avg_confidence": 0.354,
+        "words": [
+          {
+            "calusa": "ño",
+            "english": "beloved town, village",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.35,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'Ño, which signifies town beloved'. Granberry (2011). Creek radical 'a-no-kitcha' (lover) may be related (Gatschet)."
+          },
+          {
+            "calusa": "ño-pi",
+            "english": "beloved town, village",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.6649999999999999,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'Ño, which signifies town beloved'. Granberry (2011). Creek radical 'a-no-kitcha' (lover) may be related (Gatschet)."
+          },
+          {
+            "calusa": "[you]",
+            "english": "you",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "seletega",
+            "english": "run to the lookout, see if people are coming",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "lɔ́ta",
+            "notes": "Automated match: phonetic=0.38, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "nyo nyo-pi [you] seletega",
+        "english_intended": "I see you at the village."
+      },
+      {
+        "calusa": "chile washa suhki",
+        "english": "chief, principal leader fish give",
+        "template": "sov_basic",
+        "avg_confidence": 0.358,
+        "words": [
+          {
+            "calusa": "chile",
+            "english": "chief, principal leader",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.475,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Extracted from 'tocobaga chile' (principal chief). Fontaneda: 'the king, who is chief cacique'."
+          },
+          {
+            "calusa": "washa",
+            "english": "fish",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "washa",
+            "notes": "Projected from Tunica 'washa' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "suhki",
+            "english": "give",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "suhki",
+            "notes": "Projected from Tunica 'suhki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "chile washa suhki",
+        "english_intended": "The chief gives fish."
+      }
+    ]
+  },
+  {
+    "id": "village_life",
+    "title": "Describing the Village",
+    "context": "A Calusa elder describes daily life at the village to a visitor.",
+    "lines": [
+      {
+        "calusa": "guevu-pi washa [exist]",
+        "english": "place name (possibly Creek: water) fish exist",
+        "template": "sov_existential",
+        "avg_confidence": 0.193,
+        "words": [
+          {
+            "calusa": "guevu-pi",
+            "english": "place name (possibly Creek: water)",
+            "pos": "NOUN",
+            "tier": "attested_unglossed",
+            "confidence": 0.27999999999999997,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575) village list. Gatschet: possibly Creek 'u-iwa' (water)."
+          },
+          {
+            "calusa": "washa",
+            "english": "fish",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "washa",
+            "notes": "Projected from Tunica 'washa' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "[exist]",
+            "english": "exist",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "guevu-pi washa [exist]",
+        "english_intended": "There are fish in the water."
+      },
+      {
+        "calusa": "óhko kuhpa kupe",
+        "english": "woman shell assemble, gather together",
+        "template": "sov_basic",
+        "avg_confidence": 0.333,
+        "words": [
+          {
+            "calusa": "óhko",
+            "english": "woman",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas_1953_swanton_1921)",
+            "tunica_form": "óhko",
+            "notes": "Projected from Tunica 'óhko' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "kuhpa",
+            "english": "shell",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "kuhpa",
+            "notes": "Projected from Tunica 'kuhpa' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "kupe",
+            "english": "assemble, gather together",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "kúhpa",
+            "notes": "Automated match: phonetic=0.60, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "óhko kuhpa kupe",
+        "english_intended": "The woman gathers shells."
+      },
+      {
+        "calusa": "tirupo washa [catch]",
+        "english": "like God, divine healer, shaman fish catch",
+        "template": "sov_basic",
+        "avg_confidence": 0.233,
+        "words": [
+          {
+            "calusa": "tirupo",
+            "english": "like God, divine healer, shaman",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.4,
+            "source": "Calusa lexicon (alana1743)",
+            "tunica_form": "",
+            "notes": "Alana 1743: 'another Indian whom they call tirupo or like God, terms that are synonymous for them, whom they consult concerning the future and the distant. He is considered to be the doctor of the place.'"
+          },
+          {
+            "calusa": "washa",
+            "english": "fish",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "washa",
+            "notes": "Projected from Tunica 'washa' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "[catch]",
+            "english": "catch",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "tirupo washa [catch]",
+        "english_intended": "The man catches fish."
+      },
+      {
+        "calusa": "chile r(i) tuhra maś(u)",
+        "english": "chief, principal leader house big, large, great make, build",
+        "template": "sov_adj",
+        "avg_confidence": 0.465,
+        "words": [
+          {
+            "calusa": "chile",
+            "english": "chief, principal leader",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.475,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Extracted from 'tocobaga chile' (principal chief). Fontaneda: 'the king, who is chief cacique'."
+          },
+          {
+            "calusa": "r(i)",
+            "english": "house",
+            "pos": "UNK",
+            "tier": "published_analysis",
+            "confidence": 0.7,
+            "source": "Cognate table (Granberry (1994) The Calusa: Linguistic and Cultural Origins and Relationships)",
+            "tunica_form": "rí",
+            "notes": "Perfect semantic and phonetic match from Granberry 1994"
+          },
+          {
+            "calusa": "tuhra",
+            "english": "big, large, great",
+            "pos": "ADJ",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "tuhra",
+            "notes": "Projected from Tunica 'tuhra' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "maś(u)",
+            "english": "make, build",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "mášu",
+            "notes": "Automated match: phonetic=0.67, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "chile r(i) tuhra mash(u)",
+        "english_intended": "The chief builds a big house."
+      }
+    ]
+  },
+  {
+    "id": "warning_intruders",
+    "title": "Warning About Intruders",
+    "context": "A Calusa lookout spots foreign ships and raises the alarm, echoing Fontaneda's attested phrase.",
+    "lines": [
+      {
+        "calusa": "tejieue lɛte",
+        "english": "lookout, vantage point run",
+        "template": "sov_imperative",
+        "avg_confidence": 0.485,
+        "words": [
+          {
+            "calusa": "tejieue",
+            "english": "lookout, vantage point",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.57,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575), Zamponi (2024): 'miradero quiere dezir' (lookout it means)."
+          },
+          {
+            "calusa": "lɛte",
+            "english": "run",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "lɔ́ta",
+            "notes": "Automated match: phonetic=0.50, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "tejieue lehte",
+        "english_intended": "Run to the lookout!"
+      },
+      {
+        "calusa": "ño kalos seletega",
+        "english": "beloved town, village fierce people run to the lookout, see if people are coming",
+        "template": "sov_basic",
+        "avg_confidence": 0.448,
+        "words": [
+          {
+            "calusa": "ño",
+            "english": "beloved town, village",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.35,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'Ño, which signifies town beloved'. Granberry (2011). Creek radical 'a-no-kitcha' (lover) may be related (Gatschet)."
+          },
+          {
+            "calusa": "kalos",
+            "english": "fierce people",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.595,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'a province of Indians, which in their language signifies a fierce people'. 'Carlos' is Spanish corruption. Granberry (2011) reconstructs self-name as ka(ra)luś(i)."
+          },
+          {
+            "calusa": "seletega",
+            "english": "run to the lookout, see if people are coming",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "lɔ́ta",
+            "notes": "Automated match: phonetic=0.38, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "nyo kalos seletega",
+        "english_intended": "I see people."
+      },
+      {
+        "calusa": "wiruhtu ñoka nihki",
+        "english": "they war want, desire",
+        "template": "sov_basic",
+        "avg_confidence": 0.395,
+        "words": [
+          {
+            "calusa": "wiruhtu",
+            "english": "they",
+            "pos": "PRON",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "wiruhtu",
+            "notes": "Projected from Tunica 'wiruhtu' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "ñoka",
+            "english": "war",
+            "pos": "NOUN",
+            "tier": "published_analysis",
+            "confidence": 0.6,
+            "source": "Calusa lexicon (granberry2011)",
+            "tunica_form": "",
+            "notes": "Granberry (2011)."
+          },
+          {
+            "calusa": "nihki",
+            "english": "want, desire",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "nihki",
+            "notes": "Projected from Tunica 'nihki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "wiruhtu nyoka nihki",
+        "english_intended": "They want war."
+      },
+      {
+        "calusa": "chile hohti kuhki",
+        "english": "chief, principal leader arrow take, get",
+        "template": "sov_basic",
+        "avg_confidence": 0.353,
+        "words": [
+          {
+            "calusa": "chile",
+            "english": "chief, principal leader",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.475,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Extracted from 'tocobaga chile' (principal chief). Fontaneda: 'the king, who is chief cacique'."
+          },
+          {
+            "calusa": "hohti",
+            "english": "arrow",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "hɔhti",
+            "notes": "Projected from Tunica 'hɔhti' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "kuhki",
+            "english": "take, get",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "kuhki",
+            "notes": "Projected from Tunica 'kuhki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "chile hohti kuhki",
+        "english_intended": "The chief takes arrows."
+      }
+    ]
+  },
+  {
+    "id": "trade_exchange",
+    "title": "Trading with Neighbors",
+    "context": "A Calusa trader discusses exchange with a neighboring village.",
+    "lines": [
+      {
+        "calusa": "ño washa suhki",
+        "english": "beloved town, village fish give",
+        "template": "sov_basic",
+        "avg_confidence": 0.317,
+        "words": [
+          {
+            "calusa": "ño",
+            "english": "beloved town, village",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.35,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'Ño, which signifies town beloved'. Granberry (2011). Creek radical 'a-no-kitcha' (lover) may be related (Gatschet)."
+          },
+          {
+            "calusa": "washa",
+            "english": "fish",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "washa",
+            "notes": "Projected from Tunica 'washa' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "suhki",
+            "english": "give",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "suhki",
+            "notes": "Projected from Tunica 'suhki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "nyo washa suhki",
+        "english_intended": "I give fish."
+      },
+      {
+        "calusa": "ura uhpa suhki",
+        "english": "you (sg) salt give",
+        "template": "sov_basic",
+        "avg_confidence": 0.285,
+        "words": [
+          {
+            "calusa": "ura",
+            "english": "you (sg)",
+            "pos": "PRON",
+            "tier": "tunica_projection",
+            "confidence": 0.255,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "ura",
+            "notes": "Projected from Tunica 'ura' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "uhpa",
+            "english": "salt",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "uhpa",
+            "notes": "Projected from Tunica 'uhpa' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "suhki",
+            "english": "give",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "suhki",
+            "notes": "Projected from Tunica 'suhki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "ura uhpa suhki",
+        "english_intended": "You give salt."
+      },
+      {
+        "calusa": "washa ohtu tuhra [fill]",
+        "english": "fish canoe, boat big, large, great fill",
+        "template": "sov_adj",
+        "avg_confidence": 0.217,
+        "words": [
+          {
+            "calusa": "washa",
+            "english": "fish",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "washa",
+            "notes": "Projected from Tunica 'washa' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "ohtu",
+            "english": "canoe, boat",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "ɔhtu",
+            "notes": "Projected from Tunica 'ɔhtu' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "tuhra",
+            "english": "big, large, great",
+            "pos": "ADJ",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "tuhra",
+            "notes": "Projected from Tunica 'tuhra' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "[fill]",
+            "english": "fill",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "washa ohtu tuhra [fill]",
+        "english_intended": "Fish fill the big canoe."
+      },
+      {
+        "calusa": "tahni ño",
+        "english": "friend, companion beloved town, village",
+        "template": "sov_intransitive",
+        "avg_confidence": 0.492,
+        "words": [
+          {
+            "calusa": "tahni",
+            "english": "friend, companion",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "tahni",
+            "notes": "Projected from Tunica 'tahni' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "ño",
+            "english": "beloved town, village",
+            "pos": "UNK",
+            "tier": "published_analysis",
+            "confidence": 0.7,
+            "source": "Cognate table (Granberry (1994) The Calusa: Linguistic and Cultural Origins and Relationships)",
+            "tunica_form": "ná",
+            "notes": "Semantic relationship: settling/dwelling → village"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "tahni nyo",
+        "english_intended": "The friend comes."
+      }
+    ]
+  },
+  {
+    "id": "ceremony",
+    "title": "Religious Ceremony",
+    "context": "A scene at the Calusa temple where the sipi idol is honored, based on Fr. Alana's 1743 account.",
+    "lines": [
+      {
+        "calusa": "kalos [sipi] [honor]",
+        "english": "fierce people sipi honor",
+        "template": "sov_basic",
+        "avg_confidence": 0.198,
+        "words": [
+          {
+            "calusa": "kalos",
+            "english": "fierce people",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.595,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'a province of Indians, which in their language signifies a fierce people'. 'Carlos' is Spanish corruption. Granberry (2011) reconstructs self-name as ka(ra)luś(i)."
+          },
+          {
+            "calusa": "[sipi]",
+            "english": "sipi",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "[honor]",
+            "english": "honor",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "kalos [sipi] [honor]",
+        "english_intended": "The people honor sipi."
+      },
+      {
+        "calusa": "óhko -(h)ki",
+        "english": "woman feminine singular noun suffix",
+        "template": "sov_intransitive",
+        "avg_confidence": 0.35,
+        "words": [
+          {
+            "calusa": "óhko",
+            "english": "woman",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas_1953_swanton_1921)",
+            "tunica_form": "óhko",
+            "notes": "Projected from Tunica 'óhko' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "-(h)ki",
+            "english": "feminine singular noun suffix",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "-hči",
+            "notes": "Automated match: phonetic=0.50, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "óhko -(h)ki",
+        "english_intended": "The women sing."
+      },
+      {
+        "calusa": "[tirupo] sipi seletega",
+        "english": "tirupo idol, temple spirit run to the lookout, see if people are coming",
+        "template": "sov_basic",
+        "avg_confidence": 0.275,
+        "words": [
+          {
+            "calusa": "[tirupo]",
+            "english": "tirupo",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "sipi",
+            "english": "idol, temple spirit",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.425,
+            "source": "Calusa lexicon (alana1743)",
+            "tunica_form": "",
+            "notes": "Fr. Joseph Xavier de Alaña (1743 report): name of a main idol in a Calusa temple."
+          },
+          {
+            "calusa": "seletega",
+            "english": "run to the lookout, see if people are coming",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "lɔ́ta",
+            "notes": "Automated match: phonetic=0.38, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "[tirupo] sipi seletega",
+        "english_intended": "The tirupo sees the spirits."
+      },
+      {
+        "calusa": "chile nuhpi",
+        "english": "chief, principal leader dance",
+        "template": "sov_intransitive",
+        "avg_confidence": 0.387,
+        "words": [
+          {
+            "calusa": "chile",
+            "english": "chief, principal leader",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.475,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Extracted from 'tocobaga chile' (principal chief). Fontaneda: 'the king, who is chief cacique'."
+          },
+          {
+            "calusa": "nuhpi",
+            "english": "dance",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "nuhpi",
+            "notes": "Projected from Tunica 'nuhpi' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "chile nuhpi",
+        "english_intended": "The chief dances."
+      }
+    ]
+  },
+  {
+    "id": "fontaneda_phrase",
+    "title": "Fontaneda's Attested Phrase",
+    "context": "Demonstrating the only fully attested Calusa sentence from Fontaneda (1575).",
+    "lines": [
+      {
+        "speaker": "calusa",
+        "calusa": "seletega",
+        "english": "Run to the lookout, see if there are people coming!",
+        "pronunciation": "seletega",
+        "template": "free_form",
+        "avg_confidence": 0.9,
+        "notes": "This is the only complete Calusa phrase recorded by Fontaneda in 1575. Tier: primary_gloss.",
+        "words": [
+          {
+            "calusa": "seletega",
+            "english": "Run to the lookout, see if there are people coming!",
+            "pos": "PHRASE",
+            "tier": "primary_gloss",
+            "confidence": 0.9,
+            "source": "Fontaneda (1575)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ponce_first_contact",
+    "title": "Ponce de León's First Contact (1513)",
+    "context": "Spanish ships anchor off the southwest Florida coast. Calusa warriors paddle out in canoes. The first recorded encounter between Europeans and the Calusa.",
+    "lines": [
+      {
+        "speaker": "spanish",
+        "speaker_name": "Soldado español",
+        "spanish": "Venimos en nombre del Rey de España, nuestro señor. Traemos paz.",
+        "english": "We come in the name of the King of Spain, our lord. We bring peace.",
+        "pronunciation": "Venimos en nombre del Rey de España, nuestro señor. Traemos paz.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "Venimos en nombre del Rey de España, nuestro señor. Traemos paz.",
+            "english": "We come in the name of the King of Spain, our lord. We bring peace.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "tejieue lɛte",
+        "english": "lookout, vantage point run",
+        "template": "sov_imperative",
+        "avg_confidence": 0.485,
+        "words": [
+          {
+            "calusa": "tejieue",
+            "english": "lookout, vantage point",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.57,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575), Zamponi (2024): 'miradero quiere dezir' (lookout it means)."
+          },
+          {
+            "calusa": "lɛte",
+            "english": "run",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "lɔ́ta",
+            "notes": "Automated match: phonetic=0.50, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "tejieue lehte",
+        "english_intended": "Run to the lookout!"
+      },
+      {
+        "speaker": "spanish",
+        "speaker_name": "Ponce de León",
+        "spanish": "Traemos la palabra de Dios Nuestro Señor e presentes para vuestro cacique.",
+        "english": "We bring the word of God Our Lord and gifts for your chief.",
+        "pronunciation": "Traemos la palabra de Dios Nuestro Señor e presentes para vuestro cacique.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "Traemos la palabra de Dios Nuestro Señor e presentes para vuestro cacique.",
+            "english": "We bring the word of God Our Lord and gifts for your chief.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "wiruhtu ñoka nihki",
+        "english": "they war want, desire",
+        "template": "sov_basic",
+        "avg_confidence": 0.395,
+        "words": [
+          {
+            "calusa": "wiruhtu",
+            "english": "they",
+            "pos": "PRON",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "wiruhtu",
+            "notes": "Projected from Tunica 'wiruhtu' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "ñoka",
+            "english": "war",
+            "pos": "NOUN",
+            "tier": "published_analysis",
+            "confidence": 0.6,
+            "source": "Calusa lexicon (granberry2011)",
+            "tunica_form": "",
+            "notes": "Granberry (2011)."
+          },
+          {
+            "calusa": "nihki",
+            "english": "want, desire",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "nihki",
+            "notes": "Projected from Tunica 'nihki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "wiruhtu nyoka nihki",
+        "english_intended": "They want war."
+      },
+      {
+        "calusa": "chile hohti kuhki",
+        "english": "chief, principal leader arrow take, get",
+        "template": "sov_basic",
+        "avg_confidence": 0.353,
+        "words": [
+          {
+            "calusa": "chile",
+            "english": "chief, principal leader",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.475,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Extracted from 'tocobaga chile' (principal chief). Fontaneda: 'the king, who is chief cacique'."
+          },
+          {
+            "calusa": "hohti",
+            "english": "arrow",
+            "pos": "NOUN",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "hɔhti",
+            "notes": "Projected from Tunica 'hɔhti' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "kuhki",
+            "english": "take, get",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.285,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "kuhki",
+            "notes": "Projected from Tunica 'kuhki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "chile hohti kuhki",
+        "english_intended": "The chief takes arrows."
+      },
+      {
+        "speaker": "spanish",
+        "speaker_name": "Soldado español",
+        "spanish": "¡Nos acometen! ¡A las armas, señores!",
+        "english": "They charge us! To arms, men!",
+        "pronunciation": "¡Nos acometen! ¡A las armas, señores!",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "¡Nos acometen! ¡A las armas, señores!",
+            "english": "They charge us! To arms, men!",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      }
+    ],
+    "ambient": "shore_water"
+  },
+  {
+    "id": "fontaneda_captivity",
+    "title": "Fontaneda's Captivity (c. 1551)",
+    "context": "A young Spanish boy, Hernando de Escalante Fontaneda, is shipwrecked on the Florida coast and brought before the Calusa king Carlos. He will live among them for 17 years and become the primary source for the Calusa language.",
+    "lines": [
+      {
+        "speaker": "spanish",
+        "speaker_name": "Joven Fontaneda",
+        "spanish": "¡No me matéis, por amor de Dios! Soy cristiano, no soy sino un niño.",
+        "english": "Do not kill me, for the love of God! I am a Christian, I am but a child.",
+        "pronunciation": "¡No me matéis, por amor de Dios! Soy cristiano, no soy sino un niño.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "¡No me matéis, por amor de Dios! Soy cristiano, no soy sino un niño.",
+            "english": "Do not kill me, for the love of God! I am a Christian, I am but a child.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "ura kalos ño-n",
+        "english": "you (sg) fierce people beloved town, village",
+        "template": "sov_question",
+        "avg_confidence": 0.517,
+        "words": [
+          {
+            "calusa": "ura",
+            "english": "you (sg)",
+            "pos": "PRON",
+            "tier": "tunica_projection",
+            "confidence": 0.255,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "ura",
+            "notes": "Projected from Tunica 'ura' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "kalos",
+            "english": "fierce people",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.595,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'a province of Indians, which in their language signifies a fierce people'. 'Carlos' is Spanish corruption. Granberry (2011) reconstructs self-name as ka(ra)luś(i)."
+          },
+          {
+            "calusa": "ño-n",
+            "english": "beloved town, village",
+            "pos": "UNK",
+            "tier": "published_analysis",
+            "confidence": 0.7,
+            "source": "Cognate table (Granberry (1994) The Calusa: Linguistic and Cultural Origins and Relationships)",
+            "tunica_form": "ná",
+            "notes": "Semantic relationship: settling/dwelling → village"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "ura kalos nyo-n",
+        "english_intended": "Where do your people come from?"
+      },
+      {
+        "speaker": "spanish",
+        "speaker_name": "Joven Fontaneda",
+        "spanish": "Vengo de Cartagena de Indias. Mi navío se perdió en la tormenta.",
+        "english": "I come from Cartagena de Indias. My ship was lost in the storm.",
+        "pronunciation": "Vengo de Cartagena de Indias. Mi navío se perdió en la tormenta.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "Vengo de Cartagena de Indias. Mi navío se perdió en la tormenta.",
+            "english": "I come from Cartagena de Indias. My ship was lost in the storm.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "chile [you] [keep]",
+        "english": "chief, principal leader you keep",
+        "template": "sov_basic",
+        "avg_confidence": 0.158,
+        "words": [
+          {
+            "calusa": "chile",
+            "english": "chief, principal leader",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.475,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Extracted from 'tocobaga chile' (principal chief). Fontaneda: 'the king, who is chief cacique'."
+          },
+          {
+            "calusa": "[you]",
+            "english": "you",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "[keep]",
+            "english": "keep",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "chile [you] [keep]",
+        "english_intended": "The chief will keep you."
+      },
+      {
+        "calusa": "ura sacaspada [learn]",
+        "english": "you (sg) place name (possibly Spanish: draw the sword) learn",
+        "template": "sov_basic",
+        "avg_confidence": 0.135,
+        "words": [
+          {
+            "calusa": "ura",
+            "english": "you (sg)",
+            "pos": "PRON",
+            "tier": "tunica_projection",
+            "confidence": 0.255,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "ura",
+            "notes": "Projected from Tunica 'ura' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "sacaspada",
+            "english": "place name (possibly Spanish: draw the sword)",
+            "pos": "NOUN",
+            "tier": "attested_unglossed",
+            "confidence": 0.15,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575) village list. Gatschet: 'decidedly Spanish, Saca-espada (Draw-the-sword)'."
+          },
+          {
+            "calusa": "[learn]",
+            "english": "learn",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "ura sacaspada [learn]",
+        "english_intended": "You will learn our words."
+      }
+    ],
+    "ambient": "forest_day"
+  },
+  {
+    "id": "menendez_carlos",
+    "title": "Menéndez Meets King Carlos (1566)",
+    "context": "Pedro Menéndez de Avilés, adelantado of La Florida, arrives at the Calusa capital on Mound Key to negotiate with King Carlos. Menéndez will marry Carlos's sister Doña Antonia to seal an alliance. Based on accounts by Solís de Merás and Barcia.",
+    "lines": [
+      {
+        "speaker": "spanish",
+        "speaker_name": "Menéndez",
+        "spanish": "El Rey Don Felipe, nuestro señor, os ofrece su amistad e protección.",
+        "english": "King Philip, our lord, offers you his friendship and protection.",
+        "pronunciation": "El Rey Don Felipe, nuestro señor, os ofrece su amistad e protección.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "El Rey Don Felipe, nuestro señor, os ofrece su amistad e protección.",
+            "english": "King Philip, our lord, offers you his friendship and protection.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "ño kalos waka",
+        "english": "beloved town, village fierce people command",
+        "template": "sov_basic",
+        "avg_confidence": 0.448,
+        "words": [
+          {
+            "calusa": "ño",
+            "english": "beloved town, village",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.35,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'Ño, which signifies town beloved'. Granberry (2011). Creek radical 'a-no-kitcha' (lover) may be related (Gatschet)."
+          },
+          {
+            "calusa": "kalos",
+            "english": "fierce people",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.595,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'a province of Indians, which in their language signifies a fierce people'. 'Carlos' is Spanish corruption. Granberry (2011) reconstructs self-name as ka(ra)luś(i)."
+          },
+          {
+            "calusa": "waka",
+            "english": "command",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "waka",
+            "notes": "Automated match: phonetic=1.00, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "nyo kalos waka",
+        "english_intended": "I command my people."
+      },
+      {
+        "calusa": "chile guevu [rule]",
+        "english": "chief, principal leader place name (possibly Creek: water) rule",
+        "template": "sov_possessive",
+        "avg_confidence": 0.252,
+        "words": [
+          {
+            "calusa": "chile",
+            "english": "chief, principal leader",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.475,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Extracted from 'tocobaga chile' (principal chief). Fontaneda: 'the king, who is chief cacique'."
+          },
+          {
+            "calusa": "guevu",
+            "english": "place name (possibly Creek: water)",
+            "pos": "NOUN",
+            "tier": "attested_unglossed",
+            "confidence": 0.27999999999999997,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575) village list. Gatschet: possibly Creek 'u-iwa' (water)."
+          },
+          {
+            "calusa": "[rule]",
+            "english": "rule",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "chile guevu [rule]",
+        "english_intended": "The chief's waters are his domain."
+      },
+      {
+        "speaker": "spanish",
+        "speaker_name": "Menéndez",
+        "spanish": "Deseo la paz entre nuestros pueblos. Tomaré a vuestra hermana por esposa, como es voluntad de Dios.",
+        "english": "I desire peace between our peoples. I will take your sister as my wife, as is God's will.",
+        "pronunciation": "Deseo la paz entre nuestros pueblos. Tomaré a vuestra hermana por esposa, como es voluntad de Dios.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "Deseo la paz entre nuestros pueblos. Tomaré a vuestra hermana por esposa, como es voluntad de Dios.",
+            "english": "I desire peace between our peoples. I will take your sister as my wife, as is God's will.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "ura onagatano suhki",
+        "english": "you (sg) place name (distant mountains with gold mines) give",
+        "template": "sov_basic",
+        "avg_confidence": 0.27,
+        "words": [
+          {
+            "calusa": "ura",
+            "english": "you (sg)",
+            "pos": "PRON",
+            "tier": "tunica_projection",
+            "confidence": 0.255,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "ura",
+            "notes": "Projected from Tunica 'ura' via Granberry sound correspondences."
+          },
+          {
+            "calusa": "onagatano",
+            "english": "place name (distant mountains with gold mines)",
+            "pos": "NOUN",
+            "tier": "attested_unglossed",
+            "confidence": 0.255,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'the mines of Onagatano, which are distant on the snowy mountains'. Also appears as 'Olagatano'. The 'o-' prefix and '-tano' suffix may be morphemes."
+          },
+          {
+            "calusa": "suhki",
+            "english": "give",
+            "pos": "VERB",
+            "tier": "tunica_projection",
+            "confidence": 0.3,
+            "source": "Tunica projection (haas1953)",
+            "tunica_form": "suhki",
+            "notes": "Projected from Tunica 'suhki' via Granberry sound correspondences."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "ura onagatano suhki",
+        "english_intended": "You will give gold."
+      },
+      {
+        "speaker": "spanish",
+        "speaker_name": "Menéndez",
+        "spanish": "Os daremos fierro para herramientas e paños finos.",
+        "english": "We will give you iron for tools and fine cloth.",
+        "pronunciation": "Os daremos fierro para herramientas e paños finos.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "Os daremos fierro para herramientas e paños finos.",
+            "english": "We will give you iron for tools and fine cloth.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      }
+    ],
+    "ambient": "forest_day"
+  },
+  {
+    "id": "mission_estero",
+    "title": "The Mission at Estero Bay (c. 1697)",
+    "context": "A Franciscan friar attempts to convert the Calusa at their settlement near Estero Bay during the ill-fated 1697 mission. The Calusa resist, defending their traditional religion centered on the sipi idol. Based on documents translated by Hann (1991).",
+    "lines": [
+      {
+        "speaker": "spanish",
+        "speaker_name": "Fray franciscano",
+        "spanish": "No hay sino un solo Dios verdadero, el Dios de los cristianos.",
+        "english": "There is but one true God, the God of the Christians.",
+        "pronunciation": "No hay sino un solo Dios verdadero, el Dios de los cristianos.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "No hay sino un solo Dios verdadero, el Dios de los cristianos.",
+            "english": "There is but one true God, the God of the Christians.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "kalos [sipi] [honor]",
+        "english": "fierce people sipi honor",
+        "template": "sov_basic",
+        "avg_confidence": 0.198,
+        "words": [
+          {
+            "calusa": "kalos",
+            "english": "fierce people",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.595,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'a province of Indians, which in their language signifies a fierce people'. 'Carlos' is Spanish corruption. Granberry (2011) reconstructs self-name as ka(ra)luś(i)."
+          },
+          {
+            "calusa": "[sipi]",
+            "english": "sipi",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "[honor]",
+            "english": "honor",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "kalos [sipi] [honor]",
+        "english_intended": "The people honor sipi."
+      },
+      {
+        "speaker": "spanish",
+        "speaker_name": "Fray franciscano",
+        "spanish": "Habéis de dexar vuestros ídolos. Son obra del demonio.",
+        "english": "You must forsake your idols. They are the work of the devil.",
+        "pronunciation": "Habéis de dexar vuestros ídolos. Son obra del demonio.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "Habéis de dexar vuestros ídolos. Son obra del demonio.",
+            "english": "You must forsake your idols. They are the work of the devil.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      },
+      {
+        "calusa": "guarugunbe [sipi] [abandon]-ohka",
+        "english": "town of weeping sipi abandon",
+        "template": "sov_negation",
+        "avg_confidence": 0.117,
+        "words": [
+          {
+            "calusa": "guarugunbe",
+            "english": "town of weeping",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.35,
+            "source": "Calusa lexicon (fontaneda1575)",
+            "tunica_form": "",
+            "notes": "Fontaneda (1575): 'pueblo de Llanto, the town of weeping'. From the Keys. Possibly compound with '-gunbe/-gunve' as morpheme."
+          },
+          {
+            "calusa": "[sipi]",
+            "english": "sipi",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "[abandon]-ohka",
+            "english": "abandon",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "guarugunbe [sipi] [abandon]-ohka",
+        "english_intended": "We will not abandon sipi."
+      },
+      {
+        "calusa": "[tirupo] sipi seletega",
+        "english": "tirupo idol, temple spirit run to the lookout, see if people are coming",
+        "template": "sov_basic",
+        "avg_confidence": 0.275,
+        "words": [
+          {
+            "calusa": "[tirupo]",
+            "english": "tirupo",
+            "pos": "UNK",
+            "tier": "gap",
+            "confidence": 0.0,
+            "source": "no match found",
+            "tunica_form": "",
+            "notes": "No Calusa, cognate, or Tunica equivalent found."
+          },
+          {
+            "calusa": "sipi",
+            "english": "idol, temple spirit",
+            "pos": "NOUN",
+            "tier": "primary_gloss",
+            "confidence": 0.425,
+            "source": "Calusa lexicon (alana1743)",
+            "tunica_form": "",
+            "notes": "Fr. Joseph Xavier de Alaña (1743 report): name of a main idol in a Calusa temple."
+          },
+          {
+            "calusa": "seletega",
+            "english": "run to the lookout, see if people are coming",
+            "pos": "UNK",
+            "tier": "ai_hypothesis",
+            "confidence": 0.4,
+            "source": "Cognate table (AI-proposed comparison, not yet published or peer-reviewed)",
+            "tunica_form": "lɔ́ta",
+            "notes": "Automated match: phonetic=0.38, semantic=1.00"
+          }
+        ],
+        "speaker": "calusa",
+        "pronunciation": "[tirupo] sipi seletega",
+        "english_intended": "The tirupo sees the spirits."
+      },
+      {
+        "speaker": "spanish",
+        "speaker_name": "Fray franciscano",
+        "spanish": "Que Dios Nuestro Señor tenga piedad de vuestras ánimas.",
+        "english": "May God Our Lord have mercy on your souls.",
+        "pronunciation": "Que Dios Nuestro Señor tenga piedad de vuestras ánimas.",
+        "template": "spanish_line",
+        "avg_confidence": 1.0,
+        "tier": "historical_spanish",
+        "words": [
+          {
+            "calusa": "Que Dios Nuestro Señor tenga piedad de vuestras ánimas.",
+            "english": "May God Our Lord have mercy on your souls.",
+            "pos": "PHRASE",
+            "tier": "historical_spanish",
+            "confidence": 1.0,
+            "source": "Period Castilian"
+          }
+        ]
+      }
+    ],
+    "ambient": "night_insects"
+  }
+]

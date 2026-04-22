@@ -1,0 +1,173 @@
+{
+  "updated_at": "2026-04-21T22:29:05.732824+00:00",
+  "elapsed_seconds": 3364,
+  "total_extractions": 0,
+  "novel_terms": 0,
+  "by_language": {},
+  "files_completed": 31,
+  "files_total": 31,
+  "current_file": null,
+  "current_chunk": 0,
+  "files": [
+    {
+      "name": "fontaneda_memoir_full.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "ferdinando_translation_history_fontaneda.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "villarreal_tequesta_1568.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "worth_1612_calusa_expedition.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "worth_1630_investigation.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "worth_1699_tampa_expedition.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "calderon_bishop_1675.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "calderon_letter_1675.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "hispano_indigenous_alliances.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "apalachee_letter_1688.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "herrera_historia_general.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "barcia_ensayo_cronologico_1723.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "dickinson_journal_1696.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "fairbanks_history_florida_1871.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "gatschet_migration_legend_1884.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "hann_collection_south_florida.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "lopez_velasco_geografia_indias.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "milanich_floridas_indians.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "milanich_floridas_indians_full.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "oviedo_historia_general_florida.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "peter_martyr_v1_1912.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "peter_martyr_v2_1912.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "romans_natural_history_1775.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "ruidiz_la_florida_v1.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "ruidiz_la_florida_v2.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "shipp_desoto_florida_1881.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "swanton_creek_indians_1922.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "swanton_tunica_1921_extracted.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "tacachale_essays_1978.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "worth_additional_agi_transcriptions.txt",
+      "status": "done",
+      "extractions": 0
+    },
+    {
+      "name": "worth_fontaneda_revisited_1995.txt",
+      "status": "done",
+      "extractions": 0
+    }
+  ],
+  "vision": {
+    "pages": 68,
+    "vocabulary": 1498
+  },
+  "recent_finds": []
+}

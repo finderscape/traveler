@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Read — Live Extraction Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0e14;
+  --surface: #131820;
+  --surface2: #1a2030;
+  --border: #2a3545;
+  --text: #e0e6ed;
+  --dim: #6b7d93;
+  --accent: #4fc3f7;
+  --accent2: #81c784;
+  --warn: #ffb74d;
+  --hot: #ef5350;
+  --done: #66bb6a;
+  --pending: #455a64;
+  --pulse: #4fc3f7;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.header .subtitle {
+  color: var(--dim);
+  font-size: 0.85rem;
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--done);
+  animation: livePulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(102, 187, 106, 0.4); }
+  50% { opacity: 0.6; box-shadow: 0 0 0 8px rgba(102, 187, 106, 0); }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+
+.stat-card .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  margin-bottom: 0.4rem;
+}
+
+.stat-card .value {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1;
+}
+
+.stat-card .value.accent { color: var(--accent); }
+.stat-card .value.green { color: var(--accent2); }
+.stat-card .value.warn { color: var(--warn); }
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.file-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 80px;
+  align-items: center;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  transition: border-color 0.3s;
+}
+
+.file-row.processing {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(79, 195, 247, 0.08);
+}
+
+.file-row.done { opacity: 0.7; }
+
+.file-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-progress {
+  position: relative;
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.file-progress .bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.file-progress .bar.done { background: var(--done); }
+.file-progress .bar.active {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  animation: shimmer 2s ease-in-out infinite;
+}
+.file-progress .bar.pending { background: var(--pending); width: 0 !important; }
+
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.file-count {
+  text-align: right;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--dim);
+}
+
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.5rem;
+}
+
+.lang-chip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.lang-chip .name { text-transform: capitalize; }
+.lang-chip .count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.recent-finds {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.find-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 120px;
+  gap: 1rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.find-word {
+  font-weight: 600;
+  color: var(--accent2);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.find-gloss { color: var(--text); }
+
+.find-lang {
+  text-align: right;
+  color: var(--dim);
+  text-transform: capitalize;
+  font-size: 0.75rem;
+}
+
+.elapsed {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--dim);
+}
+
+.updated {
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-left: auto;
+}
+
+.error-banner {
+  background: rgba(239, 83, 80, 0.1);
+  border: 1px solid var(--hot);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--hot);
+  text-align: center;
+  display: none;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .two-col { grid-template-columns: 1fr; }
+  .file-row { grid-template-columns: 1fr 80px 60px; }
+  .find-row { grid-template-columns: 100px 1fr 80px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="live-dot" id="liveDot"></div>
+  <div>
+    <h1>Deep Read Pipeline</h1>
+    <div class="subtitle">Voices from the Water — Live Extraction Dashboard</div>
+  </div>
+  <div class="elapsed" id="elapsed"></div>
+  <div class="updated" id="updated"></div>
+</div>
+
+<div class="error-banner" id="errorBanner">Pipeline not running — no progress data found</div>
+
+<div class="stats-grid" id="statsGrid">
+  <div class="stat-card"><div class="label">Total Extractions</div><div class="value accent" id="statTotal">—</div></div>
+  <div class="stat-card"><div class="label">Novel Terms</div><div class="value green" id="statNovel">—</div></div>
+  <div class="stat-card"><div class="label">Files Completed</div><div class="value" id="statFiles">—</div></div>
+  <div class="stat-card"><div class="label">Vision Vocabulary</div><div class="value warn" id="statVision">—</div></div>
+</div>
+
+<div class="two-col">
+  <div class="section">
+    <h2>Source Files</h2>
+    <div class="files-list" id="filesList"></div>
+  </div>
+
+  <div>
+    <div class="section">
+      <h2>Novel Terms by Language</h2>
+      <div class="lang-grid" id="langGrid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Recent Discoveries</h2>
+      <div class="recent-finds" id="recentFinds"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const POLL_INTERVAL = 4000;
+let lastData = null;
+
+function formatElapsed(seconds) {
+  if (!seconds) return '';
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = seconds % 60;
+  if (h > 0) return `${h}h ${m}m ${s}s`;
+  if (m > 0) return `${m}m ${s}s`;
+  return `${s}s`;
+}
+
+function formatTime(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  return d.toLocaleTimeString();
+}
+
+function renderStats(data) {
+  document.getElementById('statTotal').textContent = (data.total_extractions || 0).toLocaleString();
+  document.getElementById('statNovel').textContent = (data.novel_terms || 0).toLocaleString();
+  document.getElementById('statFiles').textContent = `${data.files_completed || 0} / ${data.files_total || 0}`;
+  document.getElementById('statVision').textContent = (data.vision?.vocabulary || 0).toLocaleString();
+  document.getElementById('elapsed').textContent = formatElapsed(data.elapsed_seconds);
+  document.getElementById('updated').textContent = `Updated ${formatTime(data.updated_at)}`;
+}
+
+function renderFiles(files) {
+  const container = document.getElementById('filesList');
+  container.innerHTML = '';
+  if (!files) return;
+
+  for (const f of files) {
+    const row = document.createElement('div');
+    row.className = `file-row ${f.status}`;
+
+    let pct = 0;
+    let barClass = 'pending';
+    let label = '';
+    if (f.status === 'done') {
+      pct = 100;
+      barClass = 'done';
+      label = `${f.extractions}`;
+    } else if (f.status === 'processing') {
+      pct = f.total_chunks > 0 ? Math.round((f.chunk / f.total_chunks) * 100) : 0;
+      barClass = 'active';
+      label = `${f.chunk}/${f.total_chunks}`;
+    }
+
+    row.innerHTML = `
+      <div class="file-name" title="${f.name}">${f.name}</div>
+      <div class="file-progress"><div class="bar ${barClass}" style="width:${pct}%"></div></div>
+      <div class="file-count">${label}</div>
+    `;
+    container.appendChild(row);
+  }
+}
+
+function renderLanguages(byLang) {
+  const container = document.getElementById('langGrid');
+  container.innerHTML = '';
+  if (!byLang) return;
+
+  for (const [lang, count] of Object.entries(byLang)) {
+    const chip = document.createElement('div');
+    chip.className = 'lang-chip';
+    chip.innerHTML = `<span class="name">${lang}</span><span class="count">${count}</span>`;
+    container.appendChild(chip);
+  }
+}
+
+function renderRecent(finds) {
+  const container = document.getElementById('recentFinds');
+  container.innerHTML = '';
+  if (!finds || !finds.length) {
+    container.innerHTML = '<div style="color:var(--dim);font-size:0.8rem;">Waiting for data...</div>';
+    return;
+  }
+
+  for (const f of finds.slice().reverse()) {
+    const row = document.createElement('div');
+    row.className = 'find-row';
+    row.innerHTML = `
+      <div class="find-word">${f.word || ''}</div>
+      <div class="find-gloss">${f.gloss || ''}</div>
+      <div class="find-lang">${f.language || ''}</div>
+    `;
+    container.appendChild(row);
+  }
+}
+
+async function poll() {
+  try {
+    const resp = await fetch('progress.json?t=' + Date.now());
+    if (!resp.ok) throw new Error('No data');
+    const data = await resp.json();
+    lastData = data;
+
+    document.getElementById('errorBanner').style.display = 'none';
+    document.getElementById('liveDot').style.display = 'block';
+
+    renderStats(data);
+    renderFiles(data.files);
+    renderLanguages(data.by_language);
+    renderRecent(data.recent_finds);
+  } catch (e) {
+    if (!lastData) {
+      document.getElementById('errorBanner').style.display = 'block';
+      document.getElementById('liveDot').style.display = 'none';
+    }
+  }
+}
+
+poll();
+setInterval(poll, POLL_INTERVAL);
+</script>
+</body>
+</html>
