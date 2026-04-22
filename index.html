@@ -121,13 +121,15 @@ body {
   display: flex;
   align-items: center;
   height: 48px;
-  gap: 2rem;
-  overflow-x: auto;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 48px;
 }
 
 .nav-strip a {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gray-400);
@@ -773,11 +775,7 @@ footer .gen {
   <a href="#reconstruction">Hear It</a>
   <a href="#data">Data</a>
   <a href="#lexicon">Lexicon</a>
-  <a href="#network">Network</a>
-  <a href="#morphology">Morphology</a>
   <a href="#cognates">Cognates</a>
-  <a href="#place-names">Place Names</a>
-  <a href="#vision">Vision</a>
   <a href="#history">Timeline</a>
   <a href="#sources">Sources</a>
 </nav>
