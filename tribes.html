@@ -21,6 +21,13 @@
   --font-title: 'IM Fell Great Primer', serif;
   --font-body: 'Inter', system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
+  --pad: clamp(2rem, 5vw, 6rem);
+  --calusa: #2a6b4f;
+  --tocobaga: #8b5e3c;
+  --mayaimi: #4a7c9b;
+  --tequesta: #c45d3e;
+  --jaega: #7b6b9d;
+  --ais: #b08d35;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,15 +48,17 @@ nav {
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--gray-100);
-  padding: 1rem clamp(2rem, 5vw, 6rem);
+  padding: 0 var(--pad);
   display: flex;
-  gap: 2.5rem;
+  align-items: center;
+  height: 48px;
+  gap: 1.5rem;
+}
+nav a {
   font-family: var(--font-mono);
   font-size: 0.6rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-}
-nav a {
   color: var(--gray-400);
   text-decoration: none;
   white-space: nowrap;
@@ -59,96 +68,153 @@ nav a:hover { color: var(--black); }
 
 /* ── HERO ── */
 .hero {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 clamp(2rem, 5vw, 6rem) 6rem;
+  padding: clamp(6rem, 12vw, 10rem) var(--pad) clamp(4rem, 8vw, 6rem);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .hero h1 {
   font-family: var(--font-title);
   font-weight: 400;
-  font-size: clamp(2.8rem, 6.5vw, 4.5rem);
-  line-height: 1.1;
-  color: var(--black);
-  max-width: 700px;
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  line-height: 1.08;
+  max-width: 680px;
 }
 .hero-sub {
-  font-family: var(--font-body);
-  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
   font-weight: 300;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   color: var(--gray-500);
-  max-width: 520px;
+  max-width: 540px;
   margin-top: 2rem;
-  line-height: 1.7;
+  line-height: 1.75;
+}
+
+/* ── MAP SECTION ── */
+.map-section {
+  padding: 0 var(--pad) clamp(4rem, 8vw, 6rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.map-label {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-300);
+  margin-bottom: 2rem;
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--gray-100);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.map-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.territory {
+  cursor: pointer;
+  transition: opacity 0.3s, filter 0.3s;
+  opacity: 0.55;
+}
+.territory:hover {
+  opacity: 0.85;
+  filter: brightness(1.1);
+}
+.territory.active {
+  opacity: 0.85;
+}
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  margin-top: 1.5rem;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.legend-item:hover { opacity: 0.7; }
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.legend-name {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-500);
 }
 
 /* ── DIVIDER ── */
 .divider {
   height: 1px;
-  background: var(--gray-200);
-  margin: 0 clamp(2rem, 5vw, 6rem);
+  background: var(--gray-100);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.divider-full {
+  height: 1px;
+  background: var(--gray-100);
 }
 
 /* ── TRIBE SECTION ── */
 .tribe {
-  padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 5vw, 6rem);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(4rem, 8vw, 7rem) var(--pad);
 }
-
+.tribe-header {
+  margin-bottom: 3rem;
+}
 .tribe-label {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray-400);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
-
 .tribe h2 {
   font-family: var(--font-body);
   font-weight: 300;
   font-size: clamp(2.2rem, 4.5vw, 3.2rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
-  margin-bottom: 0.5rem;
-  max-width: 700px;
 }
-
 .tribe-epithet {
   font-family: var(--font-title);
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--gray-400);
-  margin-bottom: 3rem;
+  margin-top: 0.5rem;
 }
 
-/* ── IMAGE ── */
-.tribe-img {
-  margin-bottom: 3rem;
-  max-width: 700px;
+/* ── TRIBE GRID: text + image side by side ── */
+.tribe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 5vw, 5rem);
+  align-items: start;
 }
-.tribe-img img {
-  width: 100%;
-  display: block;
-  filter: grayscale(0.6);
-  transition: filter 0.4s;
-}
-.tribe-img:hover img { filter: grayscale(0); }
-.tribe-img figcaption {
-  font-family: var(--font-mono);
-  font-size: 0.5rem;
-  color: var(--gray-300);
-  letter-spacing: 0.08em;
-  margin-top: 0.75rem;
-  line-height: 1.5;
-}
+.tribe-grid.reverse { direction: rtl; }
+.tribe-grid.reverse > * { direction: ltr; }
 
 /* ── FACTS ROW ── */
 .facts {
   display: flex;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  max-width: 700px;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
 }
 .fact-label {
   font-family: var(--font-mono);
@@ -156,7 +222,7 @@ nav a:hover { color: var(--black); }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gray-300);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 .fact-value {
   font-size: 0.85rem;
@@ -164,9 +230,6 @@ nav a:hover { color: var(--black); }
 }
 
 /* ── NARRATIVE ── */
-.narrative {
-  max-width: 620px;
-}
 .narrative p {
   font-size: 0.95rem;
   font-weight: 300;
@@ -175,10 +238,30 @@ nav a:hover { color: var(--black); }
   margin-bottom: 1.5rem;
 }
 
+/* ── TRIBE IMAGE ── */
+.tribe-visual {
+  position: sticky;
+  top: 80px;
+}
+.tribe-visual img {
+  width: 100%;
+  display: block;
+  filter: grayscale(0.5);
+  transition: filter 0.5s;
+}
+.tribe-visual:hover img { filter: grayscale(0); }
+.tribe-visual figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  color: var(--gray-300);
+  letter-spacing: 0.06em;
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
 /* ── QUOTE ── */
 .quote {
-  max-width: 620px;
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   padding-left: 1.5rem;
   border-left: 2px solid var(--gray-200);
 }
@@ -186,7 +269,7 @@ nav a:hover { color: var(--black); }
   font-family: var(--font-title);
   font-style: italic;
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--gray-500);
 }
 .quote cite {
@@ -200,11 +283,10 @@ nav a:hover { color: var(--black); }
   color: var(--gray-300);
 }
 
-/* ── ASIDE NOTE ── */
+/* ── ASIDE ── */
 .aside {
-  max-width: 620px;
-  margin: 2.5rem 0;
-  padding: 1.5rem;
+  margin: 2.5rem 0 0;
+  padding: 1.25rem 1.5rem;
   background: var(--bg);
   border: 1px solid var(--gray-100);
 }
@@ -214,7 +296,7 @@ nav a:hover { color: var(--black); }
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray-400);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 .aside p {
   font-size: 0.85rem;
@@ -230,9 +312,13 @@ nav a:hover { color: var(--black); }
 
 /* ── CLOSING ── */
 .closing {
-  padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 5vw, 6rem);
+  padding: clamp(5rem, 10vw, 8rem) var(--pad);
   background: var(--black);
   color: var(--white);
+}
+.closing-inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .closing h2 {
   font-family: var(--font-body);
@@ -246,31 +332,30 @@ nav a:hover { color: var(--black); }
   font-size: 0.95rem;
   font-weight: 300;
   line-height: 1.85;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.5);
   max-width: 600px;
   margin-bottom: 1.5rem;
 }
-.closing .cta {
+.cta {
   display: inline-block;
   margin-top: 2rem;
   font-family: var(--font-mono);
   font-size: 0.6rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gray-400);
+  color: rgba(255,255,255,0.5);
   text-decoration: none;
-  border: 1px solid var(--gray-500);
+  border: 1px solid rgba(255,255,255,0.25);
   padding: 0.75rem 1.5rem;
-  transition: all 0.2s;
+  transition: all 0.25s;
 }
-.closing .cta:hover {
+.cta:hover {
   color: var(--white);
   border-color: var(--white);
 }
 
-/* ── FOOTER ── */
 footer {
-  padding: 3rem clamp(2rem, 5vw, 6rem);
+  padding: 3rem var(--pad);
   border-top: 1px solid var(--gray-100);
   font-family: var(--font-mono);
   font-size: 0.55rem;
@@ -278,8 +363,14 @@ footer {
   letter-spacing: 0.1em;
 }
 
-@media (max-width: 600px) {
-  .facts { flex-direction: column; gap: 1rem; }
+/* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .tribe-grid {
+    grid-template-columns: 1fr;
+  }
+  .tribe-grid.reverse { direction: ltr; }
+  .tribe-visual { position: static; }
+  .hero { padding-top: 5rem; }
 }
 </style>
 </head>
@@ -287,6 +378,7 @@ footer {
 
 <nav>
   <a href="index.html">Home</a>
+  <a href="#map">Map</a>
   <a href="#calusa">Calusa</a>
   <a href="#tocobaga">Tocobaga</a>
   <a href="#mayaimi">Mayaimi</a>
@@ -298,220 +390,421 @@ footer {
 <!-- ═══════════ HERO ═══════════ -->
 <div class="hero">
   <h1>The Lost Tribes of South Florida</h1>
-  <p class="hero-sub">Before Miami was a city, before Ponce de Leon named the coast, six nations shaped these waterways for a thousand years. This is who they were.</p>
+  <p class="hero-sub">Before Miami, before the Spanish, six nations shaped these waterways for a thousand years. Their names survive in the land. Their voices, almost nowhere else.</p>
 </div>
+
+<!-- ═══════════ TERRITORY MAP ═══════════ -->
+<section class="map-section" id="map">
+  <div class="map-label">Approximate Territories / c. 1500</div>
+  <div class="map-container">
+    <svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="water" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#e8eef3;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#dce5ed;stop-opacity:1" />
+        </linearGradient>
+        <filter id="shadow">
+          <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+        </filter>
+      </defs>
+
+      <rect width="800" height="900" fill="url(#water)"/>
+
+      <!-- Florida peninsula outline -->
+      <path d="M180,50 L320,30 L460,25 L580,40 L650,70 L700,120 L730,200 L740,300 L735,380 L720,420
+               L700,460 L680,490 L650,530 L620,570 L590,620 L560,660 L540,700 L520,730
+               L500,760 L470,790 L440,810 L400,820 L360,810 L320,790 L280,760
+               L250,730 L220,690 L200,650 L180,600 L160,540 L140,480
+               L120,420 L105,370 L95,310 L90,250 L100,190 L120,130 L150,80 Z"
+            fill="#f5f3ef" stroke="#d4cfc7" stroke-width="1.5" filter="url(#shadow)"/>
+
+      <!-- Lake Okeechobee -->
+      <ellipse cx="480" cy="540" rx="55" ry="45" fill="#d5dfe8" stroke="#c0ccd6" stroke-width="1"/>
+      <text x="480" y="544" text-anchor="middle" font-family="'IBM Plex Mono', monospace"
+            font-size="7" letter-spacing="0.5" fill="#99aab8">OKEECHOBEE</text>
+
+      <!-- Territory: Tocobaga (Tampa Bay area, northwest) -->
+      <path class="territory" data-tribe="tocobaga"
+            d="M130,170 L200,140 L280,130 L340,150 L360,200 L340,270 L290,310
+               L230,310 L170,290 L130,250 L110,210 Z"
+            fill="var(--tocobaga)" onclick="scrollToTribe('tocobaga')"/>
+
+      <!-- Territory: Ais (Cape Canaveral to St. Lucie, northeast coast) -->
+      <path class="territory" data-tribe="ais"
+            d="M580,120 L700,160 L730,250 L735,350 L720,420 L680,440
+               L620,400 L580,340 L560,260 L560,180 Z"
+            fill="var(--ais)" onclick="scrollToTribe('ais')"/>
+
+      <!-- Territory: Calusa (southwest coast, Charlotte Harbor to Keys) -->
+      <path class="territory" data-tribe="calusa"
+            d="M110,310 L200,320 L280,340 L340,370 L380,420 L400,480
+               L410,530 L390,580 L350,640 L310,700 L280,750 L250,730
+               L220,690 L195,640 L170,580 L150,510 L130,440 L110,370 Z"
+            fill="var(--calusa)" onclick="scrollToTribe('calusa')"/>
+
+      <!-- Territory: Mayaimi (interior, around Okeechobee) -->
+      <path class="territory" data-tribe="mayaimi"
+            d="M380,420 L450,400 L540,420 L580,480 L570,550 L540,600
+               L490,620 L430,610 L400,570 L390,510 Z"
+            fill="var(--mayaimi)" onclick="scrollToTribe('mayaimi')"/>
+
+      <!-- Territory: Jaega (Palm Beach / Jupiter Inlet, southeast coast) -->
+      <path class="territory" data-tribe="jaega"
+            d="M580,480 L670,460 L690,510 L680,580 L650,630
+               L610,650 L570,640 L550,600 L560,540 Z"
+            fill="var(--jaega)" onclick="scrollToTribe('jaega')"/>
+
+      <!-- Territory: Tequesta (Biscayne Bay / Miami, southern tip east) -->
+      <path class="territory" data-tribe="tequesta"
+            d="M490,620 L560,640 L600,680 L580,730 L530,770
+               L470,790 L430,780 L400,750 L380,700 L390,650 L430,620 Z"
+            fill="var(--tequesta)" onclick="scrollToTribe('tequesta')"/>
+
+      <!-- Territory labels -->
+      <text x="220" y="230" text-anchor="middle" font-family="'Inter', sans-serif"
+            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
+            opacity="0.9">Tocobaga</text>
+
+      <text x="650" y="290" text-anchor="middle" font-family="'Inter', sans-serif"
+            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
+            opacity="0.9">Ais</text>
+
+      <text x="260" y="510" text-anchor="middle" font-family="'Inter', sans-serif"
+            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
+            opacity="0.9">Calusa</text>
+
+      <text x="480" y="510" text-anchor="middle" font-family="'Inter', sans-serif"
+            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
+            opacity="0.9">Mayaimi</text>
+
+      <text x="630" y="570" text-anchor="middle" font-family="'Inter', sans-serif"
+            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
+            opacity="0.9">Jaega</text>
+
+      <text x="500" y="710" text-anchor="middle" font-family="'Inter', sans-serif"
+            font-size="13" font-weight="300" fill="white" style="pointer-events:none"
+            opacity="0.9">Tequesta</text>
+
+      <!-- Tampa Bay indent -->
+      <path d="M130,170 L155,210 L140,240 L110,230 L105,200 Z"
+            fill="url(#water)" opacity="0.7"/>
+
+      <!-- Charlotte Harbor indent -->
+      <path d="M120,350 L145,370 L135,395 L108,380 Z"
+            fill="url(#water)" opacity="0.7"/>
+
+      <!-- Biscayne Bay indent -->
+      <path d="M540,700 L560,720 L545,745 L525,735 Z"
+            fill="url(#water)" opacity="0.5"/>
+
+      <!-- Scale bar -->
+      <line x1="600" y1="860" x2="720" y2="860" stroke="#b0b8c0" stroke-width="1"/>
+      <line x1="600" y1="855" x2="600" y2="865" stroke="#b0b8c0" stroke-width="1"/>
+      <line x1="720" y1="855" x2="720" y2="865" stroke="#b0b8c0" stroke-width="1"/>
+      <text x="660" y="878" text-anchor="middle" font-family="'IBM Plex Mono', monospace"
+            font-size="8" fill="#99aab8" letter-spacing="0.5">~100 MI</text>
+
+      <!-- Compass -->
+      <text x="60" y="870" text-anchor="middle" font-family="'IBM Plex Mono', monospace"
+            font-size="10" fill="#b0b8c0" letter-spacing="1">N</text>
+      <line x1="60" y1="873" x2="60" y2="893" stroke="#b0b8c0" stroke-width="1"/>
+      <polygon points="55,875 60,873 65,875" fill="#b0b8c0"/>
+    </svg>
+  </div>
+  <div class="map-legend">
+    <div class="legend-item" onclick="scrollToTribe('calusa')">
+      <div class="legend-dot" style="background:var(--calusa)"></div>
+      <span class="legend-name">Calusa</span>
+    </div>
+    <div class="legend-item" onclick="scrollToTribe('tocobaga')">
+      <div class="legend-dot" style="background:var(--tocobaga)"></div>
+      <span class="legend-name">Tocobaga</span>
+    </div>
+    <div class="legend-item" onclick="scrollToTribe('mayaimi')">
+      <div class="legend-dot" style="background:var(--mayaimi)"></div>
+      <span class="legend-name">Mayaimi</span>
+    </div>
+    <div class="legend-item" onclick="scrollToTribe('tequesta')">
+      <div class="legend-dot" style="background:var(--tequesta)"></div>
+      <span class="legend-name">Tequesta</span>
+    </div>
+    <div class="legend-item" onclick="scrollToTribe('jaega')">
+      <div class="legend-dot" style="background:var(--jaega)"></div>
+      <span class="legend-name">Jaega</span>
+    </div>
+    <div class="legend-item" onclick="scrollToTribe('ais')">
+      <div class="legend-dot" style="background:var(--ais)"></div>
+      <span class="legend-name">Ais</span>
+    </div>
+  </div>
+</section>
 
 <!-- ═══════════ CALUSA ═══════════ -->
 <div class="divider"></div>
 <section class="tribe" id="calusa">
-  <div class="tribe-label">01 / The Dominant Power</div>
-  <h2>Calusa</h2>
-  <div class="tribe-epithet">Kings of the Coast</div>
-
-  <figure class="tribe-img">
-    <img src="images/key_marco_mask.jpg" alt="Key Marco cat mask, 1896">
-    <figcaption>Key Marco cat mask. Watercolor by W.M. Sawyer, Smithsonian, 1896. Discovered at the Calusa archaeological site on Marco Island.</figcaption>
-  </figure>
-
-  <div class="facts">
-    <div><div class="fact-label">Territory</div><div class="fact-value">Charlotte Harbor to the Keys</div></div>
-    <div><div class="fact-label">Capital</div><div class="fact-value">Mound Key, Estero Bay</div></div>
-    <div><div class="fact-label">Dominion</div><div class="fact-value">50+ tributary towns</div></div>
+  <div class="tribe-header">
+    <div class="tribe-label" style="color:var(--calusa)">01 / The Dominant Power</div>
+    <h2>Calusa</h2>
+    <div class="tribe-epithet">Kings of the Coast</div>
   </div>
 
-  <div class="narrative">
-    <p>The Calusa were the most powerful people in all of South Florida. From their capital on Mound Key, an artificial island built from millions of discarded shells over centuries, their paramount chief commanded tribute from at least fifty towns stretching from Tampa Bay to the Florida Keys. The Spanish called their ruler Carlos and compared his authority to that of Montezuma. His actual title, Fontaneda tells us, was <em>Certepe</em>.</p>
-    <p>What made the Calusa extraordinary was that they built a complex, hierarchical society without agriculture. They were fishermen. Their common diet was fish, turtle, snails, and whale. They engineered canals through the mangrove coast, controlled fishing weirs that fed thousands, and accumulated enormous wealth from Spanish shipwrecks that broke apart on the Florida reefs. Carlos personally divided the treasure among his subordinate chiefs.</p>
-    <p>They resisted the Spanish for over two centuries. When Pedro Menendez de Aviles arrived at Mound Key in 1566, he did not conquer Carlos. He married the chief's sister. The Calusa held out until disease, slave raids, and colonial pressure overwhelmed them. In 1763, roughly eighty families boarded boats for Havana. They never returned.</p>
-  </div>
+  <div class="tribe-grid">
+    <div class="tribe-content">
+      <div class="facts">
+        <div><div class="fact-label">Territory</div><div class="fact-value">Charlotte Harbor to the Keys</div></div>
+        <div><div class="fact-label">Capital</div><div class="fact-value">Mound Key, Estero Bay</div></div>
+        <div><div class="fact-label">Dominion</div><div class="fact-value">50+ tributary towns</div></div>
+      </div>
 
-  <div class="quote">
-    <blockquote>"Carlos, after his father, was lord of these fifty towns and over many more people on the coast and in the interior. In their language, Calusa signifies a fierce people, and so-called for being brave and skillful, as in truth they are."</blockquote>
-    <cite>Hernando de Escalante Fontaneda, Memoir, c. 1575</cite>
-  </div>
+      <div class="narrative">
+        <p>The Calusa were the most powerful people in all of South Florida. From their capital on Mound Key, an artificial island built from millions of discarded shells over centuries, their paramount chief commanded tribute from at least fifty towns stretching from Tampa Bay to the Florida Keys. The Spanish called their ruler Carlos and compared his authority to that of Montezuma.</p>
+        <p>What made the Calusa extraordinary was that they built a complex, hierarchical society without agriculture. They were fishermen. Their diet was fish, turtle, snails, and whale. They engineered canals through the mangrove coast, controlled fishing weirs that fed thousands, and accumulated enormous wealth from Spanish shipwrecks that broke apart on the Florida reefs.</p>
+        <p>They resisted the Spanish for over two centuries. When Pedro Menendez de Aviles arrived in 1566, he did not conquer Carlos. He married the chief's sister. The Calusa held out until disease, slave raids, and colonial pressure overwhelmed them. In 1763, roughly eighty families boarded boats for Havana. They never returned.</p>
+      </div>
 
-  <div class="aside">
-    <div class="aside-label">What survived</div>
-    <p>Roughly 350 linguistic fragments, a single attested sentence, and the Key Marco archaeological site. <a href="index.html#reconstruction">Hear reconstructed Calusa speech.</a></p>
+      <div class="quote">
+        <blockquote>"In their language, Calusa signifies a fierce people, and so-called for being brave and skillful, as in truth they are."</blockquote>
+        <cite>Fontaneda, Memoir, c. 1575</cite>
+      </div>
+
+      <div class="aside">
+        <div class="aside-label">What survived</div>
+        <p>Roughly 350 linguistic fragments, a single attested sentence, and the Key Marco archaeological site. <a href="index.html#reconstruction">Hear reconstructed Calusa speech.</a></p>
+      </div>
+    </div>
+
+    <figure class="tribe-visual">
+      <img src="images/key_marco_mask.jpg" alt="Key Marco cat mask, 1896">
+      <figcaption>Key Marco cat mask. Watercolor by W.M. Sawyer, Smithsonian, 1896. Discovered at the Calusa site on Marco Island.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ═══════════ TOCOBAGA ═══════════ -->
 <div class="divider"></div>
 <section class="tribe" id="tocobaga">
-  <div class="tribe-label">02 / The Northern Rivals</div>
-  <h2>Tocobaga</h2>
-  <div class="tribe-epithet">People of Tampa Bay</div>
-
-  <figure class="tribe-img">
-    <img src="images/florida_map_1584.jpg" alt="La Florida, Ortelius, 1584">
-    <figcaption>"La Florida." Abraham Ortelius, Theatrum Orbis Terrarum, 1584. Tampa Bay is visible on the Gulf coast.</figcaption>
-  </figure>
-
-  <div class="facts">
-    <div><div class="fact-label">Territory</div><div class="fact-value">Old Tampa Bay</div></div>
-    <div><div class="fact-label">Culture</div><div class="fact-value">Safety Harbor tradition</div></div>
-    <div><div class="fact-label">Status</div><div class="fact-value">Independent, then Calusa subjects</div></div>
+  <div class="tribe-header">
+    <div class="tribe-label" style="color:var(--tocobaga)">02 / The Northern Rivals</div>
+    <h2>Tocobaga</h2>
+    <div class="tribe-epithet">People of Tampa Bay</div>
   </div>
 
-  <div class="narrative">
-    <p>The Tocobaga controlled Tampa Bay, the largest natural harbor on Florida's Gulf Coast. Fontaneda listed them among the "separate kingdoms" beyond the Calusa sphere, yet their relationship with the southern paramount chief was complicated. Spanish documents from 1604 describe the Tocobaga building twelve war canoes in the "bay of Carlos," suggesting they had been pulled into the Calusa orbit.</p>
-    <p>Their territory sat along the route Hernando de Soto followed inland in 1539. Tampa Bay was where multiple Spanish expeditions first made landfall. The Tocobaga witnessed the full arc of European contact, from Narvaez's disastrous 1528 expedition through the mission period of the 1600s.</p>
-    <p>The tension in the record is revealing. Fontaneda calls Tocobaga an "independent king" in one breath, then lists Tampa among Carlos's fifty tributary towns in the next. The Calusa and Tocobaga were likely locked in a shifting power struggle, with the Spanish adding a volatile third element.</p>
-  </div>
+  <div class="tribe-grid reverse">
+    <div class="tribe-content">
+      <div class="facts">
+        <div><div class="fact-label">Territory</div><div class="fact-value">Old Tampa Bay</div></div>
+        <div><div class="fact-label">Culture</div><div class="fact-value">Safety Harbor tradition</div></div>
+        <div><div class="fact-label">Status</div><div class="fact-value">Independent, then Calusa subjects</div></div>
+      </div>
 
-  <div class="quote">
-    <blockquote>"Tocobaga, Abalachi, Olagale, and Mogoso, which are separate kingdoms."</blockquote>
-    <cite>Fontaneda, Memoir, c. 1575</cite>
-  </div>
+      <div class="narrative">
+        <p>The Tocobaga controlled Tampa Bay, the largest natural harbor on Florida's Gulf Coast. Fontaneda listed them among the "separate kingdoms" beyond the Calusa sphere, yet their relationship with the southern paramount chief was complicated. Spanish documents from 1604 describe the Tocobaga building twelve war canoes in the "bay of Carlos."</p>
+        <p>Their territory sat along the route Hernando de Soto followed inland in 1539. Tampa Bay was where multiple Spanish expeditions first made landfall. The Tocobaga witnessed the full arc of European contact, from Narvaez's disastrous 1528 expedition through the mission period of the 1600s.</p>
+        <p>Fontaneda calls Tocobaga an "independent king" in one breath, then lists Tampa among Carlos's fifty tributary towns in the next. The Calusa and Tocobaga were likely locked in a shifting power struggle, with the Spanish adding a volatile third element.</p>
+      </div>
 
-  <div class="aside">
-    <div class="aside-label">What survived</div>
-    <p>A handful of place names. The language is almost entirely unrecorded. Safety Harbor pottery, shell gorgets, and burial mound complexes around Tampa Bay remain.</p>
+      <div class="quote">
+        <blockquote>"Tocobaga, Abalachi, Olagale, and Mogoso, which are separate kingdoms."</blockquote>
+        <cite>Fontaneda, Memoir, c. 1575</cite>
+      </div>
+
+      <div class="aside">
+        <div class="aside-label">What survived</div>
+        <p>A handful of place names. The language is almost entirely unrecorded. Safety Harbor pottery and burial mound complexes around Tampa Bay remain.</p>
+      </div>
+    </div>
+
+    <figure class="tribe-visual">
+      <img src="images/florida_map_1584.jpg" alt="La Florida, Ortelius, 1584">
+      <figcaption>"La Florida." Abraham Ortelius, 1584. Tampa Bay is visible on the Gulf coast.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ═══════════ MAYAIMI ═══════════ -->
 <div class="divider"></div>
 <section class="tribe" id="mayaimi">
-  <div class="tribe-label">03 / The Inland People</div>
-  <h2>Mayaimi</h2>
-  <div class="tribe-epithet">People of the Big Water</div>
-
-  <figure class="tribe-img">
-    <img src="images/florida_map_1591.jpg" alt="De Bry map of Florida, 1591">
-    <figcaption>Florida and Cuba. Theodore de Bry after Le Moyne, 1591. The interior lake represents Mayaimi (Okeechobee).</figcaption>
-  </figure>
-
-  <div class="facts">
-    <div><div class="fact-label">Territory</div><div class="fact-value">Lake Okeechobee basin</div></div>
-    <div><div class="fact-label">Name</div><div class="fact-value">"Very large" (Fontaneda)</div></div>
-    <div><div class="fact-label">Role</div><div class="fact-value">Inland trade hub</div></div>
+  <div class="tribe-header">
+    <div class="tribe-label" style="color:var(--mayaimi)">03 / The Inland People</div>
+    <h2>Mayaimi</h2>
+    <div class="tribe-epithet">People of the Big Water</div>
   </div>
 
-  <div class="narrative">
-    <p>While the Calusa and Tequesta dominated the coasts, the Mayaimi lived at the center of the peninsula on the shores of what Fontaneda called the "Lake of Mayaimi," which he explained meant "very large." Lake Okeechobee is the largest freshwater lake in the southeastern United States, and the Mayaimi built their civilization around it.</p>
-    <p>Fontaneda described "many little villages" ringing the lake, each of thirty or forty inhabitants. The towns he named, Cutespa, Tavaguemue, Tomsobe, Enempa, are among the most tantalizing fragments in the record: place names from an entire lakeside civilization that left almost no other trace.</p>
-    <p>A Spanish pilot taken prisoner in the 18th century described being paddled by canoe through interior waterways to settlements on the lake's banks, which he estimated at seventy-five miles in circumference. The Mayaimi were the inland hub connecting the Atlantic coast, the Gulf, and the Caribbean.</p>
-  </div>
+  <div class="tribe-grid">
+    <div class="tribe-content">
+      <div class="facts">
+        <div><div class="fact-label">Territory</div><div class="fact-value">Lake Okeechobee basin</div></div>
+        <div><div class="fact-label">Name origin</div><div class="fact-value">"Very large" (Fontaneda)</div></div>
+        <div><div class="fact-label">Role</div><div class="fact-value">Inland trade hub</div></div>
+      </div>
 
-  <div class="aside">
-    <div class="aside-label">Did you know</div>
-    <p>The name "Miami" comes from the Mayaimi, carried down the river that drains Lake Okeechobee to the coast. The modern city sits on Tequesta territory, not Mayaimi, but the name traveled with the water.</p>
+      <div class="narrative">
+        <p>While the Calusa and Tequesta dominated the coasts, the Mayaimi lived at the center of the peninsula on the shores of what Fontaneda called the "Lake of Mayaimi," which he explained meant "very large." Lake Okeechobee is the largest freshwater lake in the southeastern United States.</p>
+        <p>Fontaneda described "many little villages" ringing the lake, each of thirty or forty inhabitants. The towns he named -- Cutespa, Tavaguemue, Tomsobe, Enempa -- are among the most tantalizing fragments in the record: place names from an entire lakeside civilization that left almost no other trace.</p>
+        <p>A Spanish pilot taken prisoner in the 18th century described being paddled by canoe through interior waterways to settlements on the lake's banks, which he estimated at seventy-five miles in circumference.</p>
+      </div>
+
+      <div class="aside">
+        <div class="aside-label">Did you know</div>
+        <p>The name "Miami" comes from the Mayaimi, carried down the river that drains Okeechobee to the coast. The modern city sits on Tequesta territory, not Mayaimi, but the name traveled with the water.</p>
+      </div>
+    </div>
+
+    <figure class="tribe-visual">
+      <img src="images/florida_map_1591.jpg" alt="De Bry map of Florida, 1591">
+      <figcaption>Florida and Cuba. De Bry after Le Moyne, 1591. The interior lake represents Okeechobee.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ═══════════ TEQUESTA ═══════════ -->
 <div class="divider"></div>
 <section class="tribe" id="tequesta">
-  <div class="tribe-label">04 / Where Miami Began</div>
-  <h2>Tequesta</h2>
-  <div class="tribe-epithet">Keepers of the River Mouth</div>
-
-  <figure class="tribe-img">
-    <img src="images/debry_ceremony.jpg" alt="Florida ceremonial gathering, De Bry, 1591">
-    <figcaption>Ceremonial gathering of Florida Indians. De Bry after Le Moyne, 1591. Depicts Timucua peoples of northeast Florida, the closest visual record of contact-era native life.</figcaption>
-  </figure>
-
-  <div class="facts">
-    <div><div class="fact-label">Territory</div><div class="fact-value">Biscayne Bay, Miami River</div></div>
-    <div><div class="fact-label">Capital</div><div class="fact-value">Mouth of the Miami River</div></div>
-    <div><div class="fact-label">Known for</div><div class="fact-value">Whale hunting, the Miami Circle</div></div>
+  <div class="tribe-header">
+    <div class="tribe-label" style="color:var(--tequesta)">04 / Where Miami Began</div>
+    <h2>Tequesta</h2>
+    <div class="tribe-epithet">Keepers of the River Mouth</div>
   </div>
 
-  <div class="narrative">
-    <p>The Tequesta lived at the mouth of the Miami River, on Biscayne Bay, exactly where the skyscrapers of downtown Miami stand today. When archaeologists excavated the site in 1998, they found a circle of carved holes in the bedrock, now known as the Miami Circle, that may date back two thousand years. A condo developer had to sell the land for $26.7 million to preserve it.</p>
-    <p>A Fontaneda fragment describes Tequesta whale hunts: warriors lassoed whales at sea, drove a stake through one nostril, and carried two bones from the head in a sacred chest with their dead. They were fishermen like the Calusa but culturally distinct. Granberry proposed their language may have been Arawakan, connecting them to the Caribbean rather than the Gulf.</p>
-    <p>In 1568, a Jesuit brother named Francisco Villarreal wrote from the Tequesta mission. He describes mosquitoes so bad he couldn't sleep for days, a young chief who brought a sick child for prayers, witchdoctors who nearly sacrificed four children before the priests intervened, and, with some pride: "We have put on two comedies."</p>
-  </div>
+  <div class="tribe-grid reverse">
+    <div class="tribe-content">
+      <div class="facts">
+        <div><div class="fact-label">Territory</div><div class="fact-value">Biscayne Bay, Miami River</div></div>
+        <div><div class="fact-label">Capital</div><div class="fact-value">Mouth of the Miami River</div></div>
+        <div><div class="fact-label">Known for</div><div class="fact-value">Whale hunting, the Miami Circle</div></div>
+      </div>
 
-  <div class="quote">
-    <blockquote>"The mosquitoes are so bad that I spent several days and nights without being able to sleep an hour. No more than thirty stayed while the others went to an island a league from here to eat coconuts."</blockquote>
-    <cite>Francisco Villarreal, Letter from Tequesta, 1568</cite>
-  </div>
+      <div class="narrative">
+        <p>The Tequesta lived at the mouth of the Miami River, on Biscayne Bay, exactly where the skyscrapers of downtown Miami stand today. When archaeologists excavated the site in 1998, they found a circle of carved holes in the bedrock, now known as the Miami Circle, that may date back two thousand years. A condo developer had to sell the land for $26.7 million to preserve it.</p>
+        <p>Fontaneda describes Tequesta whale hunts: warriors lassoed whales at sea, drove a stake through one nostril, and carried two bones from the head in a sacred chest. They were fishermen like the Calusa but culturally distinct. Granberry proposed their language may have been Arawakan, connecting them to the Caribbean.</p>
+        <p>In 1568, a Jesuit brother named Francisco Villarreal wrote from the Tequesta mission. He describes mosquitoes so bad he couldn't sleep for days, witchdoctors who nearly sacrificed four children, and, with some pride: "We have put on two comedies."</p>
+      </div>
 
-  <div class="aside">
-    <div class="aside-label">What survived</div>
-    <p>The place name, a few words, the 1568 Villarreal letter, and the Miami Circle. <a href="index.html#lexicon">Explore the lexicon.</a></p>
+      <div class="quote">
+        <blockquote>"The mosquitoes are so bad that I spent several days and nights without being able to sleep an hour."</blockquote>
+        <cite>Francisco Villarreal, Letter from Tequesta, 1568</cite>
+      </div>
+
+      <div class="aside">
+        <div class="aside-label">What survived</div>
+        <p>The place name, a few words, the 1568 Villarreal letter, and the Miami Circle. <a href="index.html#lexicon">Explore the lexicon.</a></p>
+      </div>
+    </div>
+
+    <figure class="tribe-visual">
+      <img src="images/debry_ceremony.jpg" alt="Florida ceremonial gathering, De Bry, 1591">
+      <figcaption>Ceremonial gathering. De Bry after Le Moyne, 1591. Depicts Timucua peoples, the closest visual record of contact-era native life.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ═══════════ JAEGA ═══════════ -->
 <div class="divider"></div>
 <section class="tribe" id="jaega">
-  <div class="tribe-label">05 / The Jupiter Coast</div>
-  <h2>Jaega</h2>
-  <div class="tribe-epithet">The Jobe of Jupiter Inlet</div>
-
-  <figure class="tribe-img">
-    <img src="images/debry_warriors.jpg" alt="Florida warriors, De Bry, 1591">
-    <figcaption>Florida warriors with weapons and tattoo regalia. De Bry, 1591. Depicts Timucua, not Jaega, but reflects contact-era warrior culture.</figcaption>
-  </figure>
-
-  <div class="facts">
-    <div><div class="fact-label">Territory</div><div class="fact-value">Palm Beach to Jupiter Inlet</div></div>
-    <div><div class="fact-label">Also called</div><div class="fact-value">Jobe, Jeaga, Hobe</div></div>
-    <div><div class="fact-label">Key source</div><div class="fact-value">Dickinson's Journal, 1696</div></div>
+  <div class="tribe-header">
+    <div class="tribe-label" style="color:var(--jaega)">05 / The Jupiter Coast</div>
+    <h2>Jaega</h2>
+    <div class="tribe-epithet">The Jobe of Jupiter Inlet</div>
   </div>
 
-  <div class="narrative">
-    <p>We know the Jaega mostly through one terrifying encounter. In 1696, Jonathan Dickinson, a Quaker merchant, was shipwrecked near Jupiter Inlet. His journal is one of the most vivid first-person accounts of any Florida tribe.</p>
-    <p>"About the eighth or ninth hour came two Indian men running from the southward fiercely," Dickinson wrote. "Their countenances were very furious and bloody. They had their hair tied in a roll behind, in which stuck two bones, one shaped like an arrow, the other a spear head." The cacique arrived with thirty warriors and demanded: "Nickaleer? Nickaleer?" Were these English? At one point, Dickinson heard an Indian say, in English, "English son of a bitch."</p>
-    <p>The Jaega territory ran along what is now Palm Beach County. Like the Ais to the north, they profited from Spanish shipwrecks along the Florida reef, and their hostility to the English suggests long experience with competing European powers on their coast.</p>
-  </div>
+  <div class="tribe-grid">
+    <div class="tribe-content">
+      <div class="facts">
+        <div><div class="fact-label">Territory</div><div class="fact-value">Palm Beach to Jupiter Inlet</div></div>
+        <div><div class="fact-label">Also called</div><div class="fact-value">Jobe, Jeaga, Hobe</div></div>
+        <div><div class="fact-label">Key source</div><div class="fact-value">Dickinson's Journal, 1696</div></div>
+      </div>
 
-  <div class="aside">
-    <div class="aside-label">Did you know</div>
-    <p>Jupiter, Florida is named after the Jobe Indians. English mapmakers misheard "Jobe" as "Jove," the Latin name for Jupiter. Hobe Sound preserves the original pronunciation.</p>
+      <div class="narrative">
+        <p>We know the Jaega mostly through one terrifying encounter. In 1696, Jonathan Dickinson, a Quaker merchant, was shipwrecked near Jupiter Inlet. His journal is one of the most vivid first-person accounts of any Florida tribe.</p>
+        <p>"Their countenances were very furious and bloody," Dickinson wrote. "They had their hair tied in a roll behind, in which stuck two bones." The cacique arrived with thirty warriors and demanded: "Nickaleer? Nickaleer?" -- were these English? At one point, Dickinson heard an Indian say, in English, "English son of a bitch."</p>
+        <p>The Jaega territory ran along what is now Palm Beach County. Like the Ais to the north, they profited from Spanish shipwrecks, and their hostility to the English suggests long experience with competing European powers.</p>
+      </div>
+
+      <div class="aside">
+        <div class="aside-label">Did you know</div>
+        <p>Jupiter, Florida is named after the Jobe. English mapmakers misheard "Jobe" as "Jove," the Latin name for Jupiter. Hobe Sound preserves the original pronunciation.</p>
+      </div>
+    </div>
+
+    <figure class="tribe-visual">
+      <img src="images/debry_warriors.jpg" alt="Florida warriors, De Bry, 1591">
+      <figcaption>Florida warriors. De Bry, 1591. Depicts Timucua, not Jaega, but reflects contact-era warrior culture.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ═══════════ AIS ═══════════ -->
 <div class="divider"></div>
 <section class="tribe" id="ais">
-  <div class="tribe-label">06 / Lords of the Shipwrecks</div>
-  <h2>Ais</h2>
-  <div class="tribe-epithet">Lords of the Treasure Coast</div>
-
-  <figure class="tribe-img">
-    <img src="images/debry_battle.jpg" alt="Florida battle scene, De Bry, 1591">
-    <figcaption>Battle of Florida warriors. De Bry Plate XIII, 1591. Depicts Timucua conflict. The Ais controlled a similarly contested coast.</figcaption>
-  </figure>
-
-  <div class="facts">
-    <div><div class="fact-label">Territory</div><div class="fact-value">Cape Canaveral to St. Lucie</div></div>
-    <div><div class="fact-label">Capital</div><div class="fact-value">Indian River area</div></div>
-    <div><div class="fact-label">Known for</div><div class="fact-value">Shipwreck treasure</div></div>
+  <div class="tribe-header">
+    <div class="tribe-label" style="color:var(--ais)">06 / Lords of the Shipwrecks</div>
+    <h2>Ais</h2>
+    <div class="tribe-epithet">Lords of the Treasure Coast</div>
   </div>
 
-  <div class="narrative">
-    <p>The Ais controlled the Atlantic coast from Cape Canaveral south, a territory now known as the Treasure Coast. The Gulf Stream pushed Spanish treasure fleets close to the Florida reef here, and wrecks were frequent. The Ais grew rich on the debris.</p>
-    <p>Fontaneda described the scale: riches "found by the Indians of Ais, which perhaps were as much as a million dollars, or over, in bars of silver, in gold, and in articles of jewelry" from ships bound from Mexico and Peru. One passenger alone carried "twenty-five thousand dollars in pure gold." It was this wealth that made Menendez negotiate friendship rather than attempt conquest.</p>
-    <p>Bernard Romans, writing in 1775, recorded the name "Aisa Hatcha" for the river, one of the few Ais-language fragments to survive. Fontaneda noted he did not speak the Ais language, hinting it may have been distinct from Calusa entirely.</p>
-  </div>
+  <div class="tribe-grid reverse">
+    <div class="tribe-content">
+      <div class="facts">
+        <div><div class="fact-label">Territory</div><div class="fact-value">Cape Canaveral to St. Lucie</div></div>
+        <div><div class="fact-label">Capital</div><div class="fact-value">Indian River area</div></div>
+        <div><div class="fact-label">Known for</div><div class="fact-value">Shipwreck treasure</div></div>
+      </div>
 
-  <div class="quote">
-    <blockquote>"The riches found by the Indians of Ais, which perhaps were as much as a million dollars, or over, in bars of silver, in gold, and in articles of jewelry made in Havana, Mexico, and Peru."</blockquote>
-    <cite>Fontaneda, Memoir, c. 1575</cite>
-  </div>
+      <div class="narrative">
+        <p>The Ais controlled the Atlantic coast from Cape Canaveral south, a territory now known as the Treasure Coast. The Gulf Stream pushed Spanish treasure fleets close to the Florida reef here, and wrecks were frequent. The Ais grew rich on the debris.</p>
+        <p>Fontaneda described the scale: riches "found by the Indians of Ais, which perhaps were as much as a million dollars, or over, in bars of silver, in gold, and in articles of jewelry" from ships bound from Mexico and Peru. It was this wealth that made Menendez negotiate friendship rather than attempt conquest.</p>
+        <p>Bernard Romans, writing in 1775, recorded "Aisa Hatcha" for the river, one of the few Ais-language fragments to survive. Fontaneda noted he did not speak the Ais language, hinting it may have been distinct from Calusa entirely.</p>
+      </div>
 
-  <div class="aside">
-    <div class="aside-label">What survived</div>
-    <p>The ethnonym "Ais," the river name "Aisa Hatcha," and fragments in Fontaneda. Archaeological sites along the Indian River Lagoon are extensive.</p>
+      <div class="quote">
+        <blockquote>"The riches found by the Indians of Ais, which perhaps were as much as a million dollars, or over, in bars of silver, in gold, and in articles of jewelry."</blockquote>
+        <cite>Fontaneda, Memoir, c. 1575</cite>
+      </div>
+
+      <div class="aside">
+        <div class="aside-label">What survived</div>
+        <p>The ethnonym "Ais," the river name "Aisa Hatcha," and fragments in Fontaneda. Archaeological sites along the Indian River Lagoon are extensive.</p>
+      </div>
+    </div>
+
+    <figure class="tribe-visual">
+      <img src="images/debry_battle.jpg" alt="Florida battle scene, De Bry, 1591">
+      <figcaption>Battle of Florida warriors. De Bry, 1591. The Ais controlled a similarly contested coast.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ═══════════ WHAT HAPPENED ═══════════ -->
-<div class="divider"></div>
+<div class="divider-full"></div>
 <section class="closing" id="what-happened">
-  <h2>What happened to them</h2>
-  <p>By the early 1700s, all six peoples were in collapse. European diseases had been devastating their populations since first contact in 1513. Creek and Yamasee slave raiders, armed with English muskets, attacked the remaining settlements. The survivors faced an impossible choice.</p>
-  <p>Some merged into Creek and Seminole groups migrating south into the depopulated peninsula. Others fled to Cuba. When Britain took Florida in 1763, Bernard Romans recorded the final chapter: "about eighty families" of Calusa remnants departed from the Keys to Havana.</p>
-  <p>What remains are fragments in Spanish archives, a handful of archaeological sites, and the place names they left behind: Miami, Tampa, Okeechobee, Sanibel, Hobe Sound. This project exists to recover what can still be recovered.</p>
-  <a href="index.html#reconstruction" class="cta">Hear the reconstructed language</a>
+  <div class="closing-inner">
+    <h2>What happened to them</h2>
+    <p>By the early 1700s, all six peoples were in collapse. European diseases had been devastating their populations since first contact in 1513. Creek and Yamasee slave raiders, armed with English muskets, attacked the remaining settlements.</p>
+    <p>Some merged into Creek and Seminole groups migrating south. Others fled to Cuba. When Britain took Florida in 1763, Bernard Romans recorded: "about eighty families" of Calusa remnants departed the Keys for Havana.</p>
+    <p>What remains are fragments in Spanish archives, a handful of archaeological sites, and the place names they left behind: Miami, Tampa, Okeechobee, Sanibel, Hobe Sound. This project exists to recover what can still be recovered.</p>
+    <a href="index.html#reconstruction" class="cta">Hear the reconstructed language</a>
+  </div>
 </section>
 
 <footer>The Traveler Project / finderscape.com</footer>
+
+<script>
+function scrollToTribe(id) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+const territories = document.querySelectorAll('.territory');
+territories.forEach(t => {
+  t.addEventListener('mouseenter', () => {
+    territories.forEach(o => { if (o !== t) o.style.opacity = '0.2'; });
+    t.style.opacity = '0.9';
+  });
+  t.addEventListener('mouseleave', () => {
+    territories.forEach(o => o.style.opacity = '');
+  });
+});
+</script>
 
 </body>
 </html>
