@@ -16,7 +16,7 @@
     "calusa_ai_hypotheses": 192,
     "calusa_glossed": 74,
     "granberry_baseline": 12,
-    "generated_at": "2026-04-22T11:50:39.233166"
+    "generated_at": "2026-04-22T12:01:08.184049"
   },
   "languages": [
     {
@@ -9071,25 +9071,9 @@
   ],
   "morphology": {
     "timucua": {
-      "total": 123,
-      "strong": 53,
+      "total": 32,
+      "strong": 18,
       "top": [
-        {
-          "calusa_word": "jobe",
-          "calusa_gloss": "town name (between Ais and Jeaga)",
-          "match_word": "obe",
-          "match_gloss": "dove",
-          "matched_substring": "obe",
-          "coverage": 0.75
-        },
-        {
-          "calusa_word": "soco",
-          "calusa_gloss": "muscadine grape (Escobedo); cf. Creek 'sa-uka' (rattle, gourd-rattle)",
-          "match_word": "oco",
-          "match_gloss": "body",
-          "matched_substring": "oco",
-          "coverage": 0.75
-        },
         {
           "calusa_word": "guacata",
           "calusa_gloss": "place name (town on Lake Mayaimi)",
@@ -9121,22 +9105,6 @@
           "match_gloss": "aforesaid",
           "matched_substring": "quene",
           "coverage": 0.62
-        },
-        {
-          "calusa_word": "guaya",
-          "calusa_gloss": "village name in Calusa territory",
-          "match_word": "aya",
-          "match_gloss": "forest",
-          "matched_substring": "aya",
-          "coverage": 0.6
-        },
-        {
-          "calusa_word": "lafay",
-          "calusa_gloss": "chief's name near Tampa Bay",
-          "match_word": "afa",
-          "match_gloss": "lightly",
-          "matched_substring": "afa",
-          "coverage": 0.6
         },
         {
           "calusa_word": "calaobe",
@@ -9193,43 +9161,51 @@
           "match_gloss": "add",
           "matched_substring": "chica",
           "coverage": 0.56
+        },
+        {
+          "calusa_word": "olacatana",
+          "calusa_gloss": "tribal nation name near Calusa territory",
+          "match_word": "acata",
+          "match_gloss": "bed",
+          "matched_substring": "acata",
+          "coverage": 0.56
+        },
+        {
+          "calusa_word": "/abalatʃi/",
+          "calusa_gloss": "kingdom name (Apalachee region)",
+          "match_word": "abala",
+          "match_gloss": "exert oneself",
+          "matched_substring": "abala",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "/huraja/",
+          "calusa_gloss": "chief's name",
+          "match_word": "hura",
+          "match_gloss": "appear",
+          "matched_substring": "hura",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "cuchiaga",
+          "calusa_gloss": "place of torture, place of suffering; or going-out to wail",
+          "match_word": "chia",
+          "match_gloss": "citizen",
+          "matched_substring": "chia",
+          "coverage": 0.5
         }
       ]
     },
     "taino": {
-      "total": 113,
-      "strong": 51,
+      "total": 16,
+      "strong": 9,
       "top": [
-        {
-          "calusa_word": "amaca",
-          "calusa_gloss": "settlement near Tampa Bay",
-          "match_word": "Maca",
-          "match_gloss": "Tree",
-          "matched_substring": "maca",
-          "coverage": 0.8
-        },
-        {
-          "calusa_word": "amaca",
-          "calusa_gloss": "settlement near Tampa Bay",
-          "match_word": "maca",
-          "match_gloss": "",
-          "matched_substring": "maca",
-          "coverage": 0.8
-        },
         {
           "calusa_word": "guaya",
           "calusa_gloss": "village name in Calusa territory",
           "match_word": "Guay",
           "match_gloss": "An Expression of emotion or Pain, when you say Ouch! it",
           "matched_substring": "guay",
-          "coverage": 0.8
-        },
-        {
-          "calusa_word": "mayai",
-          "calusa_gloss": "on the other side",
-          "match_word": "Maya",
-          "match_gloss": "Planta",
-          "matched_substring": "maya",
           "coverage": 0.8
         },
         {
@@ -9249,82 +9225,58 @@
           "coverage": 0.67
         },
         {
-          "calusa_word": "mococo",
-          "calusa_gloss": "people/town allied to Spanish, attacked by Carlos",
-          "match_word": "Coco",
-          "match_gloss": "Bachiller y",
-          "matched_substring": "coco",
-          "coverage": 0.67
-        },
-        {
-          "calusa_word": "/makanake/",
-          "calusa_gloss": "weapon, sword, cutting tool",
-          "match_word": "makana",
-          "match_gloss": "",
-          "matched_substring": "makana",
-          "coverage": 0.6
-        },
-        {
-          "calusa_word": "amaca",
-          "calusa_gloss": "settlement near Tampa Bay",
-          "match_word": "Ama'",
-          "match_gloss": "River or Body of water",
-          "matched_substring": "ama",
-          "coverage": 0.6
-        },
-        {
-          "calusa_word": "araya",
-          "calusa_gloss": "large lake/lagoon (in native language)",
-          "match_word": "Ara'",
-          "match_gloss": "People",
-          "matched_substring": "ara",
-          "coverage": 0.6
-        },
-        {
-          "calusa_word": "araya",
-          "calusa_gloss": "large lake/lagoon (in native language)",
-          "match_word": "Ara",
-          "match_gloss": "A small Red bird also called the Guacamayo",
-          "matched_substring": "ara",
-          "coverage": 0.6
-        },
-        {
-          "calusa_word": "guaxa",
-          "calusa_gloss": "place name (south of Ais, also called Ropa Tendida)",
-          "match_word": "Gua",
-          "match_gloss": "The o Her, Use with High Ranking people, example The King or Her Majesty",
-          "matched_substring": "gua",
-          "coverage": 0.6
-        },
-        {
-          "calusa_word": "guaya",
-          "calusa_gloss": "village name in Calusa territory",
-          "match_word": "Gua",
-          "match_gloss": "The o Her, Use with High Ranking people, example The King or Her Majesty",
-          "matched_substring": "gua",
-          "coverage": 0.6
-        },
-        {
-          "calusa_word": "yagua",
-          "calusa_gloss": "place name",
-          "match_word": "Gua",
-          "match_gloss": "The o Her, Use with High Ranking people, example The King or Her Majesty",
-          "matched_substring": "gua",
-          "coverage": 0.6
-        },
-        {
           "calusa_word": "cayovea",
           "calusa_gloss": "place name",
           "match_word": "Cayo",
           "match_gloss": "A Pass between Islands, Cay Island, a Pass or a Key",
           "matched_substring": "cayo",
           "coverage": 0.57
+        },
+        {
+          "calusa_word": "/huraja/",
+          "calusa_gloss": "chief's name",
+          "match_word": "Hura",
+          "match_gloss": "Wind",
+          "matched_substring": "hura",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "/majaja/",
+          "calusa_gloss": "large, great (chief name)",
+          "match_word": "Maja",
+          "match_gloss": "Big Snake",
+          "matched_substring": "maja",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "/majaja/",
+          "calusa_gloss": "large, great (chief name)",
+          "match_word": "Majá",
+          "match_gloss": "En Cuba, la culebra",
+          "matched_substring": "maja",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "/majáka/",
+          "calusa_gloss": "place name, possibly 'large people'",
+          "match_word": "Maja",
+          "match_gloss": "Big Snake",
+          "matched_substring": "maja",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "/majáka/",
+          "calusa_gloss": "place name, possibly 'large people'",
+          "match_word": "Majá",
+          "match_gloss": "En Cuba, la culebra",
+          "matched_substring": "maja",
+          "coverage": 0.5
         }
       ]
     },
     "creek": {
-      "total": 22,
-      "strong": 2
+      "total": 0,
+      "strong": 0
     },
     "apalachee": {
       "total": 0,
