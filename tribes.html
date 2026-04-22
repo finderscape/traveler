@@ -707,7 +707,7 @@ function scrollToTribe(id) {
     var focus = {
       type:'Feature',
       geometry:{ type:'Polygon',
-        coordinates:[[[-83.1,24.3],[-79.8,24.3],[-79.8,28.7],[-83.1,28.7],[-83.1,24.3]]] }
+        coordinates:[[[-83.1,24.3],[-83.1,28.7],[-79.8,28.7],[-79.8,24.3],[-83.1,24.3]]] }
     };
     var projection = d3.geoMercator().fitExtent([[12,12],[W-12,H-12]], focus);
     var pathGen = d3.geoPath(projection);
