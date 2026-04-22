@@ -6,7 +6,7 @@
 <title>The Traveler and The Lost Tribes of Florida | Voices from the Water</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --black: #1a1a1a;
@@ -25,7 +25,7 @@
   --green-light: #e6f2eb;
   --amber: #a67c00;
   --amber-light: #faf3e0;
-  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-display: 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
 }
@@ -50,30 +50,24 @@ body {
   padding: 0 clamp(2rem, 5vw, 6rem) 6rem;
 }
 
-.hero-overline {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gray-400);
-  margin-bottom: 2rem;
-  animation: fadeIn 0.8s 0.2s both;
-}
-
 .hero h1 {
-  font-family: var(--font-display);
+  font-family: 'IM Fell Great Primer', serif;
   font-weight: 400;
-  font-size: clamp(3.5rem, 10vw, 9rem);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.8rem, 6.5vw, 4.5rem);
+  line-height: 1.1;
   color: var(--black);
   max-width: 900px;
-  animation: fadeIn 1s 0.4s both;
+  animation: fadeIn 1s 0.2s both;
 }
 
-.hero h1 em {
+.hero-subtitle {
+  font-family: 'IM Fell Great Primer', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  font-weight: 400;
   font-style: italic;
+  color: var(--gray-400);
+  margin-top: 1rem;
+  animation: fadeIn 0.8s 0.5s both;
 }
 
 .hero-sub {
@@ -162,8 +156,8 @@ section {
 
 section h2 {
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
@@ -745,8 +739,8 @@ footer .gen {
 
 <!-- ═══════════ HERO ═══════════ -->
 <div class="hero">
-  <div class="hero-overline">The Traveler and The Lost Tribes of Florida</div>
-  <h1>Voices from the <em>Water</em></h1>
+  <h1>The Traveler and The Lost Tribes of Florida</h1>
+  <div class="hero-subtitle">Voices from the Water</div>
   <p class="hero-sub">Recovering the lost languages of South Florida's first people, the Calusa, Tequesta, and their neighbors, from five centuries of scattered archives.</p>
   <div class="hero-stats">
     <div class="hero-stat">
@@ -775,6 +769,7 @@ footer .gen {
 <!-- ═══════════ NAV ═══════════ -->
 <nav class="nav-strip">
   <a href="#purpose">Purpose</a>
+  <a href="#reconstruction">Hear It</a>
   <a href="#data">Data</a>
   <a href="#lexicon">Lexicon</a>
   <a href="#network">Network</a>
@@ -784,7 +779,6 @@ footer .gen {
   <a href="#vision">Vision</a>
   <a href="#history">Timeline</a>
   <a href="#sources">Sources</a>
-  <a href="#reconstruction">Reconstruction</a>
 </nav>
 
 <!-- ═══════════ PURPOSE ═══════════ -->
@@ -809,98 +803,10 @@ footer .gen {
   </div>
 </section>
 
-<!-- ═══════════ DATA OVERVIEW ═══════════ -->
-<div class="divider"></div>
-<section id="data">
-  <div class="section-label">02 / Live Data</div>
-  <h2>What we've recovered</h2>
-  <p class="lead">Every number below is generated from the actual project data. As new discoveries are made, these figures update.</p>
-  <div class="stats-bar" id="stats-bar"></div>
-</section>
-
-<!-- ═══════════ CALUSA LEXICON ═══════════ -->
-<div class="divider"></div>
-<section id="lexicon">
-  <div class="section-label">03 / The Calusa Lexicon</div>
-  <h2>Words with meanings</h2>
-  <p class="lead">Each entry is classified by provenance: primary-source translations from colonial authors, published scholarly analyses, and AI-generated hypotheses for further investigation.</p>
-  <div class="tier-legend">
-    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--green)"></div> Primary source</div>
-    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--blue)"></div> Published analysis</div>
-    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--amber)"></div> AI hypothesis</div>
-  </div>
-  <div class="lexicon-grid" id="lexicon-grid"></div>
-</section>
-
-<!-- ═══════════ NETWORK ═══════════ -->
-<div class="divider"></div>
-<section id="network">
-  <div class="section-label">04 / Language Network</div>
-  <h2>Connected languages</h2>
-  <p class="lead">South Florida's languages existed in a network of trade, migration, and contact. We map relationships to find cross-linguistic patterns.</p>
-  <canvas id="network-canvas"></canvas>
-</section>
-
-<!-- ═══════════ MORPHOLOGY ═══════════ -->
-<div class="divider"></div>
-<section id="morphology">
-  <div class="section-label">05 / Cross-Linguistic Matches</div>
-  <h2>Shared roots and morphemes</h2>
-  <p class="lead">By comparing Calusa words against Timucua, Taíno, Creek, and other documented languages, we identify shared morphemes that reveal meaning and origin.</p>
-  <div id="morph-summary"></div>
-  <div class="morph-matches" id="morph-matches"></div>
-</section>
-
-<!-- ═══════════ COGNATES ═══════════ -->
-<div class="divider"></div>
-<section id="cognates">
-  <div class="section-label">06 / Tunica-Calusa Cognates</div>
-  <h2>Testing Granberry's hypothesis</h2>
-  <p class="lead">Julian Granberry proposed that Calusa is related to Tunica. Established cognate pairs from his published work are distinguished from AI-proposed hypotheses.</p>
-  <div class="stats-bar" id="cognate-stats"></div>
-  <div class="morph-matches" id="cognate-matches"></div>
-</section>
-
-<!-- ═══════════ PLACE NAMES ═══════════ -->
-<div class="divider"></div>
-<section id="place-names">
-  <div class="section-label">07 / Place Name Etymology</div>
-  <h2>What the land was called</h2>
-  <p class="lead">Place name analyses are classified by evidence: primary-source glosses from Fontaneda, published scholarly decompositions, and AI-proposed hypotheses awaiting validation.</p>
-  <div class="morph-matches" id="placename-grid"></div>
-</section>
-
-<!-- ═══════════ VISION ═══════════ -->
-<div class="divider"></div>
-<section id="vision">
-  <div class="section-label">08 / Vision Pipeline</div>
-  <h2>Reading the manuscripts</h2>
-  <p class="lead">High-resolution scans of historical documents are fed directly to AI vision models, extracting indigenous words that may have been overlooked in prior transcriptions.</p>
-  <div class="stats-bar" id="vision-stats"></div>
-  <div class="vision-highlights" id="vision-highlights"></div>
-</section>
-
-<!-- ═══════════ TIMELINE ═══════════ -->
-<div class="divider"></div>
-<section id="history">
-  <div class="section-label">09 / Timeline</div>
-  <h2>From living language to recovery</h2>
-  <div class="timeline" id="timeline"></div>
-</section>
-
-<!-- ═══════════ SOURCES ═══════════ -->
-<div class="divider"></div>
-<section id="sources">
-  <div class="section-label">10 / Sources & References</div>
-  <h2>Documentary evidence</h2>
-  <p class="lead">Every word in our lexicon traces back to a specific historical source. This project stands on centuries of scholarship.</p>
-  <div class="sources-list" id="sources-list"></div>
-</section>
-
 <!-- ═══════════ RECONSTRUCTION ═══════════ -->
 <div class="divider"></div>
 <section id="reconstruction">
-  <div class="section-label">11 / Reconstruction</div>
+  <div class="section-label">02 / Hear the Language</div>
   <h2>Rebuilding sentences</h2>
   <p class="lead">Using Granberry's Calusa-Tunica hypothesis, SOV grammar from Haas's Tunica documentation, and our expanded cognate table, we reconstruct hypothetical Calusa sentences. Every word is tagged with its source and confidence.</p>
 
@@ -945,6 +851,94 @@ footer .gen {
       for language revitalization research, not commercial purposes.
     </p>
   </div>
+</section>
+
+<!-- ═══════════ DATA OVERVIEW ═══════════ -->
+<div class="divider"></div>
+<section id="data">
+  <div class="section-label">03 / Live Data</div>
+  <h2>What we've recovered</h2>
+  <p class="lead">Every number below is generated from the actual project data. As new discoveries are made, these figures update.</p>
+  <div class="stats-bar" id="stats-bar"></div>
+</section>
+
+<!-- ═══════════ CALUSA LEXICON ═══════════ -->
+<div class="divider"></div>
+<section id="lexicon">
+  <div class="section-label">04 / The Calusa Lexicon</div>
+  <h2>Words with meanings</h2>
+  <p class="lead">Each entry is classified by provenance: primary-source translations from colonial authors, published scholarly analyses, and AI-generated hypotheses for further investigation.</p>
+  <div class="tier-legend">
+    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--green)"></div> Primary source</div>
+    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--blue)"></div> Published analysis</div>
+    <div class="tier-legend-item"><div class="tier-legend-dot" style="background:var(--amber)"></div> AI hypothesis</div>
+  </div>
+  <div class="lexicon-grid" id="lexicon-grid"></div>
+</section>
+
+<!-- ═══════════ NETWORK ═══════════ -->
+<div class="divider"></div>
+<section id="network">
+  <div class="section-label">05 / Language Network</div>
+  <h2>Connected languages</h2>
+  <p class="lead">South Florida's languages existed in a network of trade, migration, and contact. We map relationships to find cross-linguistic patterns.</p>
+  <canvas id="network-canvas"></canvas>
+</section>
+
+<!-- ═══════════ MORPHOLOGY ═══════════ -->
+<div class="divider"></div>
+<section id="morphology">
+  <div class="section-label">06 / Cross-Linguistic Matches</div>
+  <h2>Shared roots and morphemes</h2>
+  <p class="lead">By comparing Calusa words against Timucua, Taíno, Creek, and other documented languages, we identify shared morphemes that reveal meaning and origin.</p>
+  <div id="morph-summary"></div>
+  <div class="morph-matches" id="morph-matches"></div>
+</section>
+
+<!-- ═══════════ COGNATES ═══════════ -->
+<div class="divider"></div>
+<section id="cognates">
+  <div class="section-label">07 / Tunica-Calusa Cognates</div>
+  <h2>Testing Granberry's hypothesis</h2>
+  <p class="lead">Julian Granberry proposed that Calusa is related to Tunica. Established cognate pairs from his published work are distinguished from AI-proposed hypotheses.</p>
+  <div class="stats-bar" id="cognate-stats"></div>
+  <div class="morph-matches" id="cognate-matches"></div>
+</section>
+
+<!-- ═══════════ PLACE NAMES ═══════════ -->
+<div class="divider"></div>
+<section id="place-names">
+  <div class="section-label">08 / Place Name Etymology</div>
+  <h2>What the land was called</h2>
+  <p class="lead">Place name analyses are classified by evidence: primary-source glosses from Fontaneda, published scholarly decompositions, and AI-proposed hypotheses awaiting validation.</p>
+  <div class="morph-matches" id="placename-grid"></div>
+</section>
+
+<!-- ═══════════ VISION ═══════════ -->
+<div class="divider"></div>
+<section id="vision">
+  <div class="section-label">09 / Vision Pipeline</div>
+  <h2>Reading the manuscripts</h2>
+  <p class="lead">High-resolution scans of historical documents are fed directly to AI vision models, extracting indigenous words that may have been overlooked in prior transcriptions.</p>
+  <div class="stats-bar" id="vision-stats"></div>
+  <div class="vision-highlights" id="vision-highlights"></div>
+</section>
+
+<!-- ═══════════ TIMELINE ═══════════ -->
+<div class="divider"></div>
+<section id="history">
+  <div class="section-label">10 / Timeline</div>
+  <h2>From living language to recovery</h2>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<!-- ═══════════ SOURCES ═══════════ -->
+<div class="divider"></div>
+<section id="sources">
+  <div class="section-label">11 / Sources & References</div>
+  <h2>Documentary evidence</h2>
+  <p class="lead">Every word in our lexicon traces back to a specific historical source. This project stands on centuries of scholarship.</p>
+  <div class="sources-list" id="sources-list"></div>
 </section>
 
 <!-- ═══════════ FOOTER ═══════════ -->
