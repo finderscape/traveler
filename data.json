@@ -6,7 +6,7 @@
     "goal": "To give voice back to the people who lived in South Florida for thousands of years before European contact, and ultimately demonstrate a conversation with a native Floridian from the 1500s using an AI-driven Unreal Engine character."
   },
   "summary": {
-    "total_entries": 11400,
+    "total_entries": 11416,
     "total_languages": 71,
     "core_south_florida_entries": 373,
     "calusa_total": 347,
@@ -16,7 +16,7 @@
     "calusa_ai_hypotheses": 192,
     "calusa_glossed": 74,
     "granberry_baseline": 12,
-    "generated_at": "2026-04-22T13:02:58.682580"
+    "generated_at": "2026-04-22T22:34:32.344665"
   },
   "languages": [
     {
@@ -2757,16 +2757,16 @@
     {
       "id": "creek",
       "name": "Creek",
-      "total_entries": 344,
+      "total_entries": 352,
       "primary_glosses": 0,
       "published_analyses": 0,
       "attested_unglossed": 0,
-      "ai_hypotheses": 294,
+      "ai_hypotheses": 302,
       "glossed_count": 0,
       "tiers": {
         "attested_gloss": 49,
         "scholarly_reconstruction": 1,
-        "ai_hypothesis": 294
+        "ai_hypothesis": 302
       },
       "top_sources": {
         "deep_read_swanton_creek_indians_1922.txt": 144,
@@ -6072,15 +6072,15 @@
     {
       "id": "taino",
       "name": "Taino",
-      "total_entries": 883,
+      "total_entries": 890,
       "primary_glosses": 0,
       "published_analyses": 0,
       "attested_unglossed": 0,
-      "ai_hypotheses": 873,
+      "ai_hypotheses": 880,
       "glossed_count": 0,
       "tiers": {
         "unknown": 10,
-        "ai_hypothesis": 873
+        "ai_hypothesis": 880
       },
       "top_sources": {
         "deep_read_herrera_historia_general.txt": 455,
@@ -8352,18 +8352,19 @@
     {
       "id": "yuchi",
       "name": "Yuchi",
-      "total_entries": 2,
+      "total_entries": 3,
       "primary_glosses": 0,
       "published_analyses": 0,
       "attested_unglossed": 0,
-      "ai_hypotheses": 2,
+      "ai_hypotheses": 3,
       "glossed_count": 0,
       "tiers": {
-        "ai_hypothesis": 2
+        "ai_hypothesis": 3
       },
       "top_sources": {
         "deep_read_swanton_creek_indians_1922.txt": 1,
-        "deep_read_calderon_letter_1675.txt": 1
+        "deep_read_calderon_letter_1675.txt": 1,
+        "deep_read_pipeline": 1
       },
       "glossed_words": [
         {
@@ -8381,6 +8382,14 @@
           "source": "deep_read_calderon_letter_1675.txt",
           "tier": "ai_hypothesis",
           "evidence_citation": "AI-extracted from calderon_letter_1675.txt"
+        },
+        {
+          "word": "/juʧi/",
+          "meaning": "tribal name",
+          "confidence": 0,
+          "source": "deep_read_pipeline",
+          "tier": "ai_hypothesis",
+          "evidence_citation": ""
         }
       ]
     },
@@ -8937,7 +8946,7 @@
       "author": "",
       "year": "1574",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -8946,7 +8955,7 @@
       "author": "",
       "year": "c. 1567",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -8955,7 +8964,7 @@
       "author": "",
       "year": "1723",
       "type": "secondary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9009,7 +9018,7 @@
       "author": "",
       "year": "1922",
       "type": "scholarly",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9099,7 +9108,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9108,7 +9117,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9117,7 +9126,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9126,7 +9135,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9135,7 +9144,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9234,7 +9243,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9252,7 +9261,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9261,7 +9270,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9270,7 +9279,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9279,7 +9288,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9288,7 +9297,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9297,7 +9306,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9306,7 +9315,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9315,7 +9324,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9324,7 +9333,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9333,7 +9342,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9342,7 +9351,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9351,7 +9360,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9360,7 +9369,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9369,7 +9378,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9378,7 +9387,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9387,7 +9396,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9396,7 +9405,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9405,7 +9414,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9414,7 +9423,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9423,7 +9432,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9432,7 +9441,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "unprocessed",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9441,7 +9450,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9450,7 +9459,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9468,7 +9477,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9477,7 +9486,7 @@
       "author": "",
       "year": "",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9495,7 +9504,7 @@
       "author": "",
       "year": "1904",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9504,7 +9513,7 @@
       "author": "",
       "year": "1586",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9513,7 +9522,7 @@
       "author": "",
       "year": "1557",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9522,7 +9531,7 @@
       "author": "",
       "year": "1563",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
@@ -9531,7 +9540,7 @@
       "author": "",
       "year": "1561",
       "type": "primary",
-      "status": "fetched",
+      "status": "deep_read",
       "relevance": "",
       "url": ""
     },
