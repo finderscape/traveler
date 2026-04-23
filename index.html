@@ -746,16 +746,12 @@ footer .gen {
   <p class="hero-sub">Recovering the lost languages of South Florida's first people, the Calusa, Tequesta, and their neighbors, from five centuries of scattered archives.</p>
   <div class="hero-stats">
     <div class="hero-stat">
+      <div class="number" id="stat-corpus">&ndash;</div>
+      <div class="label">Corpus Entries</div>
+    </div>
+    <div class="hero-stat">
       <div class="number" id="stat-entries">&ndash;</div>
-      <div class="label">Lexicon Entries</div>
-    </div>
-    <div class="hero-stat">
-      <div class="number" id="stat-primary">&ndash;</div>
-      <div class="label">Primary Glosses</div>
-    </div>
-    <div class="hero-stat">
-      <div class="number" id="stat-published">&ndash;</div>
-      <div class="label">Scholarly Analyses</div>
+      <div class="label">Calusa Lexicon</div>
     </div>
     <div class="hero-stat">
       <div class="number" id="stat-languages">&ndash;</div>
@@ -763,7 +759,7 @@ footer .gen {
     </div>
     <div class="hero-stat">
       <div class="number" id="stat-sources">&ndash;</div>
-      <div class="label">Sources Processed</div>
+      <div class="label">Historical Sources</div>
     </div>
   </div>
 </div>
@@ -778,6 +774,7 @@ footer .gen {
   <a href="#cognates">Cognates</a>
   <a href="#history">Timeline</a>
   <a href="#sources">Sources</a>
+  <a href="about.html">About</a>
 </nav>
 
 <!-- ═══════════ PURPOSE ═══════════ -->
@@ -807,7 +804,7 @@ footer .gen {
 <section id="reconstruction">
   <div class="section-label">02 / Hear the Language</div>
   <h2>Rebuilding sentences</h2>
-  <p class="lead">Using Granberry's Calusa-Tunica hypothesis, SOV grammar from Haas's Tunica documentation, and our expanded cognate table, we reconstruct hypothetical Calusa sentences. Every word is tagged with its source and confidence.</p>
+  <p class="lead">Using Granberry's Calusa-Tunica hypothesis, SOV grammar from Haas's Tunica documentation, and our expanded cognate table, we reconstruct hypothetical Calusa sentences. Each word is color-coded by its source tier: primary-source translations, published scholarly analyses, Tunica projections, and gaps still under investigation.</p>
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0;">
     <div class="stat-cell"><div class="val" id="rc-cognates">0</div><div class="desc">Cognate pairs</div></div>
@@ -821,7 +818,7 @@ footer .gen {
 
   <h3 style="margin-top:3rem;font-family:var(--font-display);font-size:1.5rem;">Reconstructed Calusa Dialogue</h3>
   <p style="font-size:0.8rem;color:var(--gray-400);margin:0.5rem 0 1rem;font-family:var(--font-mono);">
-    Click &#9654; to hear reconstructed Calusa pronunciation. Sorted by confidence, highest first.
+    Click &#9654; to hear reconstructed Calusa pronunciation.
   </p>
   <div id="dialogue-scenarios" style="margin:1.5rem 0;"></div>
 
@@ -840,14 +837,29 @@ footer .gen {
   <div id="encounter-scenarios" style="margin:1.5rem 0;"></div>
 
   <div style="margin-top:3rem;padding:1.5rem;border:1px solid var(--gray-200);background:var(--bg);">
-    <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:0.75rem;">Voice Attribution</div>
-    <p style="font-size:0.8rem;color:var(--gray-500);line-height:1.8;">
-      Audio pronunciation is modeled on recordings of Southeast US indigenous language speakers from the
+    <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:0.75rem;">How we generate audio</div>
+    <p style="font-size:0.8rem;color:var(--gray-500);line-height:1.8;margin-bottom:0.8rem;">
+      <strong>1. Word assembly.</strong> Each sentence is built word-by-word from the project lexicon. Words come from three tiers:
+      <span style="color:var(--green)">primary-source translations</span> from colonial authors like Fontaneda,
+      <span style="color:var(--blue)">published scholarly analyses</span> from linguists like Granberry and Swanton, and
+      <span style="color:var(--amber)">Tunica projections</span> derived from Granberry's Calusa-Tunica hypothesis. Remaining gaps are marked in
+      <span style="color:var(--red)">red</span>.
+    </p>
+    <p style="font-size:0.8rem;color:var(--gray-500);line-height:1.8;margin-bottom:0.8rem;">
+      <strong>2. Grammar.</strong> Word order follows the SOV (Subject-Object-Verb) pattern documented in Tunica by Mary Haas,
+      applied through 11 reconstructed grammar templates covering greetings, commands, descriptions, and questions.
+    </p>
+    <p style="font-size:0.8rem;color:var(--gray-500);line-height:1.8;margin-bottom:0.8rem;">
+      <strong>3. Pronunciation.</strong> Audio is generated using text-to-speech modeled on Southeast US indigenous language speakers from the
       <a href="https://muskogee.pages.wm.edu/" target="_blank" style="color:var(--blue);">Muskogee (Creek/Seminole) Documentation Project</a>
       at the College of William &amp; Mary. Creek and Seminole are geographically and culturally the closest living
-      languages to the extinct Calusa. Source recordings include Margaret McKane Mauldin reading Creek folktales
-      and Spencer Frank broadcasting in Seminole on KWSH radio (1990-91). This project uses these materials
-      for language revitalization research, not commercial purposes.
+      languages to the extinct Calusa. Phonological rules from Tunica documentation guide vowel length, stress patterns,
+      and consonant clusters.
+    </p>
+    <p style="font-size:0.8rem;color:var(--gray-500);line-height:1.8;">
+      <strong>4. Disclaimer.</strong> These reconstructions are hypothetical. No living speakers of Calusa exist, and no recordings
+      were ever made. What you hear is our best approximation, built from the fragmentary evidence that survives. Every word
+      shown in the dialogue is hover-labeled with its source tier so you can judge the evidence yourself.
     </p>
   </div>
 </section>
@@ -889,7 +901,7 @@ footer .gen {
 <section id="morphology">
   <div class="section-label">06 / Morpheme Decomposition</div>
   <h2>Candidate shared morphemes</h2>
-  <p class="lead">Calusa place names are decomposed into substrings and matched against Timucua, Taíno, and Creek dictionaries. High-coverage matches are candidates for morphological analysis, not confirmed cognates. Matches require 4+ character overlap and 50%+ coverage of the source word.</p>
+  <p class="lead">Calusa place names are decomposed into substrings and matched against neighboring and Gulf-family dictionaries: Timucua, Taíno, Tunica, Chitimacha, Natchez, and Atakapa. High-coverage matches are candidates for morphological analysis, not confirmed cognates. Matches require 4+ character overlap and 50%+ coverage of the source word.</p>
   <div id="morph-summary"></div>
   <div class="morph-matches" id="morph-matches"></div>
 </section>
@@ -982,9 +994,8 @@ function animateNumber(el, target, duration = 1000) {
 
 function renderHero(data) {
   const s = data.summary;
+  animateNumber(document.getElementById('stat-corpus'), s.total_entries);
   animateNumber(document.getElementById('stat-entries'), s.calusa_total);
-  animateNumber(document.getElementById('stat-primary'), s.calusa_primary_glosses);
-  animateNumber(document.getElementById('stat-published'), s.calusa_published_analyses);
   animateNumber(document.getElementById('stat-languages'), s.total_languages);
   animateNumber(document.getElementById('stat-sources'), data.sources.length);
 }
@@ -1155,12 +1166,21 @@ function renderMorphology(data) {
   if (m.error) return;
 
   const summary = document.getElementById('morph-summary');
+  const langStats = [
+    { key: 'timucua', label: 'Timucua' },
+    { key: 'taino', label: 'Taíno' },
+    { key: 'tunica', label: 'Tunica' },
+    { key: 'chitimacha', label: 'Chitimacha' },
+    { key: 'natchez', label: 'Natchez' },
+    { key: 'atakapa', label: 'Atakapa' },
+  ].filter(l => (m[l.key]?.total || 0) > 0);
+
   summary.innerHTML = `
     <div class="stats-bar">
-      <div class="stat-cell"><div class="val">${m.timucua?.total || 0}</div><div class="desc">Timucua matches</div></div>
-      <div class="stat-cell"><div class="val">${m.timucua?.strong || 0}</div><div class="desc">Strong (≥40%)</div></div>
-      <div class="stat-cell"><div class="val">${m.taino?.total || 0}</div><div class="desc">Taíno matches</div></div>
-      <div class="stat-cell"><div class="val">${m.taino?.strong || 0}</div><div class="desc">Strong (≥40%)</div></div>
+      ${langStats.map(l => `
+        <div class="stat-cell"><div class="val">${m[l.key].total}</div><div class="desc">${l.label} matches</div></div>
+        <div class="stat-cell"><div class="val">${m[l.key].strong}</div><div class="desc">Strong (≥50%)</div></div>
+      `).join('')}
     </div>
   `;
 
@@ -1168,9 +1188,13 @@ function renderMorphology(data) {
   const allMatches = [
     ...(m.timucua?.top || []).map(h => ({ ...h, lang: 'Timucua' })),
     ...(m.taino?.top || []).map(h => ({ ...h, lang: 'Taíno' })),
+    ...(m.tunica?.top || []).map(h => ({ ...h, lang: 'Tunica' })),
+    ...(m.chitimacha?.top || []).map(h => ({ ...h, lang: 'Chitimacha' })),
+    ...(m.natchez?.top || []).map(h => ({ ...h, lang: 'Natchez' })),
+    ...(m.atakapa?.top || []).map(h => ({ ...h, lang: 'Atakapa' })),
   ].sort((a, b) => (b.coverage || 0) - (a.coverage || 0));
 
-  container.innerHTML = allMatches.slice(0, 12).map(h => `
+  container.innerHTML = allMatches.slice(0, 15).map(h => `
     <div class="match-card">
       <div class="pair">
         <span class="w">${h.calusa_word}</span>
@@ -1250,7 +1274,6 @@ function renderPlaceNames(data) {
         </div>
         <div class="cov">
           <span class="evidence-tag ${evClass}">${evLabel}</span>
-          · ${a.confidence} confidence
         </div>
       </div>
     `;
@@ -1296,6 +1319,7 @@ function renderSources(data) {
   container.innerHTML = sorted.map(s => {
     const statusClass = s.status === 'fetched' ? 'status-fetched'
       : s.status === 'processed' ? 'status-processed'
+      : s.status === 'deep_read' ? 'status-processed'
       : s.status === 'pending' ? 'status-pending'
       : 'status-identified';
     return `
@@ -1332,9 +1356,8 @@ function renderScenarioLine(line, sid) {
       const color = tier === 'primary_gloss' ? 'var(--green)' : tier === 'published_analysis' ? 'var(--blue)' : tier === 'tunica_projection' ? 'var(--amber)' : tier === 'gap' ? 'var(--red)' : 'var(--gray-500)';
       return `<span title="${w.english} (${tier})" style="color:${color};cursor:help;">${w.calusa}</span>`;
     }).join(' ');
-    const conf = (line.avg_confidence * 100).toFixed(0);
     mainContent = `<div style="font-size:1rem;letter-spacing:0.02em;">${words || line.calusa}</div>`;
-    confHtml = `<div style="color:var(--gray-400);font-size:0.75rem;margin-top:0.2rem;">Confidence: ${conf}%</div>`;
+    confHtml = '';
   }
 
   const showTag = isSpanish || speakerName;
@@ -1418,7 +1441,6 @@ function renderReconstruction(data) {
   const calusaOnly = dialogues.filter(s => !isBilingual(s));
   const encounters = dialogues.filter(s => isBilingual(s));
 
-  // Calusa-only: sort scenarios by avg confidence, lines by confidence
   const scoredCalusa = calusaOnly.map(s => {
     const avgConf = s.lines.reduce((sum, l) => sum + (l.avg_confidence || 0), 0) / (s.lines.length || 1);
     const linesWithIdx = s.lines.map((l, i) => ({ ...l, _origLineIdx: i }));

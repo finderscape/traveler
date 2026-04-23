@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Voices from the Water</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --bg: #fafafa;
+  --gray-100: #f0f0f0;
+  --gray-200: #e0e0e0;
+  --gray-300: #c0c0c0;
+  --gray-400: #999;
+  --gray-500: #666;
+  --gray-600: #444;
+  --red: #d63220;
+  --blue: #0057b8;
+  --green: #1a7a3a;
+  --amber: #a67c00;
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-serif: 'IM Fell Great Primer', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-strip {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gray-100);
+  padding: 0.8rem clamp(2rem, 5vw, 6rem);
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+}
+.nav-strip a {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--gray-400);
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.nav-strip a:hover { color: var(--black); }
+
+article {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 6rem clamp(1.5rem, 5vw, 2rem) 4rem;
+}
+
+article h1 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--gray-400);
+  margin-bottom: 3rem;
+}
+
+.dateline {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 3rem;
+}
+
+article p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--gray-600);
+  margin-bottom: 1.6rem;
+}
+
+article p.lede {
+  font-size: 1.15rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+
+article h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+
+article blockquote {
+  border-left: 3px solid var(--gray-200);
+  padding: 1rem 0 1rem 1.5rem;
+  margin: 2rem 0;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--gray-600);
+}
+
+article blockquote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  color: var(--gray-400);
+  margin-top: 0.5rem;
+}
+
+.figure {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--gray-100);
+}
+
+.figure-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 0.75rem;
+}
+
+.figure-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.figure-data .num {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.figure-data .label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--gray-400);
+  margin-top: 0.3rem;
+}
+
+.tier-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  font-size: 0.85rem;
+}
+
+.tier-table th {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  text-align: left;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.tier-table td {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--gray-600);
+}
+
+.tier-table .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.signature {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.signature .name {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.signature .role {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+footer {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem clamp(1.5rem, 5vw, 2rem) 4rem;
+  border-top: 1px solid var(--gray-100);
+}
+
+footer a {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--gray-400);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+footer a:hover { color: var(--black); }
+
+@media (max-width: 600px) {
+  .nav-strip { display: none; }
+  article { padding: 3rem 1.5rem 3rem; }
+  .figure-data { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav-strip">
+  <a href="index.html">Home</a>
+  <a href="tribes.html">The Tribes</a>
+  <a href="index.html#reconstruction">Hear It</a>
+  <a href="index.html#lexicon">Lexicon</a>
+  <a href="index.html#sources">Sources</a>
+  <a href="about.html" style="color:var(--black);">About</a>
+</nav>
+
+<article>
+
+<h1>Recovering the voices that the water took</h1>
+<div class="subtitle">On reconstructing the lost languages of South Florida's first people</div>
+<div class="dateline">April 2026</div>
+
+<p class="lede">
+When Hernando de Escalante Fontaneda was shipwrecked on the coast of South Florida in 1549, he was a boy of thirteen. He spent the next seventeen years living among the Calusa, learning their language, observing their world. When he finally returned to Spain and wrote his memoir, he left behind a handful of translated words. Those words, and a few scattered fragments from Jesuit missionaries and Spanish officials, are nearly all that remain of a language spoken by tens of thousands of people for centuries before European contact.
+</p>
+
+<p>
+The Calusa were not a small or marginal people. They built a civilization on the estuaries and shell mounds of Southwest Florida, commanding a network of tributary chiefdoms that extended from Charlotte Harbor to the Florida Keys. They engineered canals, constructed monumental earthworks on Mound Key and Key Marco, and held off Spanish colonization longer than almost any other group in the Southeast. But no Calusa grammar was ever written down. No dictionary was compiled. No audio recording was ever made. When the last Calusa speakers disappeared in the early eighteenth century, their language went with them.
+</p>
+
+<p>
+This project is an attempt to bring some of it back.
+</p>
+
+<h2>What survives</h2>
+
+<p>
+The bedrock is thin. Fontaneda's memoir gives us perhaps two dozen words with explicit translations: <em>ño</em> for village, <em>mayaimi</em> for very large, <em>kalos</em> for fierce people, <em>seletega</em> for "run to the lookout and see if anyone is coming." Jesuit letters from Juan Rogel and the Calderón report of 1675 add a few more. In total, the colonial record provides roughly 26 directly translated words.
+</p>
+
+<p>
+Julian Granberry, the linguist who devoted decades to the problem, expanded the picture considerably. Working from Fontaneda's text, from comparative linguistics, and from a bold hypothesis connecting Calusa to the Tunica language of Louisiana, he published analyses proposing meanings for dozens of additional place names, personal names, and morphemes. His 2011 book established a baseline of about 12 glossed entries and a theoretical framework that remains the only systematic attempt to classify the language.
+</p>
+
+<blockquote>
+"I made known to them the meaning of Se-le-tega, which is, 'Run to the lookout, see if there be any people coming;' they of Florida abbreviate their words more than we."
+<cite>Hernando de Escalante Fontaneda, Memoir, c. 1575</cite>
+</blockquote>
+
+<h2>What we built</h2>
+
+<p>
+We started with Granberry's published work and Fontaneda's memoir. Then we went looking for more.
+</p>
+
+<p>
+Using computational text analysis, we processed 103 historical sources: colonial-era letters, mission reports, expedition chronicles, natural histories, and scholarly monographs spanning five centuries. Twenty-eight manuscripts from the John H. Hann Collection at the P.K. Yonge Library of Florida History were downloaded and scanned for indigenous vocabulary. The complete Tunica-English Dictionary from Webonary (2,947 entries) was integrated, alongside the Gatschet and Swanton Atakapa Dictionary of 1932 (1,532 entries), and standardized wordlists for Chitimacha and Natchez from the ASJP database and other sources.
+</p>
+
+<div class="figure">
+  <div class="figure-label">Current corpus</div>
+  <div class="figure-data">
+    <div><div class="num">11,400</div><div class="label">Lexicon entries</div></div>
+    <div><div class="num">71</div><div class="label">Languages mapped</div></div>
+    <div><div class="num">103</div><div class="label">Historical sources</div></div>
+    <div><div class="num">347</div><div class="label">Calusa lexicon</div></div>
+  </div>
+</div>
+
+<p>
+Every entry in the Calusa lexicon is classified by the quality of its evidence. This is not a matter of academic etiquette. It is the difference between knowledge and speculation, and the project treats that boundary as sacred.
+</p>
+
+<table class="tier-table">
+  <tr><th>Tier</th><th>Count</th><th>Meaning</th></tr>
+  <tr><td><span class="dot" style="background:var(--green)"></span>Primary source</td><td>26</td><td>A colonial-era author explicitly translated this word</td></tr>
+  <tr><td><span class="dot" style="background:var(--blue)"></span>Published analysis</td><td>48</td><td>A named scholar proposed this meaning in a published work</td></tr>
+  <tr><td><span class="dot" style="background:var(--gray-400)"></span>Attested unglossed</td><td>81</td><td>Appears in a historical document, but no translation was recorded</td></tr>
+  <tr><td><span class="dot" style="background:var(--amber)"></span>AI hypothesis</td><td>192</td><td>Computationally proposed, not yet established scholarship</td></tr>
+</table>
+
+<h2>How the reconstruction works</h2>
+
+<p>
+The reconstruction engine operates in layers. At the base is the lexicon: every attested Calusa word, tagged by provenance. Above it sits a morphology engine that decomposes Calusa place names into substrings and searches for matching segments in the dictionaries of neighboring and potentially related languages: Timucua, Taíno, Tunica, Chitimacha, Natchez, and Atakapa.
+</p>
+
+<p>
+The Tunica connection is the project's most speculative and most productive thread. Granberry proposed that Calusa and Tunica belong to the same language family. If he was right, Tunica's comparatively well-documented vocabulary and grammar become a key for unlocking Calusa. We now have 100 cognate pairs linking the two languages, nine of which are established in the published literature. The remaining 91 are computationally proposed hypotheses awaiting validation.
+</p>
+
+<p>
+Grammar reconstruction follows the Subject-Object-Verb word order documented in Tunica by Mary Haas in the 1930s. Eleven grammar templates govern how reconstructed sentences are assembled, covering greetings, commands, descriptions, questions, and trade negotiations. Each word in every sentence is color-coded by its source tier, so that anyone reading or listening can see exactly where the evidence is strong and where it is thin.
+</p>
+
+<p>
+The audio you can hear on the main site is generated from these reconstructions. Pronunciation is modeled on recordings of Creek and Seminole speakers, the geographically and culturally closest living languages, with phonological rules from Tunica documentation guiding vowel length, stress patterns, and consonant clusters. It is an approximation. It is the best approximation that current evidence allows.
+</p>
+
+<h2>Why it matters</h2>
+
+<p>
+Language extinction is not like species extinction. When a language dies, it is not only a communication system that disappears. It is a way of categorizing the world, a repository of ecological knowledge, a record of how a specific group of people understood their relationship to the land and water and sky. The Calusa lived on the coast of Southwest Florida for over a thousand years. Their language encoded things we do not know and cannot learn from archaeology alone: the names they gave to the fish in the estuaries, the words they used to describe the seasons, the sounds of their greetings when a canoe arrived at Mound Key.
+</p>
+
+<p>
+We will never fully recover what was lost. The fragments are too few, the centuries too many. But the fragments that survive are not nothing. Twenty-six translated words are twenty-six windows. A hundred cognate pairs are a hundred threads connecting a vanished language to a documented one. Every historical source that mentions a place name or records a personal name is a data point that, when combined with the others, can begin to sketch the outlines of a linguistic system.
+</p>
+
+<p>
+This project does not claim to have reconstructed Calusa. It claims to have assembled every recoverable fragment into one place, classified each piece honestly by the strength of its evidence, and used computational methods to propose connections that human researchers can then evaluate. The AI does not replace the linguist. It reads the archive faster, finds patterns across larger datasets, and presents its hypotheses transparently enough that they can be confirmed or rejected on their merits.
+</p>
+
+<h2>What comes next</h2>
+
+<p>
+There are thirty-one historical texts already downloaded and awaiting deeper analysis. Fourteen additional sources in the registry have been identified but not yet processed. The Atakapa dictionary alone may yield connections we have not yet found. Every new source is another chance to find a word, a morpheme, a grammatical pattern that tightens the reconstruction.
+</p>
+
+<p>
+The ultimate ambition is to reconstruct enough of the language to stage a conversation: a Calusa speaker greeting a visitor to their town, a chief addressing his people, a trader negotiating in the market at Mound Key. Not as fiction, but as a rigorous, evidence-grounded approximation of what those exchanges might have sounded like, every word traceable to its source, every gap honestly marked.
+</p>
+
+<p>
+The water took the voices. The archives preserved the echoes. This project is trying to listen.
+</p>
+
+<div class="signature">
+  <div class="name">The Traveler</div>
+  <div class="role">April 2026</div>
+</div>
+
+</article>
+
+<footer>
+  <a href="index.html">&larr; Back to the project</a>
+</footer>
+
+</body>
+</html>

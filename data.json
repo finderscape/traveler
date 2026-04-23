@@ -3,11 +3,11 @@
     "title": "Voices from the Water",
     "subtitle": "Recovering the Lost Languages of South Florida's First People",
     "description": "A computational linguistics project using AI to recover the extinct languages of the Calusa, Tequesta, and other indigenous peoples of South Florida. By cross-referencing 16th-century Spanish colonial documents, mission records, and neighboring language families, we are reconstructing words, grammar, and meaning from fragments scattered across five centuries of archives.",
-    "goal": "To give voice back to the people who lived in South Florida for thousands of years before European contact, and ultimately demonstrate a conversation with a native Floridian from the 1500s."
+    "goal": "To give voice back to the people who lived in South Florida for thousands of years before European contact, and ultimately demonstrate a conversation with a native Floridian from the 1500s using an AI-driven Unreal Engine character."
   },
   "summary": {
-    "total_entries": 7947,
-    "total_languages": 70,
+    "total_entries": 11400,
+    "total_languages": 71,
     "core_south_florida_entries": 373,
     "calusa_total": 347,
     "calusa_primary_glosses": 26,
@@ -16,7 +16,7 @@
     "calusa_ai_hypotheses": 192,
     "calusa_glossed": 74,
     "granberry_baseline": 12,
-    "generated_at": "2026-04-22T12:01:08.184049"
+    "generated_at": "2026-04-22T13:02:58.682580"
   },
   "languages": [
     {
@@ -439,658 +439,660 @@
     {
       "id": "atakapa",
       "name": "Atakapa",
-      "total_entries": 383,
+      "total_entries": 1532,
       "primary_glosses": 0,
-      "published_analyses": 0,
+      "published_analyses": 1149,
       "attested_unglossed": 0,
       "ai_hypotheses": 383,
-      "glossed_count": 0,
+      "glossed_count": 1149,
       "tiers": {
-        "ai_hypothesis": 383
+        "ai_hypothesis": 383,
+        "published_analysis": 1149
       },
       "top_sources": {
+        "atakapa_dictionary_1932": 1149,
         "swanton_comparative_1919_vision": 383
       },
       "glossed_words": [
         {
-          "word": "ak",
-          "meaning": "green",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "akak",
-          "meaning": "very green, or green things",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "ūs",
-          "meaning": "to wake",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "wī cakūtsūsō",
-          "meaning": "I wake someone repeatedly",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "kūs",
-          "meaning": "red",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "kūskūs",
-          "meaning": "red things",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "ūōl, iwil",
-          "meaning": "to arrange, to put in order",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "heu",
-          "meaning": "many",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "gen. obj. and loc. prefixes",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "pronoun. obj.",
-          "meaning": "pronoun object",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "principal stem",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "plural and usitative",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "inim.",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'nto'la'",
+          "meaning": "isitwellwith you? (L-6, 9; ne'e akili'kc to'lka la'u ha'xc, wet",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "na'xn",
+          "meaning": "what are you doing? yi'l6° akili'kicta, I shall wet (it) to-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ai",
+          "meaning": "a-i, swamp, marsh, small pond, occasion for the principal annual",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "gully",
+          "meaning": "dance.\" Gatschet was informed",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "a'yip",
+          "meaning": "in the marsh (Gatschet in- of two kinds of dances to which",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "mals",
+          "meaning": "and other objects. Anybody akonskau, stream (akon(st) + ska",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ne'cak",
+          "meaning": "sawdust. aktsa'-u,cold,cool,chilly;E.D.tsamps.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "akipa'-i",
+          "meaning": "south, \"where the sun is cold or chilly, the wind is cold",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "yaicakakipai-i'keot",
+          "meaning": "thismancomes ax, to grow.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "a'kitoc",
+          "meaning": "frog, also given as toad, but a'xli(c), axli(c), to lose.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "a'kmalc",
+          "meaning": "winter; E. D. allstcumat. icat, I lost many things.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "a'knak",
+          "meaning": "current . al am, boiled meat.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "tai'kin",
+          "meaning": "there were eddies in the a'l hopa'-i, butcher, meat piercer.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "conjunctive (tune)",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "coals",
+          "meaning": "al am, boiled meat",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "volitional",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "cheeks",
+          "meaning": "am, to drink (am, to cook; Sm, to",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "perfect",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "tu'tsko'm-al",
+          "meaning": "calfofleg, \"fieshhang- drink ).",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "pronoun. subj.",
-          "meaning": "pronoun subject",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'leman",
+          "meaning": "German (from the French ha'kit a'mtit, they drink",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "remaining tense suffix and interrogative suffix",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'lin",
+          "meaning": "a'li, grapes, raisins (cf. ha'kit a'mutet, ha'kit Smtit, they are",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "hi-",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "allstcumat",
+          "meaning": "winter (of. W. yu'kit t6m a'mtsgl, we drank yester-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ic",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "alpamu'",
+          "meaning": "Alibamu. lat, they drankyesterday.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "wi",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'mta",
+          "meaning": "youwilldrinkto-morrow.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "yakit",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "icamneng",
+          "meaning": "wewilldrinkto-morrow.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ma",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'lckit",
+          "meaning": "it was freezing (il gile). naki't yi'lSn a'mta, naki't yi'lfin na-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "-ūl",
-          "meaning": "third person plural subjective",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ka'mtikit",
+          "meaning": "you all will come to",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ha",
-          "meaning": "third person in all other cases",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "hia'mghg",
+          "meaning": "I will then drink, kapo' a'mcnen, cup for drinking",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "cak-",
-          "meaning": "objective sign for third person plural",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "naa'mghg",
+          "meaning": "you will then drink. drinking cup.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "icak",
-          "meaning": "person",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "haa'mshg",
+          "meaning": "he'will then drink, kaukau' a'm'n a'nike nta'hSntat, the",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "yūkit",
-          "meaning": "independent form",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "caka'mshg",
+          "meaning": "they will then drink. kaukau' a'mto, I am going to drink",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "nakit",
-          "meaning": "independent form",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'mlu",
+          "meaning": "let us drink! ciko'm a'm cikna'-uco, I let the",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "hakit",
-          "meaning": "independent form",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "drink",
+          "meaning": "wi himaka'w6t kitsak a'mwangye",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "nak-",
-          "meaning": "objective form",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "am'",
+          "meaning": "a'mne, a drink, a beverage, stituted for Jack)",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "na",
-          "meaning": "stem of all independent pronouns and objective suffixes in second person",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'mcne",
+          "meaning": "a cup, a dipper, to take a drink of whisky (given",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ca, icak",
-          "meaning": "a human being",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "hia'mne",
+          "meaning": "they drink, time",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kic",
-          "meaning": "woman",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'npanc",
+          "meaning": "deaf, ears closed. a°' ka't la'kicnto, a\"ka't la'kicnto, I",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "yukti",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ito'lco",
+          "meaning": "I fix the ears ofthat dog. dow; pi. mokmo'k.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "näk",
-          "meaning": "independent form",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'nhipon",
+          "meaning": "anhipo'n, folded ears, pa'hnic, shut the door! (-t final is",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "hök-",
-          "meaning": "reciprocal",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "rabbit",
+          "meaning": "and by der. sheep, correct but is often dropped .",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "hük-",
-          "meaning": "reciprocal",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'nmaiiman",
+          "meaning": "a'n ma'nman, mule, go into the house.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "hat-",
-          "meaning": "reflexive prefix",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "jackass",
+          "meaning": "long ears. a'nkoc, corner of house, angle of",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ti",
-          "meaning": "stem of verb to go",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'npakc",
+          "meaning": "mouse, rat , lit. a'lak, a'lak, jail, prison, \"strong",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "pi",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "house",
+          "meaning": "home; E. D., ank. fermes)\").",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ni",
-          "meaning": "to lie down",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "church",
+          "meaning": "powerful house. a'n ne'p, a low house.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ne",
-          "meaning": "low",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'nkin",
+          "meaning": "at his house. . co'kcakie'kca' yi'mo, co'kcakie'kc",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "pae",
-          "meaning": "outside",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "soldiers",
+          "meaning": "soldiers' house. co'kcakie'kca°' yi'kshiwe'-u, ahigh-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kimati",
-          "meaning": "inside",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "home",
+          "meaning": "wi a'n wanne ta'-i tsika'dep tat(o)",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "hal",
-          "meaning": "back of, behind, last",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "na'kan",
+          "meaning": "thy house, a'nut (or ini'hat a'nkin) (\"j'avais",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "hai",
-          "meaning": "under",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'nenui",
+          "meaning": "bullfrog (1). umbrella",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "-he or -che",
-          "meaning": "second future suffix",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "act",
+          "meaning": "reed.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "-at or -et",
-          "meaning": "past suffix",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ha'tanians",
+          "meaning": "wild, savage, ferocious ats , ats , sweat",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "wi yīlen akēta",
-          "meaning": "I am going to stay to-morrow",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'tanians",
+          "meaning": "I amafraid hewould in- at",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "nakit tekō tiā-tūmtāmieta",
-          "meaning": "go ye and roll this barrel!",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "anka",
+          "meaning": "a°ka, to play. atnu'ni (said to be a word of this lan-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "yākitōta",
-          "meaning": "we will sleep",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "tit",
+          "meaning": "my children go playing out of and in the last case e has perhaps",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "na ietsāmta",
-          "meaning": "you are going to pinch us",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a'fipats",
+          "meaning": "a°pa'ts , onpats, wi caka'mie (amne?), I give them to",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "na eaktsāmta",
-          "meaning": "you pinch them",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "sour",
+          "meaning": "bitter, drink",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "it'hañ tieta",
-          "meaning": "where do you go?",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "vinegar",
+          "meaning": "root beer sour water, -ehe, -he, a future sign, posfeibly with",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "wi tieta",
-          "meaning": "I go away",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "chiefs",
+          "meaning": "eikun ke-ucukiakinto, eku'n ke-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "yūkit tiāta",
-          "meaning": "we go away",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "hiiimghg",
+          "meaning": "I will then drink, eku'nna(k) ta'mo, I have just as-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kō",
-          "meaning": "to want",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "tsa'-alhe",
+          "meaning": "tsa'lc6h6, this cracks or wic ikunyu'ts caktika'-u, I look",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "wets",
-          "meaning": "to know how",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ehe'-u",
+          "meaning": "ya ki'c kanyu'c ya' icak ut (or ot)",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "nē",
-          "meaning": "to lay, to put",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ehuks",
+          "meaning": "given by Du Terrage elafl",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "nai",
-          "meaning": "to lay, to put",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "efi",
+          "meaning": "e'n , name. te'mak efic, kneecap.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "yukit",
-          "meaning": "we",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "e'nke",
+          "meaning": "owning a name, enetst , ainetst , wild goose",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ot",
-          "meaning": "toward",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "name",
+          "meaning": "some informants) (note: om hu'-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "-kin",
-          "meaning": "in or into",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "cakio'nculgt",
+          "meaning": "they named it . ha a\", her house, his house",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "-ki",
-          "meaning": "in or into",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "grease",
+          "meaning": "gravj', oil, tallow, sauce(?); house .",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "co",
-          "meaning": "for, on account of",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "soap",
+          "meaning": "ha intsu'mgt, he pinched you.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kai",
-          "meaning": "then, at that time or place",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "him",
+          "meaning": "him.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kut",
-          "meaning": "this",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "kat",
-          "meaning": "this",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "cok",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "nūk",
-          "meaning": "reflexive particle",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "hōk-",
-          "meaning": "reciprocal, each other, together",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tūk",
-          "meaning": "to bring",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "pō",
-          "meaning": "to finish",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "nō",
-          "meaning": "down",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "pūc",
-          "meaning": "outside",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "hūi",
-          "meaning": "under",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "lo",
-          "meaning": "imperative of first person singular",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "ta",
-          "meaning": "common Atakapa ending, perhaps connected with the future",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "ku",
-          "meaning": "to want (used as auxiliary)",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "hacakni'l",
+          "meaning": "hergrandchildren . of that dog .",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "boat",
+          "meaning": "haki't an, their ears .",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "hakithukica'k",
+          "meaning": "theirrelatives (\"leurs .",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "arrested",
+          "meaning": "are stout .",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "nu'k",
+          "meaning": "their two selves, me!",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "walk",
+          "meaning": "they went out (visiting) hio'k a'xcat, I did not come be-",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "to'lha'",
+          "meaning": "a good-for-nothing (\"un to defend me.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ne'ha",
+          "meaning": "unripe, I got no water",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "water",
+          "meaning": "afraid of my father .",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "men",
+          "meaning": "ha'l wa'n ha'xcn, don't walk behind!",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ha'hu",
+          "meaning": "halfsausages.",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "haihai'co",
+          "meaning": "I was crying, paiha'l, pai'hal , ha'hai, behind",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "hihaihai'c",
+          "meaning": "I cried, I wept, the buttocks",
+          "confidence": 0,
+          "source": "atakapa_dictionary_1932",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         }
       ]
     },
@@ -1941,19 +1943,254 @@
     {
       "id": "chitimacha",
       "name": "Chitimacha",
-      "total_entries": 380,
+      "total_entries": 409,
       "primary_glosses": 0,
-      "published_analyses": 0,
+      "published_analyses": 29,
       "attested_unglossed": 0,
       "ai_hypotheses": 380,
-      "glossed_count": 0,
+      "glossed_count": 29,
       "tiers": {
-        "ai_hypothesis": 380
+        "ai_hypothesis": 380,
+        "published_analysis": 29
       },
       "top_sources": {
-        "swanton_comparative_1919_vision": 380
+        "swanton_comparative_1919_vision": 380,
+        "asjp_chitimacha": 24,
+        "natlang_chitimacha": 5
       },
       "glossed_words": [
+        {
+          "word": "ish",
+          "meaning": "I",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "unku",
+          "meaning": "one",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "pan",
+          "meaning": "person",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "pansh",
+          "meaning": "person",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "maksh",
+          "meaning": "fish",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "cat",
+          "meaning": "louse",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "shush",
+          "meaning": "tree",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "chish",
+          "meaning": "leaf",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "uipi",
+          "meaning": "blood",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "kaci",
+          "meaning": "bone",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "wash",
+          "meaning": "ear",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "shish",
+          "meaning": "nose",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "i",
+          "meaning": "tooth",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "mokun",
+          "meaning": "knee",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "washi",
+          "meaning": "hand",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "chaka",
+          "meaning": "breast",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "kach",
+          "meaning": "drink",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "wop",
+          "meaning": "hear",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "nupi",
+          "meaning": "die",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ku",
+          "meaning": "water",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "nush",
+          "meaning": "stone",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "mish",
+          "meaning": "path",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "chima",
+          "meaning": "night",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "hop",
+          "meaning": "full",
+          "confidence": 0,
+          "source": "asjp_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "kahitie",
+          "meaning": "three (trois)",
+          "confidence": 0,
+          "source": "natlang_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "meca",
+          "meaning": "four (quatre)",
+          "confidence": 0,
+          "source": "natlang_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "hussa",
+          "meaning": "five (cinq)",
+          "confidence": 0,
+          "source": "natlang_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "asi or panš",
+          "meaning": "man (homme)",
+          "confidence": 0,
+          "source": "natlang_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "waxni or kiš",
+          "meaning": "dog (chien)",
+          "confidence": 0,
+          "source": "natlang_chitimacha",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
         {
           "word": "suk",
           "meaning": "to shake",
@@ -2357,238 +2594,6 @@
         {
           "word": "kūxpa",
           "meaning": "to collect, to gather",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "lahi",
-          "meaning": "to burn",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "laxpa",
-          "meaning": "to burn",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "taka",
-          "meaning": "to run after, to pursue",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tapā",
-          "meaning": "to catch, to grasp",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tāxpa",
-          "meaning": "to touch",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "kantāk ātcūkani",
-          "meaning": "I am sucking something",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tcūxpakani",
-          "meaning": "I am sucking out",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tcōha",
-          "meaning": "I shall be chief",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tcōha pī",
-          "meaning": "be chief!",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "winima tōiha winiti",
-          "meaning": "be chiefs!",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tūxpi",
-          "meaning": "to enclose, to shut in",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tūxpu",
-          "meaning": "a button, a blister",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "kūxpu",
-          "meaning": "to nip, to cut (with scissors)",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "sōpū",
-          "meaning": "to wither or dry up",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "cīxpu",
-          "meaning": "to prick, to point",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-ka",
-          "meaning": "negative suffix",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "kex",
-          "meaning": "to want, to desire",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-ho",
-          "meaning": "to be able",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "teū",
-          "meaning": "to go",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "āhi",
-          "meaning": "to come",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "nate",
-          "meaning": "to lay, to put",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "hat",
-          "meaning": "here, at this place",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "wet",
-          "meaning": "there, at that place",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-up",
-          "meaning": "toward",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-nki",
-          "meaning": "to and at",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "to",
-          "meaning": "when, after, while",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tat",
-          "meaning": "when, after, while",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "tcin",
-          "meaning": "for, on account of",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "am",
-          "meaning": "what, something, thing",
           "confidence": 0.6,
           "source": "swanton_comparative_1919_vision",
           "tier": "ai_hypothesis",
@@ -4870,6 +4875,473 @@
       ]
     },
     {
+      "id": "natchez",
+      "name": "Natchez",
+      "total_entries": 56,
+      "primary_glosses": 0,
+      "published_analyses": 56,
+      "attested_unglossed": 0,
+      "ai_hypotheses": 0,
+      "glossed_count": 56,
+      "tiers": {
+        "published_analysis": 56
+      },
+      "top_sources": {
+        "asjp_natchez": 48,
+        "natlang_natchez": 8
+      },
+      "glossed_words": [
+        {
+          "word": "takaha",
+          "meaning": "I",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "tagaxa",
+          "meaning": "I",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "akaha",
+          "meaning": "you",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "takani",
+          "meaning": "we",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "witan",
+          "meaning": "one",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "widan",
+          "meaning": "one",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "awiti",
+          "meaning": "two",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "tom",
+          "meaning": "person",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "tam",
+          "meaning": "person",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "en",
+          "meaning": "fish",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "washkup",
+          "meaning": "dog",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "tan",
+          "meaning": "louse",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "cu",
+          "meaning": "tree",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "chu",
+          "meaning": "tree",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "atul",
+          "meaning": "leaf",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "toloksha",
+          "meaning": "skin",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "totoks",
+          "meaning": "skin",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "idsha",
+          "meaning": "blood",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ich",
+          "meaning": "blood",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ekw~el",
+          "meaning": "bone",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "kama",
+          "meaning": "horn",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ibuka",
+          "meaning": "ear",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "uktuL",
+          "meaning": "eye",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "oktul",
+          "meaning": "eye",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "shamach",
+          "meaning": "nose",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ent",
+          "meaning": "tooth",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "icak",
+          "meaning": "tongue",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "idshak",
+          "meaning": "tongue",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "okshoya",
+          "meaning": "knee",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "izha",
+          "meaning": "hand",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "shuya",
+          "meaning": "breast",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "shulgup",
+          "meaning": "liver",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "haku",
+          "meaning": "drink",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "eʔlelat",
+          "meaning": "see",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "epledal",
+          "meaning": "hear",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "yuatik",
+          "meaning": "die",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "katataho",
+          "meaning": "come",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "wit kw~aship",
+          "meaning": "sun",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "tukul",
+          "meaning": "star",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "kun",
+          "meaning": "water",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "kuna",
+          "meaning": "water",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ufa",
+          "meaning": "stone",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "uwah",
+          "meaning": "fire",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "uya",
+          "meaning": "path",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "putkup",
+          "meaning": "mountain",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "meyogup",
+          "meaning": "night",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "hinana",
+          "meaning": "new",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "inu ish",
+          "meaning": "name",
+          "confidence": 0,
+          "source": "asjp_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "wi∙tan",
+          "meaning": "one (un)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "a∙witi",
+          "meaning": "two (deux)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ne∙ti",
+          "meaning": "three (trois)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ginawi∙ti",
+          "meaning": "four (quatre)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "icpi∙ti",
+          "meaning": "five (cinq)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "tama∙ł",
+          "meaning": "woman (femme)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "uwahci∙ł",
+          "meaning": "sun (soleil)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "kwaxcip",
+          "meaning": "moon (lune)",
+          "confidence": 0,
+          "source": "natlang_natchez",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        }
+      ]
+    },
+    {
       "id": "otomi",
       "name": "Otomi",
       "total_entries": 0,
@@ -7093,663 +7565,658 @@
     {
       "id": "tunica",
       "name": "Tunica",
-      "total_entries": 728,
+      "total_entries": 2947,
       "primary_glosses": 0,
-      "published_analyses": 0,
+      "published_analyses": 2947,
       "attested_unglossed": 0,
-      "ai_hypotheses": 423,
-      "glossed_count": 0,
+      "ai_hypotheses": 0,
+      "glossed_count": 2947,
       "tiers": {
-        "attested_gloss": 305,
-        "ai_hypothesis": 423
+        "published_analysis": 2947
       },
       "top_sources": {
-        "swanton_comparative_1919_vision": 380,
-        "haas1953": 226,
-        "deep_read_swanton_tunica_1921_extracted.txt": 43,
-        "wikipedia_tunica": 35,
-        "granberry_1994": 29
+        "webonary_tunica": 2947
       },
       "glossed_words": [
         {
-          "word": "/uni/",
-          "meaning": "person",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/oni/",
-          "meaning": "person",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/joron/",
-          "meaning": "tribal self-name",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/tiou/",
-          "meaning": "tribal name",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/jazoo/",
-          "meaning": "tribal/river name",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/koroa/",
-          "meaning": "tribal name",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/grigra/",
-          "meaning": "tribal name",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/tika/",
-          "meaning": "being big",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/laspi/",
-          "meaning": "money, valuable object",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/kodʒu/",
-          "meaning": "bell",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/puna/",
-          "meaning": "ball",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/ikaha/",
-          "meaning": "have (negative)",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
-        },
-        {
-          "word": "/amar/",
-          "meaning": "eat",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'a'aki",
+          "meaning": "to be left over",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'achi",
+          "meaning": "she sit, sat, dwells",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'aha 1)",
+          "meaning": "No! nothing much nowhere",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'aha",
+          "meaning": "to not have",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'ahak'ihch 1)",
+          "meaning": "or, or else otherwise; if not",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'ahkini",
+          "meaning": "I live, lived, exist",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'atoluni 1)",
+          "meaning": "all around adv around v.II.tr to wind",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'aka 1)",
+          "meaning": "to come in v.I.intr to enter v.I.intr to",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "get in 4)",
+          "meaning": "to go in v.I.intr to sink v.T.tr to",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'el'ɔshtayuru",
+          "meaning": "cucumber",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'aki",
+          "meaning": "she lives, lived",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'elu",
+          "meaning": "fruit",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "'ala",
+          "meaning": "cane, reed",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/sagoniti/",
-          "meaning": "we have eaten",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'elukayuru",
+          "meaning": "banana",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/wahakuna/",
-          "meaning": "he sat weeping",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'amari",
+          "meaning": "enough plenty sufficiently",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/hapelorani/",
-          "meaning": "I am lying flat on my belly",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'elumili",
+          "meaning": "tomato",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/nara/",
-          "meaning": "serpent, snake",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'ami 1) to go 2)",
+          "meaning": "to leave v.I.intr to depart",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/lupura/",
-          "meaning": "dead (lies there)",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'eluwista",
+          "meaning": "pear",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/ami/",
-          "meaning": "to go",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'eri",
+          "meaning": "to lift to hoist to raise it up to carry",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/axtʃa/",
-          "meaning": "to be, to exist",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'anani",
+          "meaning": "I sit, sat, dwell",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/halakiniʃ/",
-          "meaning": "to town",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'ani",
+          "meaning": "I go, went 'ɛsa adj flat level",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/tʃoha/",
-          "meaning": "chief",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'ara",
+          "meaning": "she lays, lies, is lying existential - 'am'ik'i",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/toni/",
-          "meaning": "man",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'ara 3 1)",
+          "meaning": "to have to possess",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/mita/",
-          "meaning": "passes/goes",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'arani",
+          "meaning": "I lay, lie, am lying",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/waʔku/",
-          "meaning": "there",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'arihchu",
+          "meaning": "bouquet",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/miktik/",
-          "meaning": "go away/more",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'asa",
+          "meaning": "she comes, came",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/sask/",
-          "meaning": "one",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'asani",
+          "meaning": "I come, came",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/ili/",
-          "meaning": "two",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'inihki",
+          "meaning": "we two live, lived 'uhki he is he lives, is alive v.chameleon he exists",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/eniksu/",
-          "meaning": "three",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'ira 1)",
+          "meaning": "to dress oneself v.II.tr to dress someone 'uk",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/maku/",
-          "meaning": "four",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "else 3) to wear 4)",
+          "meaning": "clothed",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/siku/",
-          "meaning": "five",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'irana",
+          "meaning": "we lay, lie, are lying (D-P)",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/polun/",
-          "meaning": "hundred",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "settle 9)",
+          "meaning": "to stay",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/tʃiksaltiniku/",
-          "meaning": "Avoyel people",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'itani",
+          "meaning": "we all come, came",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/tʃikasaku/",
-          "meaning": "Chickasaw",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'una",
+          "meaning": "he dwells he lives, dwells he",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/tʃohaku/",
-          "meaning": "chief, leader",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'itashi",
+          "meaning": "we all go, went",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/halukin/",
-          "meaning": "village, town",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'iyana",
+          "meaning": "we two go, went",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/jolukstʃ/",
-          "meaning": "language, speech",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'owi 1)",
+          "meaning": "to sweat : This verb can also be Class I, but",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/sikhayi/",
-          "meaning": "old, ancient",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "transitive Tishlina is strongly preferred. 2)",
+          "meaning": "to",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/hoθotoki/",
-          "meaning": "all, every",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'unasa",
+          "meaning": "they two (3MD) come, came",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/yolulk/",
-          "meaning": "story, relation, language",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "Tishlina is strongly preferred. 3)",
+          "meaning": "sweat v.II.tr to",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/luk/",
-          "meaning": "tongue",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "cause to perspire 5)",
+          "meaning": "to cause to sweat",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/tʃu/",
-          "meaning": "to take, hold, grasp",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'ɔka",
+          "meaning": "child",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "/namo/",
-          "meaning": "many",
-          "confidence": 0.7,
-          "source": "deep_read_swanton_tunica_1921_extracted.txt",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI-extracted from swanton_tunica_1921_extracted.txt"
+          "word": "'ɔkanisara",
+          "meaning": "young child 'unima pronoun they two (m.) them their",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "sama",
-          "meaning": "ripe",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔkanuhchitohku",
+          "meaning": "little girl",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "samaha",
-          "meaning": "not ripe",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔkashi",
+          "meaning": "boy",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "lapū",
-          "meaning": "good",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔkashitohku",
+          "meaning": "little boy",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "lapūhū",
-          "meaning": "not good",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔkatohku",
+          "meaning": "baby - \"there is, was\"",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kōra",
-          "meaning": "to drink",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔn'iti",
+          "meaning": "we all live, lived",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kōkōra",
-          "meaning": "to drink repeatedly or habitually",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔnahiti",
+          "meaning": "you all (2FP) live, lived",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kōmū",
-          "meaning": "roof-shaped",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔnasiti",
+          "meaning": "they all (3FP) live, lived",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "kōmūkōmū",
-          "meaning": "roof-shaped objects",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔnawiti",
+          "meaning": "you all (2MP) live, lived",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "sa:ku",
-          "meaning": "one",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'utu",
+          "meaning": "a protruding or pointed part",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "sa:ksa:ku",
-          "meaning": "one here and one there",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'uwa",
+          "meaning": "he goes, went",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "a, ē",
-          "meaning": "to go",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'ɔnta",
+          "meaning": "they all (3MP) live, lived",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "a, ōn",
-          "meaning": "to be",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'uwana",
+          "meaning": "they two (3MD) go, went",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ta, īn",
-          "meaning": "to cause",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'u-",
+          "meaning": "pfx REDUP - \"used to\"",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ičo'kĭp",
-          "meaning": "pronoun",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "'uchɛhka",
+          "meaning": "toad",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "pronou. obj.",
-          "meaning": "pronoun object",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "a-",
+          "meaning": "pfx together each other",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "principal stem",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahari",
+          "meaning": "sibling-in-law of opposite sex; sister-in-law of a alakuwatohku ('ala , kuwatohku\"cane bird\") n brown",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "plural stem",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahaya",
+          "meaning": "sibling of the opposite sex brother of a alaninitawohku ('ala, nini, ta-, wohku) n fishing pole",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "trace of numerical caus. and adj. usitative infin. -ĭni",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahayasahu",
+          "meaning": "cousin of opposite sex alatashuru ('ala, ta-, shuru) n blowgun",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "conjunctive",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "n step-sibling of the opposite sex alatawuchi",
+          "meaning": "whistle (made of cane)",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "antiparticles",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahchal'utu",
+          "meaning": "hip alatɛcha n thrush",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "perfect future",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahchal'utush",
+          "meaning": "hip thigh alatini ('ala, tini ) n cane arrowshaft arrow lit",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "negative",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahchali",
+          "meaning": "upper leg alatinikuhpa ('ala , tini, kuhpa ) n feathered arrow",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "pronoun. remaining tense suffix",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahkalayihtatahinu",
+          "meaning": "train",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "inim. or interrog. suffix",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "on-the-level-mover alatolu",
+          "meaning": "cane tied in a bundle",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         },
         {
-          "word": "ima",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "ik-",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "inima",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "iw",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-ina",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-iti",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-wi",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "hi",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "hama",
-          "meaning": "",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "ti",
-          "meaning": "feminine sign in singular",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "xi",
-          "meaning": "syllable found in third person dual and plural",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "ci",
-          "meaning": "male human being",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
-        },
-        {
-          "word": "-ūi",
-          "meaning": "third person masculine",
-          "confidence": 0.6,
-          "source": "swanton_comparative_1919_vision",
-          "tier": "ai_hypothesis",
-          "evidence_citation": "AI vision-extracted from Swanton Comparative (1919) PDF"
+          "word": "ahkalayihtatahinutɛti",
+          "meaning": "sphere",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "railroad lit. train-road alatosuwatani",
+          "meaning": "hide-the-shot game []",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ahkihtaku",
+          "meaning": "the one behind *alawɛcha'utu (*alawɛcha, 'utu) n tip of the ear",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ahkishtihki",
+          "meaning": "backwards *alawɛchatapahchu (*alawɛcha, ta-, pahchu) n ear",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ahomu",
+          "meaning": "divided ornament ear adorner",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ahpasalamihta",
+          "meaning": "mythical water animal *alawɛchatapahka (*alawɛcha) n ear ornament ear",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ahpu",
+          "meaning": "to bathe to swim decorator",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ahpushtahki",
+          "meaning": "mud *alawɛchatapahku n ear ornament",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ahtari",
+          "meaning": "wing alawuchi ('ala 1 , wuchi) n cane whistle",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "ak- var. of a- alibama",
+          "meaning": "Alabama Indian",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "akurani",
+          "meaning": "circle alibamanuhchi (alibama, nuhchi) nprop Alabama",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "alibamashi",
+          "meaning": "Alabama man",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
+        },
+        {
+          "word": "akurani",
+          "meaning": "to surround",
+          "confidence": 0,
+          "source": "webonary_tunica",
+          "tier": "published_analysis",
+          "evidence_citation": ""
         }
       ]
     },
@@ -9067,6 +9534,303 @@
       "status": "fetched",
       "relevance": "",
       "url": ""
+    },
+    {
+      "name": "Hann MS 043 - Problems of Sources for Utina",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 175 - Collection of Tribute from Dona Maria",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 110 - Mystery Missions among Apalachicoli 1670s",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 063 - Friars of Province of Santa Elena",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 081 - Floridas Friars and Missions 1730s",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 061 - Florida Cabildo Controversy",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 148 - Pirates Attack Hacienda La Chua 1682",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 099 - 1697 Listing of the Missions",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 066 - The Savacola Fort",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 084 - Church Furnishings from Cuba 1787",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 141 - Distribution Soldiers 1696",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 060 - Architectural Descriptions Forts",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 132 - Starvation in Florida 1643",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 059 - Supplies Sent to Florida 1607",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 104 - Spanish Contact Neighboring Indians",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 150 - Controversy Franciscan Provincial",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 077 - Lecture Notes Hudson Institute",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 142 - Friars Mistreatment of Indians 1697",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 065 - Service Record Leturiondo",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 136 - Reining In Friars Financial Abuse",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 129 - Dutch Fleet at Ais 1627",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 127 - Assignments of Friars 1747",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 086 - Reemergence Anacape Mayaca Missions",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 101 - Apalachee Carlos Pooy De Soto Landing",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 053 - Chisca-Chichimeco 1675",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 133 - Mid-Century Visit by Uchizes",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 001 - Matheos Part 1 1687",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Hann MS 070 - Mistreatment of Indians 1680s",
+      "author": "",
+      "year": "",
+      "type": "manuscript_translation",
+      "status": "deep_read",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "ASJP Chitimacha Wordlist (Cecil H. Brown)",
+      "author": "",
+      "year": "",
+      "type": "wordlist",
+      "status": "processed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "ASJP Natchez Wordlist (Pamela Brown)",
+      "author": "",
+      "year": "",
+      "type": "wordlist",
+      "status": "processed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Native Languages of the Americas: Chitimacha vocabulary",
+      "author": "",
+      "year": "",
+      "type": "wordlist",
+      "status": "processed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Native Languages of the Americas: Natchez vocabulary",
+      "author": "",
+      "year": "",
+      "type": "wordlist",
+      "status": "processed",
+      "relevance": "",
+      "url": ""
+    },
+    {
+      "name": "Gatschet & Swanton - Dictionary of the Atakapa Language (1932)",
+      "author": "",
+      "year": "",
+      "type": "dictionary",
+      "status": "identified",
+      "relevance": "",
+      "url": ""
     }
   ],
   "morphology": {
@@ -9273,6 +10037,99 @@
           "coverage": 0.5
         }
       ]
+    },
+    "tunica": {
+      "total": 16,
+      "strong": 9,
+      "top": [
+        {
+          "calusa_word": "estame",
+          "calusa_gloss": "place name",
+          "match_word": "tame",
+          "match_gloss": "scout",
+          "matched_substring": "tame",
+          "coverage": 0.67
+        },
+        {
+          "calusa_word": "/gwasa/",
+          "calusa_gloss": "place name",
+          "match_word": "wasa",
+          "match_gloss": "garfish species (medium size)",
+          "matched_substring": "wasa",
+          "coverage": 0.57
+        },
+        {
+          "calusa_word": "/kalus/",
+          "calusa_gloss": "possible original form of chief's name",
+          "match_word": "kalu",
+          "match_gloss": "to gobble like a turkey several intrg how many",
+          "matched_substring": "kalu",
+          "coverage": 0.57
+        },
+        {
+          "calusa_word": "otopali",
+          "calusa_gloss": "village name in Calusa territory",
+          "match_word": "pali",
+          "match_gloss": "to take off shoes, boots, socks, etc. kayi 1 ) n bile",
+          "matched_substring": "pali",
+          "coverage": 0.57
+        },
+        {
+          "calusa_word": "/ponera/",
+          "calusa_gloss": "chief's name, possibly 'place of coming' or personal name",
+          "match_word": "nɛra",
+          "match_gloss": "ghost spirit *nisara n daughter",
+          "matched_substring": "nera",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "abalachi",
+          "calusa_gloss": "kingdom name (Apalachee region)",
+          "match_word": "'achi",
+          "match_gloss": "she sit, sat, dwells",
+          "matched_substring": "achi",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "abolachi",
+          "calusa_gloss": "kingdom/region name in Calusa sphere",
+          "match_word": "'achi",
+          "match_gloss": "she sit, sat, dwells",
+          "matched_substring": "achi",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "metamapo",
+          "calusa_gloss": "bears their bowl (Escobedo: ni-ta im am-po)",
+          "match_word": "tama",
+          "match_gloss": "mountain",
+          "matched_substring": "tama",
+          "coverage": 0.5
+        },
+        {
+          "calusa_word": "olgatana",
+          "calusa_gloss": "village name in Calusa territory",
+          "match_word": "tana",
+          "match_gloss": "doodlebug, rolypoly, pillbug Armadillidiidae tasap'arash west, to the west {non std, obso}",
+          "matched_substring": "tana",
+          "coverage": 0.5
+        }
+      ]
+    },
+    "chitimacha": {
+      "total": 0,
+      "strong": 0,
+      "top": []
+    },
+    "natchez": {
+      "total": 0,
+      "strong": 0,
+      "top": []
+    },
+    "atakapa": {
+      "total": 0,
+      "strong": 0,
+      "top": []
     },
     "creek": {
       "total": 0,
